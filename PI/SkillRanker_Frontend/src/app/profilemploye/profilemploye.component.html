@@ -1,0 +1,199 @@
+<app-navemp></app-navemp>
+<app-header></app-header>
+<main class="nxl-container pf-page">
+  <div class="nxl-content">
+    <div *ngIf="!user" class="pf-loading-wrap">
+      <div class="spinner-border text-primary" role="status" aria-label="Loading"></div>
+      <p>Loading profile…</p>
+    </div>
+
+    <div class="pf-wrap" *ngIf="user && profileForm">
+
+      <header class="pf-hero">
+        <p class="pf-eyebrow">Account</p>
+        <h1 class="pf-title">Profile</h1>
+        <p class="pf-lead" *ngIf="canEditPersonnelProfile">View and update your own contact details and work identifiers.</p>
+        <p class="pf-lead" *ngIf="!canEditPersonnelProfile">View your information. Personnel changes (name, email, ID, phone) are handled by HR.</p>
+      </header>
+
+      <div class="pf-notice" *ngIf="!canEditPersonnelProfile" role="status">
+        <i class="feather-info" aria-hidden="true"></i>
+        <span>Read-only profile. Contact HR to update your official record.</span>
+      </div>
+
+      <div class="pf-grid">
+        <!-- Left -->
+        <aside class="pf-col pf-col--side" aria-label="Profile summary">
+          <div class="pf-card pf-card--profile">
+            <div class="pf-cover"></div>
+            <div class="pf-identity">
+              <div class="pf-avatar-box">
+                <img
+                  class="pf-avatar"
+                  [src]="user?.picture || 'https://pbcdn1.podbean.com/imglogo/image-logo/4389756/picture-1-1505503146.png'"
+                  [alt]="user?.name || 'Profile photo'"
+                />
+                <span class="pf-presence" [class.pf-presence--on]="user?.enLigne" [attr.title]="user?.enLigne ? 'Online' : 'Offline'"></span>
+              </div>
+              <h2 class="pf-name">{{ user.name }}</h2>
+              <p class="pf-role-pill">
+                <i class="feather-briefcase" aria-hidden="true"></i>
+                {{ user.role }}
+              </p>
+              <p class="pf-status" [class.pf-status--on]="user.status === 'ACTIVE'">
+                <span class="pf-status__dot" aria-hidden="true"></span>
+                {{ user.status === 'ACTIVE' ? 'Active' : 'Inactive' }}
+              </p>
+              <div class="pf-mini-stats" *ngIf="(stats?.length || 0) > 0">
+                <div class="pf-mini" *ngFor="let stat of stats">
+                  <div class="pf-mini__v">{{ stat.value }}</div>
+                  <div class="pf-mini__l">{{ stat.label }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pf-card pf-card--list">
+            <h3 class="pf-card__h">Contact</h3>
+            <ul class="pf-dl" role="list">
+              <li>
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-mail"></i></span>
+                <div>
+                  <span class="pf-dl__k">Email</span>
+                  <span class="pf-dl__v">{{ user.email }}</span>
+                </div>
+              </li>
+              <li *ngIf="user.telephone">
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-smartphone"></i></span>
+                <div>
+                  <span class="pf-dl__k">Phone</span>
+                  <span class="pf-dl__v">{{ user.telephone }}</span>
+                </div>
+              </li>
+              <li *ngIf="user.matricule">
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-hash"></i></span>
+                <div>
+                  <span class="pf-dl__k">ID</span>
+                  <span class="pf-dl__v">{{ user.matricule }}</span>
+                </div>
+              </li>
+              <li *ngIf="user.dateEmbauche">
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-calendar"></i></span>
+                <div>
+                  <span class="pf-dl__k">Start date</span>
+                  <span class="pf-dl__v">{{ user.dateEmbauche | date: 'd MMM yyyy' }}</span>
+                </div>
+              </li>
+              <li *ngIf="user.department">
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-layers"></i></span>
+                <div>
+                  <span class="pf-dl__k">Department</span>
+                  <span class="pf-dl__v">{{ user.department?.name || user.department }}</span>
+                </div>
+              </li>
+              <li *ngIf="user.manager">
+                <span class="pf-dl__icon" aria-hidden="true"><i class="feather-user"></i></span>
+                <div>
+                  <span class="pf-dl__k">Manager</span>
+                  <span class="pf-dl__v">{{ user.manager?.name || user.manager }}</span>
+                </div>
+              </li>
+            </ul>
+            <div class="pf-side-actions">
+              <button type="button" class="pf-btn pf-btn--primary" *ngIf="canEditPersonnelProfile" (click)="onEdit()">
+                <i class="feather-edit-2" aria-hidden="true"></i>
+                Edit
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right -->
+        <div class="pf-col pf-col--main">
+          <section class="pf-card pf-card--form">
+            <div class="pf-sec-head">
+              <h3 class="pf-sec-title">{{ canEditPersonnelProfile ? 'Edit profile' : 'Profile details' }}</h3>
+              <span class="pf-badge">{{ canEditPersonnelProfile ? 'Details' : 'Read-only' }}</span>
+            </div>
+
+            <div class="pf-notice pf-notice--warn" *ngIf="saveError" role="alert">
+              <i class="feather-alert-circle" aria-hidden="true"></i>
+              <span>{{ saveError }}</span>
+            </div>
+
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+              <div class="pf-fields">
+                <div class="pf-row">
+                  <div class="pf-field">
+                    <label class="pf-label" for="pf-name">Display name</label>
+                    <input class="pf-input" id="pf-name" type="text" formControlName="name" [placeholder]="user.name" />
+                  </div>
+                  <div class="pf-field">
+                    <label class="pf-label" for="pf-mat">Employee ID</label>
+                    <input class="pf-input" id="pf-mat" type="text" formControlName="matricule" [placeholder]="user.matricule || 'EMP-0000'" />
+                  </div>
+                </div>
+                <div class="pf-field">
+                  <label class="pf-label" for="pf-mail">Work email</label>
+                  <input class="pf-input" id="pf-mail" type="email" formControlName="email" [placeholder]="user.email" />
+                </div>
+                <div class="pf-row">
+                  <div class="pf-field">
+                    <label class="pf-label" for="pf-tel">Phone</label>
+                    <input class="pf-input" id="pf-tel" type="tel" formControlName="telephone" [placeholder]="user.telephone || '+1 …'" />
+                  </div>
+                  <div class="pf-field">
+                    <label class="pf-label" for="pf-role">Role</label>
+                    <input class="pf-input pf-input--ro" id="pf-role" type="text" [value]="user.role" readonly />
+                  </div>
+                </div>
+              </div>
+              <div class="pf-form-actions" *ngIf="canEditPersonnelProfile">
+                <button type="button" class="pf-btn pf-btn--ghost" (click)="onCancel()">Cancel</button>
+                <button type="submit" class="pf-btn pf-btn--save" [disabled]="!profileForm.valid || saving">
+                  <span *ngIf="!saving">Save changes</span>
+                  <span *ngIf="saving" class="pf-btn__spinner" aria-live="polite">Saving…</span>
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <section class="pf-card pf-card--act" aria-label="Recent activity">
+            <div class="pf-sec-head">
+              <h3 class="pf-sec-title">Recent activity</h3>
+              <span class="pf-badge">History</span>
+            </div>
+            <ul class="pf-timeline" *ngIf="recentActivities.length > 0">
+              <li
+                class="pf-ti"
+                *ngFor="let act of recentActivities"
+                [ngClass]="{
+                  'pf-ti--ok': isActDone(act),
+                  'pf-ti--go': isActInProgress(act),
+                  'pf-ti--idle': !isActDone(act) && !isActInProgress(act)
+                }"
+              >
+                <div class="pf-ti__dot" aria-hidden="true">
+                  <i class="feather-check" *ngIf="isActDone(act)"></i>
+                  <i class="feather-activity" *ngIf="!isActDone(act) && isActInProgress(act)"></i>
+                  <i class="feather-clipboard" *ngIf="!isActDone(act) && !isActInProgress(act)"></i>
+                </div>
+                <div class="pf-ti__body">
+                  <p class="pf-ti__t">{{ act.title || act.type || 'Activity' }}</p>
+                  <p class="pf-ti__d">
+                    <ng-container *ngIf="act.updatedAt || act.createdAt || act.date; else noD">
+                      {{ (act.updatedAt || act.createdAt || act.date) | date: 'd MMM yyyy' }}
+                    </ng-container>
+                    <ng-template #noD>Recently</ng-template>
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p *ngIf="recentActivities.length === 0" class="pf-empty">No recent activity to show yet.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+

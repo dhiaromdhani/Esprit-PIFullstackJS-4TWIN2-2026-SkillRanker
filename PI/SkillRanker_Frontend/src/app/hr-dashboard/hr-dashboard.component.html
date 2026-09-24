@@ -1,0 +1,706 @@
+<app-navbar></app-navbar>
+<!-- <app-header></app-header> -->
+<app-header-hr></app-header-hr>
+<main class="nxl-container">
+  <!-- hrd-page reçoit hrd-light pour le light mode -->
+  <div class="nxl-content hrd-page" [class.hrd-light]="!isDarkMode">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Fira+Code:wght@400;500&display=swap');
+
+    /* ══════════════════════════════════════
+       DARK  (défaut — pas de classe extra)
+    ══════════════════════════════════════ */
+    .hrd-page {
+      --bg:   #07090f;
+      --s1:   #0a0d16;
+      --s2:   #0f1521;
+      --s3:   #141c2e;
+      --s4:   #1a2438;
+      --bd:   rgba(255,255,255,0.06);
+      --bdhi: rgba(255,255,255,0.13);
+      --tx:   #dce4f2;
+      --tx2:  #a8b4cc;
+      --mu:   #4d5e7a;
+      --mu2:  #7080a0;
+      --shd:  rgba(0,0,0,0.45);
+
+      --ind:  #5b7cfa;  --ind2: #7b97fc;  --indl: rgba(91,124,250,0.13);
+      --grn:  #22c988;  --grnl: rgba(34,201,136,0.12);
+      --amb:  #f5a623;  --ambl: rgba(245,166,35,0.12);
+      --red:  #f43f5e;  --redl: rgba(244,63,94,0.12);
+      --cyn:  #38bdf8;  --cynl: rgba(56,189,248,0.10);
+      --r: 12px;  --rl: 18px;  --g: 26px;
+
+      background: var(--bg);
+      font-family: 'Bricolage Grotesque', sans-serif;
+      color: var(--tx);
+      min-height: calc(100vh - 70px);
+      padding-bottom: 80px;
+      transition: background .3s, color .3s;
+    }
+
+    /* ══════════════════════════════════════
+       LIGHT  — on redéfinit uniquement les vars
+    ══════════════════════════════════════ */
+    .hrd-page.hrd-light {
+      --bg:   #f0f4fc;
+      --s1:   #ffffff;
+      --s2:   #ffffff;
+      --s3:   #eef2fa;
+      --s4:   #e4eaf5;
+      --bd:   rgba(0,0,0,0.08);
+      --bdhi: rgba(0,0,0,0.16);
+      --tx:   #0f172a;
+      --tx2:  #374151;
+      --mu:   #9ca3af;
+      --mu2:  #6b7280;
+      --shd:  rgba(0,0,0,0.07);
+    }
+
+    /* reset propre */
+    .hrd-page * { box-sizing: border-box; }
+    .hrd-page a { text-decoration: none; }
+
+    /* ══ PAGE HEADER ══ */
+    .hrd-ph {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 24px var(--g) 20px;
+      flex-wrap: wrap;
+      gap: 14px;
+      border-bottom: 1px solid var(--bd);
+      background: linear-gradient(180deg, rgba(91,124,250,0.05) 0%, transparent 100%);
+      transition: background .3s, border-color .3s;
+    }
+    .hrd-eyebrow {
+      display: flex; align-items: center; gap: 7px;
+      font-family: 'Fira Code', monospace;
+      font-size: 10px; color: var(--ind2); margin-bottom: 5px;
+    }
+    .hrd-eyebrow::before {
+      content: ''; width: 5px; height: 5px; border-radius: 50%;
+      background: var(--ind); box-shadow: 0 0 8px rgba(91,124,250,.6); flex-shrink: 0;
+    }
+    .hrd-title { font-size: 21px; font-weight: 700; color: var(--tx); letter-spacing: -.02em; margin: 0 0 5px; line-height: 1.15; }
+    .hrd-crumb { list-style: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--mu2); }
+    .hrd-crumb li+li::before { content:"/"; margin-right:6px; opacity:.35; }
+    .hrd-crumb a { color: var(--mu2); transition: color .15s; }
+    .hrd-crumb a:hover { color: var(--tx2); }
+    .hrd-ph-right { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
+    /* ══ BUTTONS ══ */
+    .hrd-btn {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-size: 13px; font-weight: 500;
+      padding: 8px 16px; border-radius: 99px;
+      border: 1px solid var(--bd); background: var(--s3); color: var(--tx2);
+      cursor: pointer; display: inline-flex; align-items: center; gap: 7px;
+      transition: all .18s; white-space: nowrap;
+    }
+    .hrd-btn:hover { border-color: var(--bdhi); background: var(--s4); color: var(--tx); }
+    .hrd-btn-primary { background: var(--ind) !important; border-color: var(--ind) !important; color: #fff !important; }
+    .hrd-btn-primary:hover { opacity: .87 !important; }
+    .hrd-btn-primary:disabled { opacity: .5 !important; cursor: not-allowed; }
+    .hrd-btn-grn { border-color: rgba(34,201,136,.3); color: var(--grn); background: var(--grnl); }
+    .hrd-btn-grn:hover { background: rgba(34,201,136,.2); border-color: rgba(34,201,136,.5); color: var(--grn); }
+    .hrd-btn-cyn { border-color: rgba(56,189,248,.3); color: var(--cyn); background: var(--cynl); }
+    .hrd-btn-cyn:hover { background: rgba(56,189,248,.2); color: var(--cyn); }
+    .hrd-btn-sm { padding: 5px 12px; font-size: 12px; }
+    .hrd-btn-theme { min-width: 110px; justify-content: center; }
+
+    /* ══ CONTENT ══ */
+    .hrd-content { padding: var(--g); display: flex; flex-direction: column; gap: 22px; }
+
+    /* ══ SECTION LABEL ══ */
+    .hrd-sl {
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Fira Code', monospace; font-size: 9.5px;
+      letter-spacing: .13em; text-transform: uppercase; color: var(--mu); margin-bottom: 12px;
+    }
+    .hrd-sl::after { content: ''; flex: 1; height: 1px; background: var(--bd); }
+
+    /* ══ LOADER ══ */
+    .hrd-loader { display: flex; flex-direction: column; align-items: center; padding: 64px 20px; gap: 14px; }
+    .hrd-spinner { width: 36px; height: 36px; border: 3px solid var(--bd); border-top-color: var(--ind); border-radius: 50%; animation: hrd-spin .65s linear infinite; }
+    @keyframes hrd-spin { to { transform: rotate(360deg); } }
+    .hrd-loader p { font-size: 13px; color: var(--mu); margin: 0; }
+
+    /* ══ KPI GRID ══ */
+    .hrd-kpi-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+    @media (max-width:1100px) { .hrd-kpi-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width:600px)  { .hrd-kpi-grid { grid-template-columns: 1fr; } }
+
+    .hrd-kpi {
+      background: var(--s2); border: 1px solid var(--bd); border-radius: var(--rl);
+      padding: 18px 20px 15px; position: relative; overflow: hidden;
+      transition: border-color .2s, transform .2s, box-shadow .2s, background .3s; cursor: default;
+    }
+    .hrd-kpi::before { content: ''; position: absolute; top:0;left:0;right:0; height: 2.5px; border-radius: 2px 2px 0 0; }
+    .hrd-kpi:hover { border-color: var(--bdhi); transform: translateY(-2px); box-shadow: 0 6px 24px var(--shd); }
+    .k-ind::before { background: linear-gradient(90deg,var(--ind),transparent); }
+    .k-grn::before { background: linear-gradient(90deg,var(--grn),transparent); }
+    .k-amb::before { background: linear-gradient(90deg,var(--amb),transparent); }
+    .k-red::before { background: linear-gradient(90deg,var(--red),transparent); }
+    .hrd-kpi-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+    .kpi-label { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--mu); margin-bottom: 5px; }
+    .kpi-val   { font-family: 'Fira Code',monospace; font-size: 27px; font-weight: 500; line-height: 1; }
+    .kpi-sub   { font-size: 11px; color: var(--mu); margin-top: 3px; }
+    .kpi-icon  { width: 40px; height: 40px; border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+    .hrd-kpi-bar-wrap { height: 3px; border-radius: 99px; background: var(--bd); overflow: hidden; }
+    .hrd-kpi-bar      { height: 100%; border-radius: 99px; transition: width .6s ease; }
+    .k-ind .kpi-val  { color: var(--ind2); } .k-ind .kpi-icon { background: var(--indl); color: var(--ind2); } .k-ind .hrd-kpi-bar { background: var(--ind); }
+    .k-grn .kpi-val  { color: var(--grn);  } .k-grn .kpi-icon { background: var(--grnl); color: var(--grn);  } .k-grn .hrd-kpi-bar { background: var(--grn); }
+    .k-amb .kpi-val  { color: var(--amb);  } .k-amb .kpi-icon { background: var(--ambl); color: var(--amb);  } .k-amb .hrd-kpi-bar { background: var(--amb); }
+    .k-red .kpi-val  { color: var(--red);  } .k-red .kpi-icon { background: var(--redl); color: var(--red);  } .k-red .hrd-kpi-bar { background: var(--red); }
+
+    /* ══ CHART GRID ══ */
+    .hrd-chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width:800px) { .hrd-chart-grid { grid-template-columns: 1fr; } }
+
+    /* ══ CARD ══ */
+    .hrd-card { background: var(--s2); border: 1px solid var(--bd); border-radius: var(--rl); overflow: hidden; transition: border-color .2s, box-shadow .2s, background .3s; }
+    .hrd-card:hover { border-color: var(--bdhi); box-shadow: 0 6px 24px var(--shd); }
+    .hrd-card-hd { padding: 14px 20px; border-bottom: 1px solid var(--bd); display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--s2); transition: background .3s, border-color .3s; }
+    .hrd-card-hd-l { display: flex; align-items: center; gap: 8px; }
+    .hrd-card-title { font-size: 13px; font-weight: 600; color: var(--tx); margin: 0; }
+    .hrd-card-sub   { font-size: 11px; color: var(--mu); margin-top: 2px; }
+    .hrd-card-body  { padding: 20px; background: var(--s2); transition: background .3s; }
+    .hrd-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+
+    /* ══ PROGRESS ══ */
+    .hrd-prog { margin-bottom: 15px; }
+    .hrd-prog:last-child { margin-bottom: 0; }
+    .hrd-prog-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
+    .prog-name  { font-size: 12.5px; color: var(--tx2); }
+    .prog-count { font-family: 'Fira Code',monospace; font-size: 12px; font-weight: 500; }
+    .prog-track { height: 5px; border-radius: 99px; background: var(--bd); overflow: hidden; }
+    .prog-fill  { height: 100%; border-radius: 99px; transition: width .5s ease; }
+
+    /* ══ DONUT ══ */
+    .hrd-donut-wrap   { display: flex; align-items: center; gap: 26px; padding: 4px 0; }
+    .hrd-donut-ring   { position: relative; width: 120px; height: 120px; flex-shrink: 0; }
+    .hrd-donut-ring svg { transform: rotate(-90deg); }
+    .hrd-donut-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .donut-num  { font-family: 'Fira Code',monospace; font-size: 20px; font-weight: 500; color: var(--tx); }
+    .donut-lbl  { font-size: 10px; color: var(--mu); margin-top: 1px; }
+    .hrd-donut-legend { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .dl-row  { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .dl-left { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--tx2); }
+    .dl-val  { font-family: 'Fira Code',monospace; font-size: 12px; font-weight: 500; }
+
+    /* ══ BADGE ══ */
+    .hrd-badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+    .b-ind { background: var(--indl); color: var(--ind2); }
+    .b-grn { background: var(--grnl); color: var(--grn); }
+    .b-amb { background: var(--ambl); color: var(--amb); }
+    .b-red { background: var(--redl); color: var(--red); }
+    .b-mu  { background: rgba(100,116,139,.12); color: var(--mu2); }
+    .b-cyn { background: var(--cynl); color: var(--cyn); }
+
+    /* ══ TABLE ══ */
+    .hrd-tbl-wrap { overflow-x: auto; }
+    .hrd-tbl { width: 100%; border-collapse: collapse; }
+    .hrd-tbl th { font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--mu); font-weight: 500; padding: 10px 16px; border-bottom: 1px solid var(--bd); text-align: left; white-space: nowrap; background: var(--s2); transition: background .3s,color .3s,border-color .3s; }
+    .hrd-tbl td { padding: 12px 16px; font-size: 13px; border-bottom: 1px solid var(--bd); color: var(--tx2); background: var(--s2); transition: background .3s,color .3s,border-color .3s; }
+    .hrd-tbl tbody tr:last-child td { border-bottom: none; }
+    .hrd-tbl tbody tr:hover td { background: var(--s3) !important; }
+
+    /* ══ AVATAR ══ */
+    .emp-av { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; color: #fff; }
+
+    /* ══ INPUT ══ */
+    .hrd-input { font-family: 'Bricolage Grotesque',sans-serif; font-size: 13px; background: var(--s3); border: 1px solid var(--bd); border-radius: 9px; padding: 8px 13px; color: var(--tx); outline: none; transition: border-color .18s,background .3s,color .3s; width: 100%; }
+    .hrd-input:focus { border-color: var(--ind); background: var(--s4); }
+    .hrd-input::placeholder { color: var(--mu); }
+
+    /* ══ SEARCH ROW ══ */
+    .hrd-search-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .hrd-search-row .hrd-input { flex: 1; min-width: 130px; }
+
+    /* ══ QUICK ACTIONS ══ */
+    .hrd-qa-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+    @media (max-width:900px) { .hrd-qa-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width:500px) { .hrd-qa-grid { grid-template-columns: 1fr; } }
+    .hrd-qa-btn { padding: 16px; border-radius: var(--r); border: 1px solid var(--bd); background: var(--s3); cursor: pointer; display: flex; align-items: flex-start; gap: 12px; transition: all .18s; text-align: left; width: 100%; font-family: 'Bricolage Grotesque',sans-serif; }
+    .hrd-qa-btn:hover { border-color: var(--bdhi); background: var(--s4); transform: translateY(-1px); box-shadow: 0 4px 16px var(--shd); }
+    .qa-icon  { width: 36px; height: 36px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+    .qa-title { font-size: 13px; font-weight: 600; color: var(--tx); }
+    .qa-sub   { font-size: 11px; color: var(--mu); margin-top: 3px; }
+
+    /* ══ DIVIDER ══ */
+    .hrd-div { border: none; border-top: 1px solid var(--bd); margin: 0; transition: border-color .3s; }
+
+    /* ══ ERROR ══ */
+    .hrd-error { background: rgba(244,63,94,.08); border: 1px solid rgba(244,63,94,.25); border-radius: var(--r); padding: 12px 16px; color: var(--red); font-size: 13px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+    /* ══ EMPTY ══ */
+    .hrd-empty { text-align: center; padding: 36px; color: var(--mu); font-size: 13px; }
+
+    /* ══ MODAL ══ */
+    .hrd-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.65); backdrop-filter: blur(5px); z-index: 2000; display: flex; align-items: center; justify-content: center; animation: hrd-fin .2s ease; }
+    @keyframes hrd-fin { from{opacity:0} to{opacity:1} }
+    .hrd-modal { background: var(--s2); border: 1px solid var(--bdhi); border-radius: 20px; width: 100%; max-width: 480px; max-height: 90vh; overflow-y: auto; box-shadow: 0 24px 80px rgba(0,0,0,.5); animation: hrd-sup .25s ease; }
+    @keyframes hrd-sup { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:none} }
+    .hrd-modal-hd { padding: 20px 24px 16px; border-bottom: 1px solid var(--bd); display: flex; align-items: center; justify-content: space-between; background: var(--s2); }
+    .hrd-modal-title { font-size: 15px; font-weight: 700; color: var(--tx); }
+    .hrd-modal-close { width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--bd); background: none; color: var(--mu); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: all .15s; }
+    .hrd-modal-close:hover { background: var(--s3); color: var(--tx); }
+    .hrd-modal-body { padding: 20px 24px 24px; background: var(--s2); }
+    .hrd-field { margin-bottom: 16px; }
+    .hrd-field label { display: block; font-size: 11px; color: var(--mu2); margin-bottom: 6px; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
+
+    /* ══ CHATBOT ══ */
+    #hrd-chat-wrap { position: fixed; bottom: 26px; right: 26px; z-index: 1500; }
+    #hrd-chat-fab { width: 50px; height: 50px; border-radius: 50%; background: var(--ind); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 4px 20px rgba(91,124,250,.45); transition: transform .2s; }
+    #hrd-chat-fab:hover { transform: scale(1.09); }
+    #hrd-chat-win { position: absolute; bottom: 64px; right: 0; width: 300px; background: var(--s2); border: 1px solid var(--bdhi); border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.45); animation: hrd-sup .2s ease; }
+    #hrd-chat-hd { padding: 13px 16px; background: linear-gradient(135deg,rgba(91,124,250,.18),rgba(34,201,136,.08)); border-bottom: 1px solid var(--bd); display: flex; justify-content: space-between; align-items: center; }
+    #hrd-chat-hd-title { font-size: 12.5px; font-weight: 600; color: var(--tx); display: flex; align-items: center; gap: 7px; }
+    #hrd-chat-hd-title::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--grn); box-shadow:0 0 6px rgba(34,201,136,.6); }
+    #hrd-chat-hd button { background:none; border:none; cursor:pointer; color:var(--mu); font-size:13px; }
+    #hrd-chat-box { height: 200px; overflow-y: auto; padding: 13px; display: flex; flex-direction: column; gap: 8px; background: var(--s2); }
+    #hrd-chat-box::-webkit-scrollbar { width: 3px; }
+    #hrd-chat-box::-webkit-scrollbar-thumb { background: var(--bd); border-radius: 99px; }
+    .hrd-bot-msg,.hrd-usr-msg { padding: 8px 11px; border-radius: 10px; font-size: 12.5px; max-width: 85%; }
+    .hrd-bot-msg { background: var(--s3); color: var(--tx2); }
+    .hrd-usr-msg { background: rgba(91,124,250,.2); color: var(--ind2); margin-left: auto; text-align: right; }
+    #hrd-chat-inp-area { display: flex; gap: 8px; padding: 10px; border-top: 1px solid var(--bd); background: var(--s2); }
+    #hrd-chat-inp { flex:1; background:var(--s3); border:1px solid var(--bd); border-radius:8px; padding:7px 10px; font-size:12.5px; color:var(--tx); outline:none; font-family:'Bricolage Grotesque',sans-serif; transition:border-color .18s; }
+    #hrd-chat-inp:focus { border-color: var(--ind); }
+    #hrd-chat-send { padding:7px 13px; background:var(--ind); border:none; border-radius:8px; color:#fff; cursor:pointer; font-size:13px; transition:opacity .15s; }
+    #hrd-chat-send:hover { opacity:.85; }
+    </style>
+
+    <!-- ══════════════════
+         PAGE HEADER
+    ══════════════════ -->
+    <div class="hrd-ph">
+      <div>
+        <div class="hrd-eyebrow">{{ 'navigation.hrDashboard' | translate }}</div>
+        <h1 class="hrd-title">{{ 'navigation.hrDashboard' | translate }}</h1>
+        <ul class="hrd-crumb">
+          <li><a href="javascript:void(0)">{{ 'common.home' | translate }}</a></li>
+          <li>{{ 'navigation.hrDashboard' | translate }}</li>
+        </ul>
+      </div>
+      <div class="hrd-ph-right">
+        <!-- ✅ THEME TOGGLE -->
+        <button class="hrd-btn hrd-btn-theme" (click)="toggleTheme()">
+          <span *ngIf="isDarkMode">☀️ Light Mode</span>
+          <span *ngIf="!isDarkMode">🌙 Dark Mode</span>
+        </button>
+        <app-language-selector></app-language-selector>
+        <a routerLink="/stats"   class="hrd-btn hrd-btn-cyn"><i class="feather-bar-chart-2"></i> Stats</a>
+        <a routerLink="/history" class="hrd-btn hrd-btn-grn"><i class="feather-clock"></i> History</a>
+        <button class="hrd-btn hrd-btn-primary" (click)="openModal()">
+          <i class="feather-plus"></i> Add Employee
+        </button>
+      </div>
+    </div>
+
+    <!-- ══ LOADER ══ -->
+    <div *ngIf="loading" class="hrd-loader">
+      <div class="hrd-spinner"></div>
+      <p>{{ 'common.loading' | translate }}</p>
+    </div>
+
+    <!-- ══════════════════
+         STATS
+    ══════════════════ -->
+    <div class="hrd-content" *ngIf="!loading && stats">
+
+      <!-- KPI -->
+      <div>
+        <div class="hrd-sl">Overview</div>
+        <div class="hrd-kpi-grid">
+          <div class="hrd-kpi k-ind">
+            <div class="hrd-kpi-top">
+              <div><div class="kpi-label">Total Users</div><div class="kpi-val">{{ stats.users.total || 0 }}</div><div class="kpi-sub">All roles</div></div>
+              <div class="kpi-icon"><i class="feather-users"></i></div>
+            </div>
+            <div class="hrd-kpi-bar-wrap"><div class="hrd-kpi-bar" style="width:72%"></div></div>
+          </div>
+          <div class="hrd-kpi k-grn">
+            <div class="hrd-kpi-top">
+              <div><div class="kpi-label">Total Activities</div><div class="kpi-val">{{ stats.activities.total || 0 }}</div><div class="kpi-sub">This quarter</div></div>
+              <div class="kpi-icon"><i class="feather-activity"></i></div>
+            </div>
+            <div class="hrd-kpi-bar-wrap"><div class="hrd-kpi-bar" style="width:85%"></div></div>
+          </div>
+          <div class="hrd-kpi k-amb">
+            <div class="hrd-kpi-top">
+              <div><div class="kpi-label">Open Activities</div><div class="kpi-val">{{ stats.activities.byStatus.open || 0 }}</div><div class="kpi-sub">Needs action</div></div>
+              <div class="kpi-icon"><i class="feather-folder-plus"></i></div>
+            </div>
+            <div class="hrd-kpi-bar-wrap"><div class="hrd-kpi-bar" style="width:48%"></div></div>
+          </div>
+          <div class="hrd-kpi k-red">
+            <div class="hrd-kpi-top">
+              <div><div class="kpi-label">Completed</div><div class="kpi-val">{{ stats.activities.byStatus.completed || 0 }}</div><div class="kpi-sub">Finished tasks</div></div>
+              <div class="kpi-icon"><i class="feather-check-circle"></i></div>
+            </div>
+            <div class="hrd-kpi-bar-wrap"><div class="hrd-kpi-bar" style="width:63%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+      <div *ngIf="stats.activities?.byStatus || stats.activities?.byType">
+        <div class="hrd-sl">Activity Breakdown</div>
+        <div class="hrd-chart-grid">
+
+          <div class="hrd-card" *ngIf="stats.activities?.byStatus">
+            <div class="hrd-card-hd">
+              <div class="hrd-card-hd-l"><div class="hrd-dot" style="background:var(--ind)"></div><div><div class="hrd-card-title">By Status</div><div class="hrd-card-sub">Distribution actuelle</div></div></div>
+              <span class="hrd-badge b-ind">Live</span>
+            </div>
+            <div class="hrd-card-body">
+              <div class="hrd-prog" *ngIf="stats.activities.byStatus.draft">
+                <div class="hrd-prog-meta"><span class="prog-name">{{ getStatusLabel('draft') }}</span><span class="prog-count" style="color:var(--mu)">{{ stats.activities.byStatus.draft }}</span></div>
+                <div class="prog-track"><div class="prog-fill" [style.width.%]="getStatusPercent(stats.activities.byStatus.draft)" style="background:var(--mu)"></div></div>
+              </div>
+              <div class="hrd-prog" *ngIf="stats.activities.byStatus.open">
+                <div class="hrd-prog-meta"><span class="prog-name">{{ getStatusLabel('open') }}</span><span class="prog-count" style="color:var(--ind2)">{{ stats.activities.byStatus.open }}</span></div>
+                <div class="prog-track"><div class="prog-fill" [style.width.%]="getStatusPercent(stats.activities.byStatus.open)" style="background:var(--ind)"></div></div>
+              </div>
+              <div class="hrd-prog" *ngIf="stats.activities.byStatus.inProgress">
+                <div class="hrd-prog-meta"><span class="prog-name">{{ getStatusLabel('inProgress') }}</span><span class="prog-count" style="color:var(--amb)">{{ stats.activities.byStatus.inProgress }}</span></div>
+                <div class="prog-track"><div class="prog-fill" [style.width.%]="getStatusPercent(stats.activities.byStatus.inProgress)" style="background:var(--amb)"></div></div>
+              </div>
+              <div class="hrd-prog" *ngIf="stats.activities.byStatus.completed">
+                <div class="hrd-prog-meta"><span class="prog-name">{{ getStatusLabel('completed') }}</span><span class="prog-count" style="color:var(--grn)">{{ stats.activities.byStatus.completed }}</span></div>
+                <div class="prog-track"><div class="prog-fill" [style.width.%]="getStatusPercent(stats.activities.byStatus.completed)" style="background:var(--grn)"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hrd-card" *ngIf="stats.activities?.byType">
+            <div class="hrd-card-hd">
+              <div class="hrd-card-hd-l"><div class="hrd-dot" style="background:var(--grn)"></div><div><div class="hrd-card-title">By Type</div><div class="hrd-card-sub">Répartition des catégories</div></div></div>
+            </div>
+            <div class="hrd-card-body">
+              <div class="hrd-donut-wrap">
+                <div class="hrd-donut-ring">
+                  <svg width="120" height="120" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="46" fill="none" stroke="rgba(100,116,139,0.2)" stroke-width="16"/>
+                    <circle cx="60" cy="60" r="46" fill="none" stroke="#5b7cfa" stroke-width="16" stroke-dasharray="289" stroke-dashoffset="195" stroke-linecap="round"/>
+                    <circle cx="60" cy="60" r="46" fill="none" stroke="#22c988" stroke-width="16" stroke-dasharray="289" stroke-dashoffset="259" stroke-linecap="round" transform="rotate(88 60 60)"/>
+                    <circle cx="60" cy="60" r="46" fill="none" stroke="#f5a623" stroke-width="16" stroke-dasharray="289" stroke-dashoffset="231" stroke-linecap="round" transform="rotate(151 60 60)"/>
+                    <circle cx="60" cy="60" r="46" fill="none" stroke="#f43f5e" stroke-width="16" stroke-dasharray="289" stroke-dashoffset="261" stroke-linecap="round" transform="rotate(214 60 60)"/>
+                  </svg>
+                  <div class="hrd-donut-center"><div class="donut-num">{{ stats.activities.total || 0 }}</div><div class="donut-lbl">total</div></div>
+                </div>
+                <div class="hrd-donut-legend">
+                  <div class="dl-row"><div class="dl-left"><div class="hrd-dot" style="background:#5b7cfa"></div>{{ getTypeLabel('training') }}</div><div class="dl-val" style="color:#7b97fc">{{ stats.activities.byType.training || 0 }}</div></div>
+                  <div class="dl-row"><div class="dl-left"><div class="hrd-dot" style="background:#22c988"></div>{{ getTypeLabel('certification') }}</div><div class="dl-val" style="color:#22c988">{{ stats.activities.byType.certification || 0 }}</div></div>
+                  <div class="dl-row"><div class="dl-left"><div class="hrd-dot" style="background:#f5a623"></div>{{ getTypeLabel('project') }}</div><div class="dl-val" style="color:#f5a623">{{ stats.activities.byType.project || 0 }}</div></div>
+                  <div class="dl-row"><div class="dl-left"><div class="hrd-dot" style="background:#f43f5e"></div>{{ getTypeLabel('mission') }}</div><div class="dl-val" style="color:#f43f5e">{{ stats.activities.byType.mission || 0 }}</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RECENT ACTIVITIES -->
+      <div *ngIf="stats.activities?.recent?.length">
+        <div class="hrd-sl">Recent Activities</div>
+        <div class="hrd-card">
+          <div class="hrd-card-hd">
+            <div class="hrd-card-hd-l"><div class="hrd-dot" style="background:var(--amb)"></div><div class="hrd-card-title">Latest Records</div></div>
+          </div>
+          <div class="hrd-tbl-wrap">
+            <table class="hrd-tbl">
+              <thead><tr><th>Title</th><th>Type</th><th>Status</th><th>Date</th></tr></thead>
+              <tbody>
+                <tr *ngFor="let act of stats.activities.recent">
+                  <td style="font-weight:500;color:var(--tx)">{{ act.title }}</td>
+                  <td><span class="hrd-badge b-cyn">{{ getTypeLabel(act.type) }}</span></td>
+                  <td>
+                    <span class="hrd-badge"
+                      [class.b-mu] ="act.status==='draft'"
+                      [class.b-ind]="act.status==='open'"
+                      [class.b-amb]="act.status==='inProgress'"
+                      [class.b-grn]="act.status==='completed'"
+                      [class.b-red]="act.status==='cancelled'">
+                      {{ getStatusLabel(act.status) }}
+                    </span>
+                  </td>
+                  <td style="font-family:'Fira Code',monospace;font-size:12px">{{ act.createdAt | date:'dd MMM yyyy' }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- EMPLOYEE RESPONSES -->
+      <div>
+        <div class="hrd-sl">Employee Responses</div>
+
+        <div class="hrd-card">
+          <div class="hrd-card-hd">
+            <div class="hrd-card-hd-l">
+              <div class="hrd-dot" style="background:var(--grn)"></div>
+              <div>
+                <div class="hrd-card-title">Responses to assigned activities</div>
+                <div class="hrd-card-sub">Accept / decline / justification</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hrd-card-body" *ngIf="responsesLoading">
+            <div class="hrd-loader" style="padding: 24px 0;">
+              <div class="hrd-spinner"></div>
+              <p>Loading employee responses…</p>
+            </div>
+          </div>
+
+          <div class="hrd-error" *ngIf="!responsesLoading && responsesError">
+            {{ responsesError }}
+          </div>
+
+          <div class="hrd-empty" *ngIf="!responsesLoading && !responsesError && !employeeResponses.length">
+            Aucune réponse employé pour le moment.
+          </div>
+
+          <div class="hrd-tbl-wrap" *ngIf="!responsesLoading && employeeResponses.length">
+            <table class="hrd-tbl">
+              <thead>
+                <tr>
+                  <th>Employee</th>
+                  <th>Activity</th>
+                  <th>Status</th>
+                  <th>Justification</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of employeeResponses">
+                  <td>
+                    <div style="font-weight:600;color:var(--tx)">{{ row.employeeName }}</div>
+                    <div style="font-size:12px;color:var(--mu2)">{{ row.employeeEmail }}</div>
+                  </td>
+                  <td>
+                    <div style="font-weight:600;color:var(--tx)">{{ row.activityTitle }}</div>
+                    <div style="font-size:12px;color:var(--mu2)">
+                      {{ getTypeLabel(row.activityType) }}
+                      <span *ngIf="row.activityCategory">• {{ row.activityCategory }}</span>
+                    </div>
+                  </td>
+                  <td>
+                    <span class="hrd-badge" [ngClass]="getResponseBadgeClass(row.responseStatus)">
+                      {{ getResponseLabel(row.responseStatus) }}
+                    </span>
+                  </td>
+                  <td>{{ row.justification || '—' }}</td>
+                  <td style="font-family:'Fira Code', monospace; font-size:12px">
+                    {{ (row.respondedAt || row.selectedAt) | date:'dd/MM/yyyy HH:mm' }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div>
+        <div class="hrd-sl">Quick Actions</div>
+        <div class="hrd-qa-grid">
+          <button class="hrd-qa-btn" (click)="navigateTo('/activities')">
+            <div class="qa-icon" style="background:var(--indl)">➕</div>
+            <div><div class="qa-title">New Activity</div><div class="qa-sub">Create an HR activity</div></div>
+          </button>
+          <button class="hrd-qa-btn" (click)="navigateTo('/recommondation')">
+            <div class="qa-icon" style="background:var(--redl)">🤖</div>
+            <div><div class="qa-title">AI Recommend</div><div class="qa-sub">Smart notifications</div></div>
+          </button>
+          <button class="hrd-qa-btn" (click)="navigateTo('/stats')">
+            <div class="qa-icon" style="background:var(--grnl)">📊</div>
+            <div><div class="qa-title">Statistics</div><div class="qa-sub">Detailed analytics</div></div>
+          </button>
+          <button class="hrd-qa-btn" (click)="navigateTo('/history')">
+            <div class="qa-icon" style="background:var(--ambl)">🕐</div>
+            <div><div class="qa-title">History</div><div class="qa-sub">View activity log</div></div>
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /stats content -->
+
+    <hr class="hrd-div" style="margin:0 var(--g)">
+
+    <!-- ══════════════════
+         EMPLOYEES
+    ══════════════════ -->
+    <div class="hrd-content">
+      
+
+      <div *ngIf="error && !loading" class="hrd-error">
+        <i class="feather-alert-circle"></i>
+        <span><strong>Erreur:</strong> {{ error }}</span>
+        <button class="hrd-btn hrd-btn-sm" style="margin-left:auto" (click)="loadEmployees()"><i class="feather-refresh-cw"></i> Retry</button>
+      </div>
+
+      <div class="hrd-card">
+  <div class="hrd-card-hd">
+    <div class="hrd-card-hd-l">
+      <div class="hrd-dot" style="background:var(--grn)"></div>
+      <div>
+        <div class="hrd-card-title">Validations certifications en attente</div>
+        <div class="hrd-card-sub">Formations terminées par les employés</div>
+      </div>
+    </div>
+    <span class="hrd-badge b-grn">{{ certificationApprovals.length }}</span>
+  </div>
+
+  <div class="hrd-card-body">
+    <div *ngIf="approvalsLoading" class="hrd-empty">Chargement...</div>
+    <div *ngIf="approvalsError" class="hrd-error">{{ approvalsError }}</div>
+
+    <div class="hrd-empty" *ngIf="!approvalsLoading && certificationApprovals.length === 0">
+      Aucune certification en attente.
+    </div>
+
+    <div class="hrd-tbl-wrap" *ngIf="!approvalsLoading && certificationApprovals.length > 0">
+      <table class="hrd-tbl">
+        <thead>
+          <tr>
+            <th>Employé</th>
+            <th>Activité</th>
+            <th>Terminée le</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of certificationApprovals">
+            <td>
+              <div class="fw-semibold">{{ row.employeeName }}</div>
+              <small>{{ row.employeeEmail }}</small>
+            </td>
+            <td>{{ row.activityTitle }}</td>
+            <td>{{ row.completedAt | date:'dd/MM/yyyy HH:mm' }}</td>
+            <td>
+              <button class="hrd-btn hrd-btn-grn hrd-btn-sm" (click)="approveCertification(row)">
+                Valider certification
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      <div *ngIf="!loading && !error">
+        <div class="hrd-sl">Employee Management</div>
+
+        <div class="hrd-search-row" style="margin-bottom:16px">
+          <input class="hrd-input" type="text" placeholder="Search by name…"  [(ngModel)]="searchFilters.name">
+          <input class="hrd-input" type="text" placeholder="Department…"      [(ngModel)]="searchFilters.department">
+          <input class="hrd-input" type="text" placeholder="Job title…"       [(ngModel)]="searchFilters.jobTitle">
+          <button class="hrd-btn hrd-btn-primary" (click)="applyFilters()" style="flex-shrink:0">
+            <i class="feather-search"></i> Search
+          </button>
+        </div>
+
+        <div class="hrd-card">
+          <div class="hrd-tbl-wrap">
+            <table class="hrd-tbl">
+              <thead><tr><th>Employee</th><th>Email</th><th>Job Title</th><th>Department</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr *ngFor="let emp of employees">
+                  <td>
+                    <div style="display:flex;align-items:center;gap:10px">
+                      <div class="emp-av" style="background:linear-gradient(135deg,#5b7cfa,#22c988)">
+                        {{ (emp.firstName||'?')[0] }}{{ (emp.lastName||'')[0] }}
+                      </div>
+                      <span style="font-weight:500;color:var(--tx)">{{ emp.firstName }} {{ emp.lastName }}</span>
+                    </div>
+                  </td>
+                  <td>{{ emp.email }}</td>
+                  <td>{{ emp.jobTitle }}</td>
+                  <td><span class="hrd-badge b-mu">{{ emp.department }}</span></td>
+                  <td>
+                    <div style="display:flex;gap:6px">
+                      <button class="hrd-btn hrd-btn-sm" (click)="editEmployee(emp)"><i class="feather-edit-2"></i> Edit</button>
+                      <button class="hrd-btn hrd-btn-sm" style="border-color:rgba(244,63,94,.3);color:var(--red)" (click)="deleteEmployee(emp._id)"><i class="feather-trash-2"></i></button>
+                    </div>
+                  </td>
+                </tr>
+                <tr *ngIf="employees.length === 0">
+                  <td colspan="5" class="hrd-empty">No employees found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════════════
+         MODAL
+    ══════════════════ -->
+    <div class="hrd-overlay" *ngIf="showModal" (click)="closeOnBackdrop()">
+      <div class="hrd-modal" (click)="$event.stopPropagation()">
+        <div class="hrd-modal-hd">
+          <div class="hrd-modal-title">{{ editMode ? 'Edit Employee' : 'Add Employee' }}</div>
+          <button class="hrd-modal-close" (click)="closeModal()">✕</button>
+        </div>
+        <div class="hrd-modal-body">
+          <form [formGroup]="employeeForm" (ngSubmit)="submitEmployee()">
+            <div class="hrd-field"><label>First Name</label><input class="hrd-input" type="text"  formControlName="firstName"></div>
+            <div class="hrd-field"><label>Last Name</label> <input class="hrd-input" type="text"  formControlName="lastName"></div>
+            <div class="hrd-field"><label>Email</label>      <input class="hrd-input" type="email" formControlName="email"></div>
+            <div class="hrd-field"><label>Job Title</label>  <input class="hrd-input" type="text"  formControlName="jobTitle"></div>
+            <div class="hrd-field"><label>Department</label> <input class="hrd-input" type="text"  formControlName="department"></div>
+            <div class="hrd-field"><label>Skills (comma separated)</label><input class="hrd-input" type="text" formControlName="skills"></div>
+            <div style="margin-top:20px">
+              <button type="submit" class="hrd-btn hrd-btn-primary"
+                style="width:100%;justify-content:center;padding:11px;border-radius:10px;font-size:14px"
+                [disabled]="employeeForm.invalid">
+                {{ editMode ? '✓ Update Employee' : '+ Create Employee' }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+   <div id="chatbot-wrapper">
+    <div id="chat-window" style="display:none">
+      <div id="chat-header">
+        <span><span id="chat-dot"></span> AI Assistant</span>
+        <button onclick="toggleChat()">✕</button>
+      </div>
+      <div id="chat-box">
+        <div class="bot-msg">Bonjour! Comment puis-je vous aider?</div>
+      </div>
+      <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Votre message..." />
+        <button id="chat-send" onclick="sendChat()">➤</button>
+      </div>
+    </div>
+    <button id="chat-fab" onclick="toggleChat()">💬</button>
+  </div>
+
+    <script>
+    function hrdToggle(){var w=document.getElementById('hrd-chat-win');w.style.display=w.style.display==='none'?'block':'none';}
+    function hrdSend(){
+      var i=document.getElementById('hrd-chat-inp'),b=document.getElementById('hrd-chat-box'),m=i.value.trim();
+      if(!m)return;
+      var u=document.createElement('div');u.className='hrd-usr-msg';u.textContent=m;b.appendChild(u);
+      i.value='';b.scrollTop=b.scrollHeight;
+      setTimeout(function(){var r=document.createElement('div');r.className='hrd-bot-msg';r.textContent='Merci pour votre message. Je vous réponds sous peu.';b.appendChild(r);b.scrollTop=b.scrollHeight;},800);
+    }
+    document.getElementById('hrd-chat-inp').addEventListener('keypress',function(e){if(e.key==='Enter')hrdSend();});
+    </script>
+
+  </div><!-- /nxl-content hrd-page -->
+</main><!-- /nxl-container -->

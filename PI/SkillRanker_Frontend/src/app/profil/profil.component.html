@@ -1,0 +1,220 @@
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!--  PROFILE COMPONENT TEMPLATE                    -->
+<!-- ═══════════════════════════════════════════════ -->
+
+<app-navbar></app-navbar>
+<main class="nxl-container">
+        <div class="nxl-content">
+<div class="profile-layout">
+
+  <!-- ══ LEFT PANEL ══ -->
+  <div class="panel-left">
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-cover"></div>
+
+      <div class="profile-avatar-wrap">
+        <img
+          class="profile-avatar"
+          [src]="user.picture || 'https://pbcdn1.podbean.com/imglogo/image-logo/4389756/picture-1-1505503146.png'"
+          alt="Photo de {{ user.name }}"
+        />
+        <!-- Statut en ligne / hors ligne -->
+        <span class="online-dot"  *ngIf="user.enLigne"></span>
+        <span class="offline-dot" *ngIf="!user.enLigne"></span>
+      </div>
+
+      <div class="profile-info">
+        <div class="profile-name">{{ user.name }}</div>
+        <span class="profile-role">{{ user.role }}</span>
+
+        <!-- Badge status actif/inactif -->
+        <div>
+          <span class="status-badge status-active"   *ngIf="user.status === 'ACTIVE'">● Actif</span>
+          <span class="status-badge status-inactive" *ngIf="user.status !== 'ACTIVE'">● Inactif</span>
+        </div>
+
+        <div class="profile-stats" *ngIf="stats && stats.length > 0">
+          <div class="stat" *ngFor="let stat of stats">
+            <div class="stat-num">{{ stat.value }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Card -->
+    <div class="info-card">
+      <div class="info-card-title">Coordonnées</div>
+
+      <div class="info-row">
+        <div class="info-icon">📧</div>
+        <div class="info-content">
+          <div class="info-label">Email</div>
+          <div class="info-value">{{ user.email }}</div>
+        </div>
+      </div>
+
+      <div class="info-row" *ngIf="user.telephone">
+        <div class="info-icon">📱</div>
+        <div class="info-content">
+          <div class="info-label">Téléphone</div>
+          <div class="info-value">{{ user.telephone }}</div>
+        </div>
+      </div>
+
+      <div class="info-row" *ngIf="user.matricule">
+        <div class="info-icon">🪪</div>
+        <div class="info-content">
+          <div class="info-label">Matricule</div>
+          <div class="info-value">{{ user.matricule }}</div>
+        </div>
+      </div>
+
+      <div class="info-row" *ngIf="user.dateEmbauche">
+        <div class="info-icon">📅</div>
+        <div class="info-content">
+          <div class="info-label">Date d'embauche</div>
+          <div class="info-value">{{ user.dateEmbauche | date: 'dd MMM yyyy' : '' : 'fr' }}</div>
+        </div>
+      </div>
+
+      <div class="info-row" *ngIf="user.department">
+        <div class="info-icon">🏢</div>
+        <div class="info-content">
+          <div class="info-label">Département</div>
+          <div class="info-value">{{ user.department?.name || user.department }}</div>
+        </div>
+      </div>
+
+      <div class="info-row" *ngIf="user.manager">
+        <div class="info-icon">👤</div>
+        <div class="info-content">
+          <div class="info-label">Manager</div>
+          <div class="info-value">{{ user.manager?.name || user.manager }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <!-- <div class="action-row">
+      <button class="btn btn-ghost">💬 Message</button>
+      <button class="btn btn-accent" (click)="onEdit()">✏️ Modifier</button>
+    </div> -->
+
+  </div>
+
+  <!-- ══ RIGHT PANEL ══ -->
+  <div class="panel-right">
+
+    <!-- Edit Form -->
+    <div class="form-card">
+      <div class="form-card-header">
+        <div class="form-card-title">Modifier le profil</div>
+        <span class="section-tag">Informations</span>
+      </div>
+
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+        <!-- Section: Identité -->
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Nom d'utilisateur</label>
+            <input
+              class="form-input"
+              type="text"
+              formControlName="name"
+              [placeholder]="user.name"
+            />
+          </div>
+          <!-- <div class="form-group">
+            <label class="form-label">Matricule</label>
+            <input
+              class="form-input"
+              type="text"
+              formControlName="matricule"
+              [placeholder]="user.matricule || 'EMP-0000'"
+            />
+          </div> -->
+        </div>
+
+        <div class="divider" style="margin: 20px 0;"></div>
+
+        <!-- Section: Contact -->
+        <div class="form-grid">
+          <div class="form-group full">
+            <label class="form-label">Email professionnel</label>
+            <input
+              class="form-input"
+              type="email"
+              formControlName="email"
+              [placeholder]="user.email"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Téléphone</label>
+            <input
+              class="form-input"
+              type="tel"
+              formControlName="telephone"
+              [placeholder]="user.telephone || '+216 XX XXX XXX'"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Rôle</label>
+            <input
+              class="form-input"
+              type="text"
+              [value]="user.role"
+              readonly
+              style="opacity: 0.5; cursor: not-allowed;"
+            />
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-cancel" (click)="onCancel()">Annuler</button>
+          <button type="submit" class="btn-save">Enregistrer</button>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="activity-card">
+      <div class="activity-header">
+        <div class="activity-title">Activité récente</div>
+        <span class="section-tag">Historique</span>
+      </div>
+      <div class="activity-list">
+        <div class="activity-item" *ngFor="let act of recentActivities">
+          <div class="activity-icon" 
+               [ngClass]="{
+                 'green': act.status === 'COMPLETED' || act.status === 'TERMINE' || act.status === 'APPROVED', 
+                 'purple': act.status === 'IN_PROGRESS' || act.status === 'EN_COURS' || act.status === 'OPEN',
+                 'gold': act.status === 'DRAFT' || act.status === 'BROUILLON' || !act.status
+               }">
+               {{ (act.status === 'COMPLETED' || act.status === 'TERMINE' || act.status === 'APPROVED') ? '✅' : (act.status === 'IN_PROGRESS' || act.status === 'EN_COURS' || act.status === 'OPEN') ? '⏳' : '📋' }}
+          </div>
+          <div class="activity-text">
+            <div class="activity-desc">{{ act.title || act.type || 'Activité sur la plateforme' }}</div>
+            <div class="activity-time">
+              <ng-container *ngIf="act.updatedAt || act.createdAt || act.date; else noDate">
+                {{ (act.updatedAt || act.createdAt || act.date) | date:'dd MMM yyyy':'':'fr' }}
+              </ng-container>
+              <ng-template #noDate>Récemment</ng-template>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="recentActivities.length === 0" style="text-align: center; color: var(--muted); padding: 12px; font-size: 0.85rem;">
+          Aucune activité récente.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div></main>

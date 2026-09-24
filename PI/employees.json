@@ -1,0 +1,4066 @@
+[{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a1995"
+  },
+  "csvEmployeeId": 3,
+  "userId": {
+    "$oid": "69edfea69930ec5e03b59786"
+  },
+  "firstName": "Slim",
+  "lastName": "Sellami",
+  "email": "slim.sellami.3@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Jest",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Angular",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "Bootstrap",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.085Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:30:08.831Z"
+  },
+  "__v": 4,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:04:00.911Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:07.230Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a199f"
+  },
+  "csvEmployeeId": 8,
+  "userId": {
+    "$oid": "69edfea69930ec5e03b5978c"
+  },
+  "firstName": "Hamza",
+  "lastName": "Karray",
+  "email": "hamza.karray.8@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Linux",
+      "level": 3
+    },
+    {
+      "name": "Kubernetes",
+      "level": 3
+    },
+    {
+      "name": "Git",
+      "level": 3
+    },
+    {
+      "name": "ELK Stack",
+      "level": 3
+    },
+    {
+      "name": "Jenkins",
+      "level": 3
+    },
+    {
+      "name": "Nginx",
+      "level": 3
+    },
+    {
+      "name": "CI/CD",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.400Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:30:32.619Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:08.847Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a19a9"
+  },
+  "csvEmployeeId": 19,
+  "userId": {
+    "$oid": "69edfea69930ec5e03b59792"
+  },
+  "firstName": "Jawher",
+  "lastName": "Slama",
+  "email": "jawher.slama.19@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Data Visualization",
+      "level": 3
+    },
+    {
+      "name": "Computer Vision",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "MLflow",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    },
+    {
+      "name": "Tableau",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.682Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:30:55.947Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:32.656Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a19b3"
+  },
+  "csvEmployeeId": 22,
+  "userId": {
+    "$oid": "69edfea79930ec5e03b59798"
+  },
+  "firstName": "Lotfi",
+  "lastName": "Rouissi",
+  "email": "lotfi.rouissi.22@tonentreprise.com",
+  "jobTitle": "Full Stack Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Python",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 3
+    },
+    {
+      "name": "Next.js",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "Redis",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.953Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:53:50.593Z"
+  },
+  "__v": 3,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:55.974Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T22:53:50.589Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3b28a028c11d0a4a19bd"
+  },
+  "csvEmployeeId": 27,
+  "userId": {
+    "$oid": "69edfea79930ec5e03b5979e"
+  },
+  "firstName": "Rihab",
+  "lastName": "Abidi",
+  "email": "rihab.abidi.27@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Data Analysis",
+      "level": 3
+    },
+    {
+      "name": "Tableau",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Jupyter",
+      "level": 3
+    },
+    {
+      "name": "Hadoop",
+      "level": 3
+    },
+    {
+      "name": "Python",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:36.227Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:41:30.864Z"
+  },
+  "__v": 3,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:58.006Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T22:41:30.837Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3fa535cc27db077fb948"
+  },
+  "csvEmployeeId": 3527,
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "firstName": "Dorra",
+  "lastName": "Belhaj",
+  "email": "mohameddhiaromdhaneey@gmail.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "A/B Testing",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Spark",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Python",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:45.919Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:41:17.503Z"
+  },
+  "__v": 6,
+  "password": "$2b$10$ra5zNTir0lD6dOCMWCXCxeMmLuaPtEz6v3EeZ.FNL1jgjW4i9HwDy",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T13:22:34.247Z"
+      },
+      "status": "CERTIFIED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": {
+        "$date": "2026-04-27T22:41:07.419Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:41:17.501Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb952"
+  },
+  "csvEmployeeId": 562,
+  "userId": {
+    "$oid": "69edff149930ec5e03b597da"
+  },
+  "firstName": "Rim",
+  "lastName": "Karoui",
+  "email": "rim.karoui.562@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Python",
+      "level": 3
+    },
+    {
+      "name": "A/B Testing",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.268Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:04:38.097Z"
+  },
+  "__v": 5,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T13:22:57.719Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T23:04:38.096Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb95c"
+  },
+  "csvEmployeeId": 1181,
+  "userId": {
+    "$oid": "69edff149930ec5e03b597e0"
+  },
+  "firstName": "Brahim",
+  "lastName": "Belhaj",
+  "email": "brahim.belhaj.1181@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "A/B Testing",
+      "level": 3
+    },
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Python",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.593Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:44:29.904Z"
+  },
+  "__v": 3,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T13:22:59.800Z"
+      },
+      "status": "PENDING",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb966"
+  },
+  "csvEmployeeId": 1943,
+  "userId": {
+    "$oid": "69edff159930ec5e03b597e6"
+  },
+  "firstName": "Maher",
+  "lastName": "Haddad",
+  "email": "maher.haddad.1943@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "Python",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    },
+    {
+      "name": "Tableau",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.922Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:44:31.691Z"
+  },
+  "__v": 3,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T13:23:02.227Z"
+      },
+      "status": "PENDING",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfc3f0c8bcf4720107b87"
+  },
+  "csvEmployeeId": 111,
+  "userId": {
+    "$oid": "69edfc3f0c8bcf4720107b89"
+  },
+  "firstName": "Rami",
+  "lastName": "Nasri",
+  "email": "rami.nasri.111@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Bash",
+      "level": 3
+    },
+    {
+      "name": "Istio",
+      "level": 3
+    },
+    {
+      "name": "Grafana",
+      "level": 3
+    },
+    {
+      "name": "CI/CD",
+      "level": 3
+    },
+    {
+      "name": "ArgoCD",
+      "level": 3
+    },
+    {
+      "name": "Prometheus",
+      "level": 3
+    },
+    {
+      "name": "Docker",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:27.872Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:47:24.210Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T19:47:00.431Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107b91"
+  },
+  "csvEmployeeId": 118,
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107b93"
+  },
+  "firstName": "Dhia",
+  "lastName": "Ben Hassine",
+  "email": "dhia.ben.hassine.118@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Docker",
+      "level": 3
+    },
+    {
+      "name": "ArgoCD",
+      "level": 3
+    },
+    {
+      "name": "Azure",
+      "level": 3
+    },
+    {
+      "name": "CI/CD",
+      "level": 3
+    },
+    {
+      "name": "GCP",
+      "level": 3
+    },
+    {
+      "name": "Bash",
+      "level": 3
+    },
+    {
+      "name": "Helm",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.225Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:47:46.942Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T19:47:24.234Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107b9b"
+  },
+  "csvEmployeeId": 177,
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107b9d"
+  },
+  "firstName": "Bilel",
+  "lastName": "Ferchichi",
+  "email": "bilel.ferchichi@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Ansible",
+      "level": 3
+    },
+    {
+      "name": "DataDog",
+      "level": 3
+    },
+    {
+      "name": "Networking",
+      "level": 3
+    },
+    {
+      "name": "Docker",
+      "level": 3
+    },
+    {
+      "name": "Nginx",
+      "level": 3
+    },
+    {
+      "name": "Linux",
+      "level": 3
+    },
+    {
+      "name": "Istio",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.562Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:47:48.617Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T19:47:46.951Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107ba5"
+  },
+  "csvEmployeeId": 187,
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107ba7"
+  },
+  "firstName": "Mohamed",
+  "lastName": "Turki",
+  "email": "mohamed.turki.187@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Nginx",
+      "level": 3
+    },
+    {
+      "name": "Vault",
+      "level": 3
+    },
+    {
+      "name": "Grafana",
+      "level": 3
+    },
+    {
+      "name": "Jenkins",
+      "level": 3
+    },
+    {
+      "name": "GCP",
+      "level": 3
+    },
+    {
+      "name": "Helm",
+      "level": 3
+    },
+    {
+      "name": "Docker",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.891Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T19:48:11.325Z"
+  },
+  "__v": 2,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T19:47:48.624Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69edfc410c8bcf4720107baf"
+  },
+  "csvEmployeeId": 217,
+  "userId": {
+    "$oid": "69edfc410c8bcf4720107bb1"
+  },
+  "firstName": "Ahmed",
+  "lastName": "Chebbi",
+  "email": "ahmed.chebbi.217@tonentreprise.com",
+  "jobTitle": "DevOps Engineer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "GCP",
+      "level": 3
+    },
+    {
+      "name": "Bash",
+      "level": 3
+    },
+    {
+      "name": "ELK Stack",
+      "level": 3
+    },
+    {
+      "name": "Pulumi",
+      "level": 3
+    },
+    {
+      "name": "Istio",
+      "level": 3
+    },
+    {
+      "name": "DataDog",
+      "level": 3
+    },
+    {
+      "name": "Docker",
+      "level": 3
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:29.246Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:17:01.934Z"
+  },
+  "__v": 10,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T19:48:11.348Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T20:17:01.933Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef841f"
+  },
+  "csvEmployeeId": 2926,
+  "userId": {
+    "$oid": "69ee1f10117de61b7bef8421"
+  },
+  "firstName": "Zied",
+  "lastName": "Ben Ammar",
+  "email": "zied.ben.ammar.2926@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "A/B Testing",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Data Visualization",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:25.530Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T14:29:23.560Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.445Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:29:23.562Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8429"
+  },
+  "csvEmployeeId": 126,
+  "userId": {
+    "$oid": "69ee1f10117de61b7bef842b"
+  },
+  "firstName": "Walid",
+  "lastName": "Ezzine",
+  "email": "walid.ezzine@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Feature Engineering",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Data Visualization",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Tableau",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:48.563Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.543Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:27:50.745Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8433"
+  },
+  "csvEmployeeId": 134,
+  "userId": {
+    "$oid": "69ee1f10117de61b7bef8435"
+  },
+  "firstName": "Imed",
+  "lastName": "Ben Dhiab",
+  "email": "imed.ben.dhiab.134@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Feature Engineering",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "XGBoost",
+      "level": 3
+    },
+    {
+      "name": "LLMs",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:50.768Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T21:54:19.562Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.627Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:54:19.564Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef843d"
+  },
+  "csvEmployeeId": 509,
+  "userId": {
+    "$oid": "69ee1f10117de61b7bef843f"
+  },
+  "firstName": "Lotfi",
+  "lastName": "Turki",
+  "email": "lotfi.turki.509@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Hadoop",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "XGBoost",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:28:13.648Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.712Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:28:37.363Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8447"
+  },
+  "csvEmployeeId": 1098,
+  "userId": {
+    "$oid": "69ee1f10117de61b7bef8449"
+  },
+  "firstName": "Tarek",
+  "lastName": "Fakhfakh",
+  "email": "tarek.fakhfakh.1098@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "R",
+      "level": 3
+    },
+    {
+      "name": "XGBoost",
+      "level": 3
+    },
+    {
+      "name": "LLMs",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:28:37.403Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.806Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:28:39.061Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef848d"
+  },
+  "csvEmployeeId": 1186,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef848f"
+  },
+  "firstName": "Tarek",
+  "lastName": "Mekki",
+  "email": "tarek.mekki.1186@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Spark",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "A/B Testing",
+      "level": 3
+    },
+    {
+      "name": "Deep Learning",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:52:59.172Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.427Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:22.283Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef8497"
+  },
+  "csvEmployeeId": 1742,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef8499"
+  },
+  "firstName": "Mondher",
+  "lastName": "Mabrouk",
+  "email": "mondher.mabrouk.1742@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "MLflow",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Deep Learning",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:22.291Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.513Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:24.967Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84a1"
+  },
+  "csvEmployeeId": 1797,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef84a3"
+  },
+  "firstName": "Omar",
+  "lastName": "Ben Fredj",
+  "email": "omar.ben.fredj.1797@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "LLMs",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "R",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:24.973Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.601Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:27.020Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84ab"
+  },
+  "csvEmployeeId": 1998,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef84ad"
+  },
+  "firstName": "Oussama",
+  "lastName": "Ferchichi",
+  "email": "oussama.ferchichi.1998@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "R",
+      "level": 3
+    },
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Computer Vision",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:27.028Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:29.329Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84b5"
+  },
+  "csvEmployeeId": 2035,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef84b7"
+  },
+  "firstName": "Khawla",
+  "lastName": "Hamdi",
+  "email": "khawla.hamdi@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "MLflow",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:29.353Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.763Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:53.128Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84bf"
+  },
+  "csvEmployeeId": 2634,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef84c1"
+  },
+  "firstName": "Rania",
+  "lastName": "Belhaj",
+  "email": "rania.belhaj@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Data Analysis",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "LLMs",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.848Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:31.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84c9"
+  },
+  "csvEmployeeId": 3053,
+  "userId": {
+    "$oid": "69ee1fa7117de61b7bef84cb"
+  },
+  "firstName": "Ines",
+  "lastName": "Ghannouchi",
+  "email": "ines.ghannouchi.3053@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "Jupyter",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.926Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:31.998Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84d3"
+  },
+  "csvEmployeeId": 3493,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef84d5"
+  },
+  "firstName": "Houda",
+  "lastName": "Karray",
+  "email": "houda.karray.3493@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "XGBoost",
+      "level": 3
+    },
+    {
+      "name": "Hadoop",
+      "level": 3
+    },
+    {
+      "name": "Computer Vision",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.009Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.080Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84dd"
+  },
+  "csvEmployeeId": 3525,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef84df"
+  },
+  "firstName": "Khawla",
+  "lastName": "Khelifi",
+  "email": "khawla.khelifi.3525@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Tableau",
+      "level": 3
+    },
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "A/B Testing",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.090Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.179Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84e7"
+  },
+  "csvEmployeeId": 3686,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef84e9"
+  },
+  "firstName": "Sonia",
+  "lastName": "Dhouib",
+  "email": "sonia.dhouib.3686@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "SQL",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Data Visualization",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.191Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.275Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84f1"
+  },
+  "csvEmployeeId": 3918,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef84f3"
+  },
+  "firstName": "Wissem",
+  "lastName": "Marzouki",
+  "email": "wissem.marzouki@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Tableau",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    },
+    {
+      "name": "Computer Vision",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.289Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.367Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84fb"
+  },
+  "csvEmployeeId": 4692,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef84fd"
+  },
+  "firstName": "Issam",
+  "lastName": "Jebali",
+  "email": "issam.jebali.5980@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "LLMs",
+      "level": 3
+    },
+    {
+      "name": "XGBoost",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "Statistics",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.376Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:23:50.179Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef8505"
+  },
+  "csvEmployeeId": 5209,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef8507"
+  },
+  "firstName": "Rami",
+  "lastName": "Yahiaoui",
+  "email": "rami.yahiaoui.5209@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Tableau",
+      "level": 3
+    },
+    {
+      "name": "PyTorch",
+      "level": 3
+    },
+    {
+      "name": "MLflow",
+      "level": 3
+    },
+    {
+      "name": "R",
+      "level": 3
+    },
+    {
+      "name": "TensorFlow",
+      "level": 3
+    },
+    {
+      "name": "Machine Learning",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.464Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.541Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef8516"
+  },
+  "csvEmployeeId": 6121,
+  "userId": {
+    "$oid": "69ee1fa8117de61b7bef8518"
+  },
+  "firstName": "Dalenda",
+  "lastName": "Riahi",
+  "email": "dalenda.riahi.6121@tonentreprise.com",
+  "jobTitle": "Data Scientist",
+  "department": "General",
+  "skills": [
+    {
+      "name": "NumPy",
+      "level": 3
+    },
+    {
+      "name": "NLP",
+      "level": 3
+    },
+    {
+      "name": "Power BI",
+      "level": 3
+    },
+    {
+      "name": "Pandas",
+      "level": 3
+    },
+    {
+      "name": "Scikit-learn",
+      "level": 3
+    },
+    {
+      "name": "R",
+      "level": 3
+    },
+    {
+      "name": "Feature Engineering",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.563Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.641Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8ea1"
+  },
+  "csvEmployeeId": 48,
+  "userId": {
+    "$oid": "69ee7364c651a8c229bf8ea3"
+  },
+  "firstName": "Manel",
+  "lastName": "Chaouachi",
+  "email": "manel.chaouachi@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Angular",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    },
+    {
+      "name": "PWA",
+      "level": 3
+    },
+    {
+      "name": "Node.js",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:19:53.115Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T23:11:25.139Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.722Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:11:47.910Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8eab"
+  },
+  "csvEmployeeId": 49,
+  "userId": {
+    "$oid": "69ee7364c651a8c229bf8ead"
+  },
+  "firstName": "Zied",
+  "lastName": "Hammami",
+  "email": "zied.hammami.49@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Node.js",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "Angular",
+      "level": 3
+    },
+    {
+      "name": "Jest",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:19:55.254Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:05:12.058Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T23:11:47.922Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T23:46:06.179Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.801Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:05:12.071Z"
+  },
+  "__v": 10
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8eb5"
+  },
+  "csvEmployeeId": 56,
+  "userId": {
+    "$oid": "69ee7364c651a8c229bf8eb7"
+  },
+  "firstName": "Hassen",
+  "lastName": "Derbel",
+  "email": "hassen.derbel.56@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Next.js",
+      "level": 3
+    },
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "Node.js",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:18.944Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T20:22:20.299Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:31.342Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.883Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:55:33.500Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8ebf"
+  },
+  "csvEmployeeId": 87,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8ec1"
+  },
+  "firstName": "Salma",
+  "lastName": "Nasr",
+  "email": "salma.nasr@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "GraphQL",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "Bootstrap",
+      "level": 3
+    },
+    {
+      "name": "Svelte",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:20.963Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:22:01.906Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie"
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:33.518Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:21:22.487Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.971Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:22:01.914Z"
+  },
+  "__v": 6
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ec9"
+  },
+  "csvEmployeeId": 155,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8ecb"
+  },
+  "firstName": "Sofiene",
+  "lastName": "Belhaj",
+  "email": "sofiene.belhaj.155@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Jest",
+      "level": 3
+    },
+    {
+      "name": "Angular",
+      "level": 3
+    },
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "GraphQL",
+      "level": 3
+    },
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:23.109Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.050Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:20:46.282Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ed3"
+  },
+  "csvEmployeeId": 244,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8ed5"
+  },
+  "firstName": "Tarek",
+  "lastName": "Fehri",
+  "email": "tarek.fehri.244@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Node.js",
+      "level": 3
+    },
+    {
+      "name": "Bootstrap",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "GraphQL",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Svelte",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:46.299Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:57.315Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.128Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:55:59.185Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8edd"
+  },
+  "csvEmployeeId": 251,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8edf"
+  },
+  "firstName": "Thouraya",
+  "lastName": "Wassim",
+  "email": "thouraya.wassim@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "Webpack",
+      "level": 3
+    },
+    {
+      "name": "Next.js",
+      "level": 3
+    },
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "Web Performance",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:09.269Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:59.216Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.203Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:56:22.781Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ee7"
+  },
+  "csvEmployeeId": 301,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8ee9"
+  },
+  "firstName": "Dalenda",
+  "lastName": "Ben Mohamed",
+  "email": "dalenda.ben.mohamed@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Svelte",
+      "level": 3
+    },
+    {
+      "name": "Next.js",
+      "level": 3
+    },
+    {
+      "name": "Web Performance",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    },
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "Webpack",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:32.037Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.294Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:21:33.709Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ef1"
+  },
+  "csvEmployeeId": 312,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8ef3"
+  },
+  "firstName": "Fethi",
+  "lastName": "Saidani",
+  "email": "fethi.saidani.312@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "Web Performance",
+      "level": 3
+    },
+    {
+      "name": "Redux",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:33.718Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.369Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:21:35.285Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8efb"
+  },
+  "csvEmployeeId": 336,
+  "userId": {
+    "$oid": "69ee7365c651a8c229bf8efd"
+  },
+  "firstName": "Ghassen",
+  "lastName": "Elloumi",
+  "email": "ghassen.elloumi.553@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "REST APIs",
+      "level": 3
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 3
+    },
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "Sass",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:35.320Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T21:02:53.856Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.444Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:30:02.504Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb5c"
+  },
+  "csvEmployeeId": 277,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb5e"
+  },
+  "firstName": "Zeineb",
+  "lastName": "Xenopoulos",
+  "email": "zeineb.xenopoulos.277@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Svelte",
+      "level": 3
+    },
+    {
+      "name": "Bootstrap",
+      "level": 3
+    },
+    {
+      "name": "Web Performance",
+      "level": 3
+    },
+    {
+      "name": "PWA",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "REST APIs",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:14.736Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:56:22.815Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.176Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:56:46.957Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb66"
+  },
+  "csvEmployeeId": 446,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb68"
+  },
+  "firstName": "Jihene",
+  "lastName": "Zaag",
+  "email": "jihene.zaag@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Svelte",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "GraphQL",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:17.098Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.272Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:30:40.231Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb70"
+  },
+  "csvEmployeeId": 463,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb72"
+  },
+  "firstName": "Hamza",
+  "lastName": "Ben Fredj",
+  "email": "hamza.ben.fredj.463@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "GraphQL",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Jest",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "PWA",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:40.248Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.354Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:03.510Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb7a"
+  },
+  "csvEmployeeId": 513,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb7c"
+  },
+  "firstName": "Naoufel",
+  "lastName": "Karoui",
+  "email": "naoufel.karoui.513@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Angular",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:03.516Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.430Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:28.050Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb8c"
+  },
+  "csvEmployeeId": 700,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb8e"
+  },
+  "firstName": "Elyes",
+  "lastName": "Trabelsi",
+  "email": "elyes.trabelsi.700@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "Vite",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:51.709Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.515Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:54.119Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb96"
+  },
+  "csvEmployeeId": 734,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feb98"
+  },
+  "firstName": "Bilel",
+  "lastName": "Ben Ali",
+  "email": "bilel.ben.ali.734@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "Svelte",
+      "level": 3
+    },
+    {
+      "name": "CSS",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    },
+    {
+      "name": "Vue.js",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Storybook",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:54.129Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.595Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:57.863Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feba0"
+  },
+  "csvEmployeeId": 811,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7feba2"
+  },
+  "firstName": "Walid",
+  "lastName": "Mansouri",
+  "email": "walid.mansouri.811@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "GraphQL",
+      "level": 3
+    },
+    {
+      "name": "Redux",
+      "level": 3
+    },
+    {
+      "name": "Accessibility",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "Cypress",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:57.869Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.678Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:32:01.831Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7febaa"
+  },
+  "csvEmployeeId": 857,
+  "userId": {
+    "$oid": "69ee83dadf9d20ad2e7febac"
+  },
+  "firstName": "Cyrine",
+  "lastName": "Sellami",
+  "email": "cyrine.sellami.857@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [
+    {
+      "name": "REST APIs",
+      "level": 3
+    },
+    {
+      "name": "JavaScript",
+      "level": 3
+    },
+    {
+      "name": "TypeScript",
+      "level": 3
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": 3
+    },
+    {
+      "name": "Figma",
+      "level": 3
+    },
+    {
+      "name": "React",
+      "level": 3
+    },
+    {
+      "name": "HTML",
+      "level": 3
+    }
+  ],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:32:01.848Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.760Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:32:04.265Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efd44520757cc34580155b"
+  },
+  "csvEmployeeId": 1736,
+  "userId": {
+    "$oid": "69efd44520757cc34580155e"
+  },
+  "firstName": "Walid",
+  "lastName": "Ferchichi",
+  "email": "walid.ferchichi.1736@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:25:25.150Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T21:32:16.151Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:25:25.021Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:32:16.154Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69efd45c20757cc345801570"
+  },
+  "csvEmployeeId": 2381,
+  "userId": {
+    "$oid": "69efd45c20757cc345801573"
+  },
+  "firstName": "Ines",
+  "lastName": "Derbel",
+  "email": "ines.derbel.2381@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:25:48.261Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:25:48.079Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:26:13.647Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efd47520757cc345801585"
+  },
+  "csvEmployeeId": 3041,
+  "userId": {
+    "$oid": "69efd47520757cc345801588"
+  },
+  "firstName": "Oumaima",
+  "lastName": "Ben Ali",
+  "email": "oumaima.ben.ali.3041@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:13.846Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:13.703Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:26:36.596Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efd48c20757cc34580159a"
+  },
+  "csvEmployeeId": 3463,
+  "userId": {
+    "$oid": "69efd48c20757cc34580159d"
+  },
+  "firstName": "Jawher",
+  "lastName": "Baccouche",
+  "email": "jawher.baccouche.3463@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:36.715Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:36.619Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:26:59.580Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efd4a320757cc3458015af"
+  },
+  "csvEmployeeId": 4126,
+  "userId": {
+    "$oid": "69efd4a320757cc3458015b2"
+  },
+  "firstName": "Mehdi",
+  "lastName": "Guizani",
+  "email": "mehdi.guizani.4126@tonentreprise.com",
+  "jobTitle": "Frontend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:59.837Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:59.625Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:27:01.658Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efe6ab271db4fe134d53cf"
+  },
+  "csvEmployeeId": 938,
+  "userId": {
+    "$oid": "69efe6ab271db4fe134d53d2"
+  },
+  "firstName": "Ikram",
+  "lastName": "Nasr",
+  "email": "ikram.nasr@tonentreprise.com",
+  "jobTitle": "Backend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "spring",
+      "description": "spring",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T22:43:55.241Z"
+      },
+      "status": "CERTIFIED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": {
+        "$date": "2026-04-27T22:45:12.091Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:45:24.449Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED"
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T22:43:55.153Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:45:24.451Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69efe6c2271db4fe134d53e4"
+  },
+  "csvEmployeeId": 1637,
+  "userId": {
+    "$oid": "69efe6c2271db4fe134d53e7"
+  },
+  "firstName": "Adel",
+  "lastName": "Largueche",
+  "email": "adel.largueche.1637@tonentreprise.com",
+  "jobTitle": "Backend Developer",
+  "department": "General",
+  "skills": [],
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "spring",
+      "description": "spring",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T22:44:18.968Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": ""
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T22:44:18.888Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:44:43.566Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69f120486dbcb6b306496da0"
+  },
+  "userId": null,
+  "firstName": "nefwi",
+  "lastName": "firas",
+  "email": "fnefzi466@gmail.com",
+  "jobTitle": "etudiant",
+  "department": "IT",
+  "skills": [
+    {
+      "name": "python",
+      "level": 1
+    },
+    {
+      "name": "js ; java",
+      "level": 1
+    }
+  ],
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-28T21:02:00.576Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-28T21:02:00.576Z"
+  },
+  "__v": 0
+}]

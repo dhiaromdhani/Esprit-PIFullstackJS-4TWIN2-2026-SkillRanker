@@ -1,0 +1,147 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+    <div class="container-fluid py-4 px-4">
+
+      <!-- HEADER -->
+      <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+        <div>
+          <p class="text-muted text-uppercase fw-semibold mb-1" style="font-size: 0.72rem;">
+            Gestion des fiches
+          </p>
+          <h1 class="fw-bold mb-0">
+            Fiches
+            <span class="badge bg-dark ms-2">{{ fiches.length }}</span>
+          </h1>
+        </div>
+
+        <button class="btn btn-danger px-4"
+                style="border-radius: 12px;"
+                (click)="openModal()">
+          + Nouvelle fiche
+        </button>
+      </div>
+
+      <!-- EMPTY -->
+      <div *ngIf="fiches.length === 0" class="text-center py-5">
+        <p class="text-muted">Aucune fiche</p>
+      </div>
+
+      <!-- CARDS -->
+      <div class="row g-3" *ngIf="fiches.length > 0">
+
+        <div class="col-md-6 col-lg-4" *ngFor="let f of fiches">
+
+          <div class="card shadow-sm h-100" style="border-radius: 16px;">
+
+            <div style="height: 4px; background: linear-gradient(90deg,#dc3545,#f08070);"></div>
+
+            <div class="card-body p-4">
+
+              <h5 class="fw-bold">{{ f.saisons }}</h5>
+
+              <p class="mb-1 text-muted">
+                Etat:
+                <span class="badge bg-primary">{{ f.etat }}</span>
+              </p>
+
+              <p class="text-muted">
+                {{ f.user?.firstName }} {{ f.user?.lastName }}
+              </p>
+
+            </div>
+
+            <div class="card-footer bg-transparent d-flex justify-content-end gap-2">
+
+              <button class="btn btn-sm btn-outline-secondary"
+                      style="border-radius: 8px; width: 34px; height: 34px; padding: 0;"
+                      (click)="edit(f)">
+                ✏️
+              </button>
+
+              <button class="btn btn-sm btn-outline-danger"
+                      style="border-radius: 8px; width: 34px; height: 34px; padding: 0;"
+                      (click)="delete(f._id)">
+                🗑️
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- MODAL -->
+<div class="modal-backdrop fade show" *ngIf="showModal" (click)="closeModal()"></div>
+
+<div class="modal fade show d-block" *ngIf="showModal" style="z-index:1050;">
+
+  <div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content" style="border-radius: 18px;">
+
+      <!-- HEADER -->
+      <div class="modal-header">
+        <h5 class="fw-bold">
+          {{ editMode ? 'Modifier fiche' : 'Nouvelle fiche' }}
+        </h5>
+        <button class="btn-close" (click)="closeModal()"></button>
+      </div>
+
+      <!-- BODY -->
+      <div class="modal-body">
+
+        <form [formGroup]="ficheForm">
+
+          <div class="mb-3">
+            <label class="form-label">Saison</label>
+            <input type="text"
+                   class="form-control"
+                   formControlName="saisons"
+                   placeholder="Ex: 2025">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Etat</label>
+
+            <select class="form-control" formControlName="etat">
+              <option value="draft">draft</option>
+              <option value="in_progress">in_progress</option>
+              <option value="completed">completed</option>
+              <option value="validated">validated</option>
+            </select>
+
+          </div>
+
+        </form>
+
+      </div>
+
+      <!-- FOOTER -->
+      <div class="modal-footer">
+
+        <button class="btn btn-secondary" (click)="closeModal()">
+          Annuler
+        </button>
+
+        <button class="btn btn-danger"
+                (click)="submit()"
+                [disabled]="ficheForm.invalid">
+
+          {{ editMode ? 'Modifier' : 'Ajouter' }}
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

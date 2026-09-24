@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+
+    <!-- Page Header -->
+    <div class="page-header mb-4">
+      <div class="page-header-title">
+        <h5 class="m-b-10">Statistics Dashboard</h5>
+      </div>
+    </div>
+
+    <!-- Row Global -->
+    <div class="row g-4">
+
+      <!-- Skill Chart -->
+      <div class="col-lg-6 col-md-12" *ngIf="!loading && !error">
+        <div class="card shadow-sm h-100">
+          <div class="card-header text-center">
+            <h5 class="mb-0">Skill Coverage</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <canvas id="skillChart" style="max-height: 300px;"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Chart -->
+      <div class="col-lg-6 col-md-12" *ngIf="!loading && !error">
+        <div class="card shadow-sm h-100">
+          <div class="card-header text-center">
+            <h5 class="mb-0">Activity Statistics</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <canvas id="activityChart" style="max-height: 300px;"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Loading -->
+    <div class="row mt-4" *ngIf="loading">
+      <div class="col-12 text-center">
+        <div class="spinner-border text-danger"></div>
+        <p class="mt-2 text-muted">Chargement...</p>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div class="row mt-4" *ngIf="error && !loading">
+      <div class="col-12">
+        <div class="alert alert-danger text-center">
+          {{ error }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

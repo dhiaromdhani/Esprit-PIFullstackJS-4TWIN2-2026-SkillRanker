@@ -1,0 +1,930 @@
+[{
+  "_id": {
+    "$oid": "69d256a89de7d756a71caf22"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté(e) à \"spring\".",
+  "userId": {
+    "$oid": "69951a2d7b38812ed2cbd013"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:33:44.855Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d256d59de7d756a71caf4e"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté(e) à \"spring\".",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:34:29.103Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:55:49.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d25815bfe44bfd416e00a7"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté(e) à l'activité \"spring\" (TRAINING).",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:39:49.892Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:55:50.215Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d258dc8ac41ecb45afa48e"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté(e) à l'activité \"spring\" par RH.",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:43:08.692Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:37:36.478Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d2594c1409aba92b56ec30"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté(e) à l'activité \"spring\" par RH.",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:45:00.555Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:21:21.733Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d25a72065f1753fc3a3c87"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté à \"spring\"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T12:49:54.264Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:21:22.811Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d26540065f1753fc3a3d00"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté à \"spring\"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-05T13:36:00.446Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:21:23.945Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d3c7c2daa386e22300e08b"
+  },
+  "title": "Nouvelle activité : Test Notification Postman",
+  "message": "Vous avez été affecté à \"Test Notification Postman\"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-06T14:48:34.482Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:21:24.842Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69d554ec47e6172bf5b5561f"
+  },
+  "title": "Nouvelle activité : formation python ",
+  "message": "Vous avez été affecté à \"formation python \"",
+  "userId": {
+    "$oid": "69951a2d7b38812ed2cbd012"
+  },
+  "timestamp": {
+    "$date": "2026-04-07T19:03:08.456Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5558147e6172bf5b55665"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été affecté à \"spring\"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-07T19:05:37.305Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:21:25.517Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69dea9fe64914a49e3d9a56e"
+  },
+  "title": "Nouvelle activité : formation python ",
+  "message": "Vous avez été affecté à \"formation python \"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-14T20:56:30.810Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:56:10.949Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e52f2199cc80afa57582ea"
+  },
+  "title": "Nouvelle activité : formation python ",
+  "message": "Vous avez été affecté à \"formation python \"",
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "timestamp": {
+    "$date": "2026-04-19T19:38:09.815Z"
+  },
+  "__v": 0,
+  "read": true,
+  "updatedAt": {
+    "$date": "2026-04-19T20:58:12.088Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69e5343a976aa54781663e21"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'devops' créée avec succès.",
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "timestamp": {
+    "$date": "2026-04-19T19:59:54.341Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e53cc29f78160294d0d28e"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été affecté à \"devops\"",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": true,
+  "userId": {
+    "$oid": "69951a2d7b38812ed2cbd010"
+  },
+  "createdAt": {
+    "$date": "2026-04-19T20:36:18.534Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-19T20:58:36.626Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b41a028c11d0a4a19d0"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69ed3b27a028c11d0a4a1997"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:08:01.617Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b41a028c11d0a4a19d5"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69ed3b27a028c11d0a4a19a1"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:08:01.643Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.643Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b41a028c11d0a4a19da"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69ed3b27a028c11d0a4a19ab"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:08:01.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.648Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b41a028c11d0a4a19df"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69ed3b27a028c11d0a4a19b5"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:08:01.653Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.653Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b41a028c11d0a4a19e4"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69ed3b28a028c11d0a4a19bf"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:08:01.658Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3fbe35cc27db077fb978"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69ed3fa535cc27db077fb94a"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:27:10.147Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.147Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3fbe35cc27db077fb97d"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69ed3fa635cc27db077fb954"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:27:10.181Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.181Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3fbe35cc27db077fb982"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69ed3fa635cc27db077fb95e"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:27:10.200Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.200Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3fbe35cc27db077fb987"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69ed3fa635cc27db077fb968"
+  },
+  "createdAt": {
+    "$date": "2026-04-25T22:27:10.225Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.225Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc4c0c8bcf4720107bc3"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été sélectionné(e) pour \"devops\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "userId": {
+    "$oid": "69edfc3f0c8bcf4720107b89"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T11:51:40.114Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T11:51:40.114Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc4c0c8bcf4720107bc8"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été sélectionné(e) pour \"devops\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107b93"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T11:51:40.132Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T11:51:40.132Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc4c0c8bcf4720107bcd"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été sélectionné(e) pour \"devops\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107b9d"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T11:51:40.145Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T11:51:40.145Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc4c0c8bcf4720107bd2"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été sélectionné(e) pour \"devops\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "userId": {
+    "$oid": "69edfc400c8bcf4720107ba7"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T11:51:40.156Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T11:51:40.156Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc4c0c8bcf4720107bd7"
+  },
+  "title": "Nouvelle activité : devops",
+  "message": "Vous avez été sélectionné(e) pour \"devops\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "userId": {
+    "$oid": "69edfc410c8bcf4720107bb1"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T11:51:40.163Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T11:51:40.163Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfeb59930ec5e03b597af"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69edfea69930ec5e03b59786"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:01:57.492Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:01:57.492Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfeb59930ec5e03b597b4"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69edfea69930ec5e03b5978c"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:01:57.534Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:01:57.534Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfeb59930ec5e03b597b9"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69edfea69930ec5e03b59792"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:01:57.555Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:01:57.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfeb59930ec5e03b597be"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69edfea79930ec5e03b59798"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:01:57.581Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:01:57.581Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfeb59930ec5e03b597c3"
+  },
+  "title": "Nouvelle activité : spring",
+  "message": "Vous avez été sélectionné(e) pour \"spring\". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "userId": {
+    "$oid": "69edfea79930ec5e03b5979e"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:01:57.605Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:01:57.605Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edff179930ec5e03b597f6"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597d4"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:03:35.958Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:03:35.958Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edff179930ec5e03b597fb"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597da"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:03:35.986Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:03:35.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edff179930ec5e03b59800"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597e0"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:03:36.000Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:03:36.000Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edff189930ec5e03b59805"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff159930ec5e03b597e6"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:03:36.013Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:03:36.013Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee03749930ec5e03b59842"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597d4"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:22:12.818Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:22:12.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee03749930ec5e03b59847"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597da"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:22:12.840Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:22:12.840Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee03749930ec5e03b5984c"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff149930ec5e03b597e0"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:22:12.856Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:22:12.856Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee03749930ec5e03b59851"
+  },
+  "title": "Nouvelle activité : python ",
+  "message": "Vous avez été sélectionné(e) pour \"python \". Cliquez pour ouvrir la page des activités et répondre.",
+  "type": "ACTIVITY_ASSIGNED",
+  "read": false,
+  "activityId": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "userId": {
+    "$oid": "69edff159930ec5e03b597e6"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T12:22:12.877Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T12:22:12.877Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1f01117de61b7bef8410"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'python ,AI' créée avec succès.",
+  "type": "GENERAL",
+  "read": false,
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T14:19:45.158Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:19:45.158Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7356c651a8c229bf8e92"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'react' créée avec succès.",
+  "type": "GENERAL",
+  "read": false,
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T20:19:34.413Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T20:19:34.413Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee91d9667e7c26273e2104"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'francais' créée avec succès.",
+  "type": "GENERAL",
+  "read": false,
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T22:29:45.094Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:29:45.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee97cf07040fb43547afe6"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'angular' créée avec succès.",
+  "type": "GENERAL",
+  "read": false,
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "createdAt": {
+    "$date": "2026-04-26T22:55:11.885Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:55:11.885Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69efcb3b39984cbdc77404a2"
+  },
+  "title": "Activité créée",
+  "message": "Activité 'full stack js' créée avec succès.",
+  "type": "GENERAL",
+  "read": false,
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "createdAt": {
+    "$date": "2026-04-27T20:46:51.425Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T20:46:51.425Z"
+  },
+  "__v": 0
+}]

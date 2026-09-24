@@ -1,0 +1,118 @@
+pipeline {
+  agent any
+
+  environment {
+    DOCKER_IMAGE = "meddhia1rom/skillranker-frontend"
+    DOCKER_TAG   = "latest"
+    K8S_NS       = "skillranker"
+    REPO_URL     = "https://github.com/AliBouaine/SkillRanker_Frontend.git"
+
+    SONAR_HOST_URL    = "http://localhost:9000"
+    SONAR_PROJECT_KEY = "SkillRanker-Frontend"
+  }
+
+  tools {
+    nodejs 'NodeJS'
+  }
+
+  stages {
+
+    stage('Checkout') {
+      steps {
+        git branch: 'main',
+            credentialsId: 'github-token',
+            url: "${REPO_URL}"
+      }
+    }
+
+    stage('Install') {
+      steps {
+        sh 'npm ci --prefer-offline'
+      }
+    }
+
+    stage('Build Angular') {
+      steps {
+        sh 'npm run build -- --configuration production'
+      }
+    }
+
+    stage('SonarQube Analysis') {
+      steps {
+        withCredentials([string(credentialsId: 'sonarqube-frontend-token', variable: 'SONAR_TOKEN')]) {
+          sh '''
+            echo "=== SonarQube Frontend Analysis ==="
+
+            FRONT_LCOV=$(find coverage -name lcov.info 2>/dev/null | head -n 1 || true)
+
+            if [ -n "$FRONT_LCOV" ]; then
+              echo "LCOV found: $FRONT_LCOV"
+              SONAR_COVERAGE="-Dsonar.javascript.lcov.reportPaths=$FRONT_LCOV"
+            else
+              echo "No coverage/lcov.info found. SonarQube will analyze code without coverage."
+              SONAR_COVERAGE=""
+            fi
+
+            npx sonar-scanner \
+              -Dsonar.projectKey=${SONAR_PROJECT_KEY} \
+              -Dsonar.projectName=SkillRanker-Frontend \
+              -Dsonar.sources=src \
+              -Dsonar.exclusions=node_modules/**,dist/**,coverage/**,.angular/**,**/*.spec.ts,**/environments/** \
+              -Dsonar.coverage.exclusions=**/*.spec.ts,**/*.module.ts,**/main.ts,**/polyfills.ts,**/environment*.ts,**/environments/** \
+              -Dsonar.sourceEncoding=UTF-8 \
+              -Dsonar.host.url=${SONAR_HOST_URL} \
+              -Dsonar.login=${SONAR_TOKEN} \
+              $SONAR_COVERAGE
+          '''
+        }
+      }
+    }
+
+    stage('Docker Build') {
+      steps {
+        sh "docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG} ."
+      }
+    }
+
+    stage('Docker Push') {
+      steps {
+        withCredentials([usernamePassword(
+          credentialsId: 'dockerhub-token',
+          usernameVariable: 'DOCKER_USER',
+          passwordVariable: 'DOCKER_PASS'
+        )]) {
+          sh """
+            echo \$DOCKER_PASS | docker login -u \$DOCKER_USER --password-stdin
+            docker push ${DOCKER_IMAGE}:${DOCKER_TAG}
+            docker logout
+          """
+        }
+      }
+    }
+
+    stage('Deploy Kubernetes') {
+      steps {
+        withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
+          sh """
+            kubectl apply -f k8s/frontend-deployment.yaml --kubeconfig=\$KUBECONFIG
+            kubectl apply -f k8s/frontend-service.yaml    --kubeconfig=\$KUBECONFIG
+            kubectl apply -f k8s/ingress.yaml             --kubeconfig=\$KUBECONFIG
+            kubectl rollout restart deployment/frontend -n ${K8S_NS} --kubeconfig=\$KUBECONFIG
+            kubectl rollout status  deployment/frontend -n ${K8S_NS} \
+              --kubeconfig=\$KUBECONFIG --timeout=120s
+          """
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      echo "Frontend deployé → http://skillranker.local:8080"
+      echo "SonarQube analysis done → SkillRanker-Frontend"
+    }
+    failure {
+      echo "Echec pipeline frontend"
+    }
+  }
+}

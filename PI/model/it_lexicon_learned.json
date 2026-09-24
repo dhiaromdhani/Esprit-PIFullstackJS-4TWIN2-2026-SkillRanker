@@ -1,0 +1,33 @@
+{
+  "skills": {
+    "spring boot": [
+      "spring",
+      "srong"
+    ],
+    "typescript": [
+      "tyscript"
+    ],
+    "kotlin": [
+      "kotli"
+    ],
+    "sql": [
+      "sqlite"
+    ],
+    "power bi": [
+      "power"
+    ],
+    "tdd": [
+      "todd"
+    ],
+    "python": [
+      "pithon"
+    ]
+  },
+  "roles": {
+    "qa engineer": [
+      "engineers",
+      "engineer",
+      "ingenieurs"
+    ]
+  }
+}

@@ -1,0 +1,2137 @@
+[{
+  "_id": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "title": "spring",
+  "description": "spring",
+  "__v": 17,
+  "category": "TECHNICAL",
+  "duration": "",
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : java\nNombre de places : 2\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "location": "",
+  "priorityContext": "UPSKILLING",
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 938,
+      "employeeId": {
+        "$oid": "69efe6ab271db4fe134d53cf"
+      },
+      "userId": {
+        "$oid": "69efe6ab271db4fe134d53d2"
+      },
+      "name": "Ikram Nasr",
+      "email": "ikram.nasr@tonentreprise.com",
+      "jobTitle": "Backend Developer",
+      "currentSkills": "Docker, Ruby on Rails, Elasticsearch, Microservices, SQL, Spring Boot, MySQL",
+      "score": 73.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: java",
+      "matchedInMongo": true,
+      "autoProvisioned": true
+    },
+    {
+      "csvEmployeeId": 1637,
+      "employeeId": {
+        "$oid": "69efe6c2271db4fe134d53e4"
+      },
+      "userId": {
+        "$oid": "69efe6c2271db4fe134d53e7"
+      },
+      "name": "Adel Largueche",
+      "email": "adel.largueche.1637@tonentreprise.com",
+      "jobTitle": "Backend Developer",
+      "currentSkills": "FastAPI, Elasticsearch, Go, Spring Boot, SQLite, SQL, Microservices",
+      "score": 73.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: java",
+      "matchedInMongo": true,
+      "autoProvisioned": true
+    }
+  ],
+  "requiredSkills": [
+    {
+      "name": "java",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 2,
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 938,
+      "employeeId": {
+        "$oid": "69efe6ab271db4fe134d53cf"
+      },
+      "userId": {
+        "$oid": "69efe6ab271db4fe134d53d2"
+      },
+      "name": "Ikram Nasr",
+      "email": "ikram.nasr@tonentreprise.com",
+      "score": 74,
+      "status": "CERTIFIED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T22:43:55.241Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:45:24.455Z"
+      },
+      "managerScore": 5,
+      "managerComment": "bien",
+      "managerEvaluatedAt": {
+        "$date": "2026-04-27T23:14:31.263Z"
+      },
+      "managerEvaluatedBy": {
+        "$oid": "697926549262d96d3c46299f"
+      }
+    },
+    {
+      "csvEmployeeId": 1637,
+      "employeeId": {
+        "$oid": "69efe6c2271db4fe134d53e4"
+      },
+      "userId": {
+        "$oid": "69efe6c2271db4fe134d53e7"
+      },
+      "name": "Adel Largueche",
+      "email": "adel.largueche.1637@tonentreprise.com",
+      "score": 74,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T22:44:18.968Z"
+      },
+      "respondedAt": null,
+      "managerScore": null,
+      "managerComment": "",
+      "managerEvaluatedAt": null,
+      "managerEvaluatedBy": null
+    }
+  ],
+  "status": "IN_PROGRESS",
+  "type": "TRAINING",
+  "updatedAt": {
+    "$date": "2026-04-27T23:14:31.272Z"
+  },
+  "endDate": {
+    "$date": "2026-04-27T00:00:00.000Z"
+  },
+  "startDate": {
+    "$date": "2026-04-26T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "title": "python ",
+  "description": "machine learning",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "python",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1,
+      "_id": {
+        "$oid": "69e53471976aa54781663e27"
+      }
+    }
+  ],
+  "seats": 4,
+  "priorityContext": "UPSKILLING",
+  "location": "En ligne",
+  "startDate": {
+    "$date": "2026-04-01T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-05T00:00:00.000Z"
+  },
+  "duration": "5 ",
+  "status": "IN_PROGRESS",
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 3527,
+      "employeeId": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "userId": {
+        "$oid": "69a768cbd1b1fc087a71db85"
+      },
+      "name": "Dorra Belhaj",
+      "email": "mohameddhiaromdhaneey@gmail.com",
+      "score": 77,
+      "status": "CERTIFIED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:01:38.101Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:41:17.510Z"
+      },
+      "managerScore": 5,
+      "managerComment": "assez bien",
+      "managerEvaluatedAt": {
+        "$date": "2026-04-27T23:39:53.392Z"
+      },
+      "managerEvaluatedBy": {
+        "$oid": "697926549262d96d3c46299f"
+      }
+    },
+    {
+      "csvEmployeeId": 562,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "userId": {
+        "$oid": "69edff149930ec5e03b597da"
+      },
+      "name": "Rim Karoui",
+      "email": "rim.karoui.562@tonentreprise.com",
+      "score": 75,
+      "status": "ACCEPTED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:01:41.306Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-26T23:04:38.103Z"
+      },
+      "managerScore": null,
+      "managerComment": "",
+      "managerEvaluatedAt": null,
+      "managerEvaluatedBy": null
+    },
+    {
+      "csvEmployeeId": 1181,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "userId": {
+        "$oid": "69edff149930ec5e03b597e0"
+      },
+      "name": "Brahim Belhaj",
+      "email": "brahim.belhaj.1181@tonentreprise.com",
+      "score": 75,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:01:43.062Z"
+      },
+      "respondedAt": null,
+      "managerScore": null,
+      "managerComment": "",
+      "managerEvaluatedAt": null,
+      "managerEvaluatedBy": null
+    },
+    {
+      "csvEmployeeId": 1943,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "userId": {
+        "$oid": "69edff159930ec5e03b597e6"
+      },
+      "name": "Maher Haddad",
+      "email": "maher.haddad.1943@tonentreprise.com",
+      "score": 75,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:01:44.754Z"
+      },
+      "respondedAt": null,
+      "managerScore": null,
+      "managerComment": "",
+      "managerEvaluatedAt": null,
+      "managerEvaluatedBy": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-01T09:55:31.924Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T23:39:53.421Z"
+  },
+  "__v": 24,
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 3527,
+      "employeeId": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "userId": {
+        "$oid": "69a768cbd1b1fc087a71db85"
+      },
+      "name": "Dorra Belhaj",
+      "email": "mohameddhiaromdhaneey@gmail.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "A/B Testing, Pandas, Spark, TensorFlow, Scikit-learn, Python, PyTorch",
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 562,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "userId": {
+        "$oid": "69edff149930ec5e03b597da"
+      },
+      "name": "Rim Karoui",
+      "email": "rim.karoui.562@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "SQL, Power BI, Pandas, TensorFlow, Python, A/B Testing, Scikit-learn",
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 1181,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "userId": {
+        "$oid": "69edff149930ec5e03b597e0"
+      },
+      "name": "Brahim Belhaj",
+      "email": "brahim.belhaj.1181@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "A/B Testing, SQL, TensorFlow, NumPy, Python, NLP, Scikit-learn",
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 1943,
+      "employeeId": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "userId": {
+        "$oid": "69edff159930ec5e03b597e6"
+      },
+      "name": "Maher Haddad",
+      "email": "maher.haddad.1943@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "SQL, Python, Scikit-learn, NumPy, Pandas, Power BI, Tableau",
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "title": "devops",
+  "description": "pipeline CI/Cd",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "docker",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1,
+      "_id": {
+        "$oid": "69e5343a976aa54781663e1f"
+      }
+    }
+  ],
+  "seats": 5,
+  "priorityContext": "UPSKILLING",
+  "location": "en ligne ",
+  "startDate": {
+    "$date": "2026-04-19T00:00:00.000Z"
+  },
+  "endDate": {
+    "$date": "2026-04-21T00:00:00.000Z"
+  },
+  "duration": null,
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "status": "IN_PROGRESS",
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 111,
+      "employeeId": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "userId": {
+        "$oid": "69edfc3f0c8bcf4720107b89"
+      },
+      "name": "Rami Nasri",
+      "email": "rami.nasri.111@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:49:27.721Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 118,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107b93"
+      },
+      "name": "Dhia Ben Hassine",
+      "email": "dhia.ben.hassine.118@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:49:50.608Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 177,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107b9d"
+      },
+      "name": "Bilel Ferchichi",
+      "email": "bilel.ferchichi@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:50:13.254Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 187,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107ba7"
+      },
+      "name": "Mohamed Turki",
+      "email": "mohamed.turki.187@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:50:15.000Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 217,
+      "employeeId": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "userId": {
+        "$oid": "69edfc410c8bcf4720107bb1"
+      },
+      "name": "Ahmed Chebbi",
+      "email": "ahmed.chebbi.217@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:50:37.693Z"
+      },
+      "respondedAt": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-19T19:59:54.328Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:51:00.413Z"
+  },
+  "__v": 9,
+  "latestRecommendationPrompt": "Formation specialisee pour devops, top 10 employees",
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 111,
+      "employeeId": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "userId": {
+        "$oid": "69edfc3f0c8bcf4720107b89"
+      },
+      "name": "Rami Nasri",
+      "email": "rami.nasri.111@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Bash, Istio, Grafana, CI/CD, ArgoCD, Prometheus, Docker",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 118,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107b93"
+      },
+      "name": "Dhia Ben Hassine",
+      "email": "dhia.ben.hassine.118@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Docker, ArgoCD, Azure, CI/CD, GCP, Bash, Helm",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 177,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107b9d"
+      },
+      "name": "Bilel Ferchichi",
+      "email": "bilel.ferchichi@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Ansible, DataDog, Networking, Docker, Nginx, Linux, Istio",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 187,
+      "employeeId": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "userId": {
+        "$oid": "69edfc400c8bcf4720107ba7"
+      },
+      "name": "Mohamed Turki",
+      "email": "mohamed.turki.187@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Nginx, Vault, Grafana, Jenkins, GCP, Helm, Docker",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 217,
+      "employeeId": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "userId": {
+        "$oid": "69edfc410c8bcf4720107bb1"
+      },
+      "name": "Ahmed Chebbi",
+      "email": "ahmed.chebbi.217@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "GCP, Bash, ELK Stack, Pulumi, Istio, DataDog, Docker",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 292,
+      "employeeId": null,
+      "userId": null,
+      "name": "Walid Mekki",
+      "email": "",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "PagerDuty, Istio, AWS, Docker, Terraform, Pulumi, Git",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 490,
+      "employeeId": null,
+      "userId": null,
+      "name": "Mehdi Ghribi",
+      "email": "",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Docker, PagerDuty, CI/CD, Git, Vault, Grafana, DataDog",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 567,
+      "employeeId": null,
+      "userId": null,
+      "name": "Chiheb Abidi",
+      "email": "",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Docker, DataDog, PagerDuty, Grafana, CloudFormation, Vault, Terraform",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 594,
+      "employeeId": null,
+      "userId": null,
+      "name": "Mehdi Nasr",
+      "email": "",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Helm, Azure, Jenkins, Docker, PagerDuty, AWS, Ansible",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 606,
+      "employeeId": null,
+      "userId": null,
+      "name": "Yosra Jebali",
+      "email": "",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Git, Docker, DataDog, Pulumi, CloudFormation, ArgoCD, Bash",
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69ecee44fc7fcd2393330b50"
+  },
+  "title": "s, exactement 5 employes",
+  "description": "Formation recommandée par IA pour 5 employé(s).",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "seats": 5,
+  "priorityContext": "UPSKILLING",
+  "createdBy": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "status": "OPEN",
+  "requiredSkills": [],
+  "selectedEmployees": [],
+  "createdAt": {
+    "$date": "2026-04-25T16:39:32.522Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T16:39:32.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ecefe0fc7fcd2393330b66"
+  },
+  "title": "Formation specialisee pour devops, top 10 employees",
+  "description": "Formation recommandée par IA pour 10 employé(s).",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "seats": 5,
+  "priorityContext": "UPSKILLING",
+  "createdBy": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "status": "OPEN",
+  "requiredSkills": [],
+  "selectedEmployees": [],
+  "createdAt": {
+    "$date": "2026-04-25T16:46:24.186Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T16:46:24.186Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "title": "python",
+  "description": "Python",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "Python",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 5,
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : python\nDescription : Python\nType : TRAINING\nCompétences requises : Python\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "status": "IN_PROGRESS",
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 2926,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8421"
+      },
+      "name": "Zied Ben Ammar",
+      "email": "zied.ben.ammar.2926@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "PyTorch, TensorFlow, A/B Testing, NLP, Data Visualization, Scikit-learn, NumPy",
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 126,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef842b"
+      },
+      "name": "Walid Ezzine",
+      "email": "walid.ezzine@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Feature Engineering, NumPy, NLP, PyTorch, Data Visualization, Scikit-learn, Tableau",
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 134,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8435"
+      },
+      "name": "Imed Ben Dhiab",
+      "email": "imed.ben.dhiab.134@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Machine Learning, Feature Engineering, NLP, PyTorch, XGBoost, LLMs, Pandas",
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 509,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef843f"
+      },
+      "name": "Lotfi Turki",
+      "email": "lotfi.turki.509@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Hadoop, PyTorch, Power BI, NumPy, XGBoost, Machine Learning, Scikit-learn",
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 1098,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8449"
+      },
+      "name": "Tarek Fakhfakh",
+      "email": "tarek.fakhfakh.1098@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Scikit-learn, R, XGBoost, LLMs, PyTorch, Pandas, Machine Learning",
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ],
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 2926,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8421"
+      },
+      "name": "Zied Ben Ammar",
+      "email": "zied.ben.ammar.2926@tonentreprise.com",
+      "score": 56.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:07.030Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 126,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef842b"
+      },
+      "name": "Walid Ezzine",
+      "email": "walid.ezzine@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:09.082Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 134,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8435"
+      },
+      "name": "Imed Ben Dhiab",
+      "email": "imed.ben.dhiab.134@tonentreprise.com",
+      "score": 55.17,
+      "status": "DECLINED",
+      "justification": "maladie",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:31.812Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-26T21:54:19.571Z"
+      }
+    },
+    {
+      "csvEmployeeId": 509,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef843f"
+      },
+      "name": "Lotfi Turki",
+      "email": "lotfi.turki.509@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:54.770Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 1098,
+      "employeeId": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "userId": {
+        "$oid": "69ee1f10117de61b7bef8449"
+      },
+      "name": "Tarek Fakhfakh",
+      "email": "tarek.fakhfakh.1098@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:56.573Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 1186,
+      "employeeId": {
+        "$oid": "69ee1fa7117de61b7bef848d"
+      },
+      "userId": {
+        "$oid": "69ee1fa7117de61b7bef848f"
+      },
+      "name": "Tarek Mekki",
+      "email": "tarek.mekki.1186@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:52:59.172Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 1742,
+      "employeeId": {
+        "$oid": "69ee1fa7117de61b7bef8497"
+      },
+      "userId": {
+        "$oid": "69ee1fa7117de61b7bef8499"
+      },
+      "name": "Mondher Mabrouk",
+      "email": "mondher.mabrouk.1742@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:53:22.291Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 1797,
+      "employeeId": {
+        "$oid": "69ee1fa7117de61b7bef84a1"
+      },
+      "userId": {
+        "$oid": "69ee1fa7117de61b7bef84a3"
+      },
+      "name": "Omar Ben Fredj",
+      "email": "omar.ben.fredj.1797@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:53:24.973Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 1998,
+      "employeeId": {
+        "$oid": "69ee1fa7117de61b7bef84ab"
+      },
+      "userId": {
+        "$oid": "69ee1fa7117de61b7bef84ad"
+      },
+      "name": "Oussama Ferchichi",
+      "email": "oussama.ferchichi.1998@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:53:27.028Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 2035,
+      "employeeId": {
+        "$oid": "69ee1fa7117de61b7bef84b5"
+      },
+      "userId": {
+        "$oid": "69ee1fa7117de61b7bef84b7"
+      },
+      "name": "Khawla Hamdi",
+      "email": "khawla.hamdi@tonentreprise.com",
+      "score": 55.17,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:53:29.353Z"
+      },
+      "respondedAt": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:19:45.146Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:28:35.403Z"
+  },
+  "__v": 11
+},
+{
+  "_id": {
+    "$oid": "69ee7356c651a8c229bf8e90"
+  },
+  "title": "react",
+  "description": "frontend",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "bootstrap",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 10,
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : react\nDescription : frontend\nType : TRAINING\nCompétences requises : bootstrap\nNombre de places : 10\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "status": "IN_PROGRESS",
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 48,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ea1"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ea3"
+      },
+      "name": "Manel Chaouachi",
+      "email": "manel.chaouachi@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Angular, JavaScript, PWA, Node.js, Accessibility, Sass, Figma",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 49,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eab"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ead"
+      },
+      "name": "Zied Hammami",
+      "email": "zied.hammami.49@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Sass, Storybook, Node.js, Vue.js, Accessibility, Angular, Jest",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 56,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eb5"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8eb7"
+      },
+      "name": "Hassen Derbel",
+      "email": "hassen.derbel.56@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Next.js, Cypress, HTML, CSS, Tailwind CSS, Accessibility, Node.js",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 87,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ebf"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ec1"
+      },
+      "name": "Salma Nasr",
+      "email": "salma.nasr@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Sass, HTML, GraphQL, CSS, Accessibility, Bootstrap, Svelte",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 155,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ec9"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ecb"
+      },
+      "name": "Sofiene Belhaj",
+      "email": "sofiene.belhaj.155@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Jest, Angular, Sass, HTML, GraphQL, Cypress, CSS",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 244,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ed3"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ed5"
+      },
+      "name": "Tarek Fehri",
+      "email": "tarek.fehri.244@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Node.js, Bootstrap, Figma, GraphQL, Storybook, Svelte, Vue.js",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 251,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8edd"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8edf"
+      },
+      "name": "Thouraya Wassim",
+      "email": "thouraya.wassim@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Cypress, CSS, Webpack, Next.js, Vite, Figma, Web Performance",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 301,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ee7"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ee9"
+      },
+      "name": "Dalenda Ben Mohamed",
+      "email": "dalenda.ben.mohamed@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Svelte, Next.js, Web Performance, JavaScript, Vite, Cypress, Webpack",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 312,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ef1"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ef3"
+      },
+      "name": "Fethi Saidani",
+      "email": "fethi.saidani.312@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Vite, JavaScript, Storybook, Accessibility, CSS, Web Performance, Redux",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 336,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8efb"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8efd"
+      },
+      "name": "Ghassen Elloumi",
+      "email": "ghassen.elloumi.336@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "REST APIs, Tailwind CSS, Vite, Storybook, Cypress, Sass, Vue.js",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ],
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 3,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b59786"
+      },
+      "name": "Slim Sellami",
+      "email": "slim.sellami.3@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:30:12.338Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 277,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5c"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5e"
+      },
+      "name": "Zeineb Xenopoulos",
+      "email": "zeineb.xenopoulos.277@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:30:14.736Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 446,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb66"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb68"
+      },
+      "name": "Jihene Zaag",
+      "email": "jihene.zaag@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:30:17.098Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 463,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb70"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb72"
+      },
+      "name": "Hamza Ben Fredj",
+      "email": "hamza.ben.fredj.463@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:30:40.248Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 513,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb7a"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb7c"
+      },
+      "name": "Naoufel Karoui",
+      "email": "naoufel.karoui.513@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:31:03.516Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 553,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8efb"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8efd"
+      },
+      "name": "Ghassen Elloumi",
+      "email": "ghassen.elloumi.553@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:31:28.057Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 700,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb8c"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb8e"
+      },
+      "name": "Elyes Trabelsi",
+      "email": "elyes.trabelsi.700@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:31:51.709Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 734,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb96"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb98"
+      },
+      "name": "Bilel Ben Ali",
+      "email": "bilel.ben.ali.734@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:31:54.129Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 811,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feba0"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feba2"
+      },
+      "name": "Walid Mansouri",
+      "email": "walid.mansouri.811@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:31:57.869Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 857,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7febaa"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7febac"
+      },
+      "name": "Cyrine Sellami",
+      "email": "cyrine.sellami.857@tonentreprise.com",
+      "score": 67.83,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T21:32:01.848Z"
+      },
+      "respondedAt": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:34.409Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T22:28:54.444Z"
+  },
+  "__v": 11
+},
+{
+  "_id": {
+    "$oid": "69ee91d9667e7c26273e2102"
+  },
+  "title": "francais",
+  "description": "grammaire",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "langue",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 5,
+  "latestRecommendationPrompt": "je veux 10 employees pour francais",
+  "status": "IN_PROGRESS",
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 3,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b59786"
+      },
+      "name": "Slim Sellami",
+      "email": "slim.sellami.3@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Jest, Vue.js, React, Angular, TypeScript, Sass, Bootstrap",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 8,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b5978c"
+      },
+      "name": "Hamza Karray",
+      "email": "hamza.karray.8@tonentreprise.com",
+      "jobTitle": "DevOps Engineer",
+      "currentSkills": "Linux, Kubernetes, Git, ELK Stack, Jenkins, Nginx, CI/CD",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 19,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b59792"
+      },
+      "name": "Jawher Slama",
+      "email": "jawher.slama.19@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Pandas, Data Visualization, Computer Vision, Statistics, MLflow, Power BI, Tableau",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 22,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "userId": {
+        "$oid": "69edfea79930ec5e03b59798"
+      },
+      "name": "Lotfi Rouissi",
+      "email": "lotfi.rouissi.22@tonentreprise.com",
+      "jobTitle": "Full Stack Developer",
+      "currentSkills": "Python, HTML, Tailwind CSS, Next.js, Vue.js, Redis, JavaScript",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 27,
+      "employeeId": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "userId": {
+        "$oid": "69edfea79930ec5e03b5979e"
+      },
+      "name": "Rihab Abidi",
+      "email": "rihab.abidi.27@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "PyTorch, Data Analysis, Tableau, TensorFlow, Jupyter, Hadoop, Python",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 34,
+      "employeeId": null,
+      "userId": null,
+      "name": "Amine Letaief",
+      "email": "amine.letaief.34@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Scikit-learn, Computer Vision, A/B Testing, Python, Deep Learning, Machine Learning, MLflow",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 37,
+      "employeeId": null,
+      "userId": null,
+      "name": "Sirine Mhiri",
+      "email": "sirine.mhiri.37@tonentreprise.com",
+      "jobTitle": "Data Scientist",
+      "currentSkills": "Spark, Scikit-learn, A/B Testing, Statistics, PyTorch, NLP, Feature Engineering",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 42,
+      "employeeId": null,
+      "userId": null,
+      "name": "Oumaima Fakhfakh",
+      "email": "oumaima.fakhfakh.42@tonentreprise.com",
+      "jobTitle": "Full Stack Developer",
+      "currentSkills": "MongoDB, Node.js, Django, Git, React, Python, TypeScript",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 48,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ea1"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ea3"
+      },
+      "name": "Manel Chaouachi",
+      "email": "manel.chaouachi@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Angular, JavaScript, PWA, Node.js, Accessibility, Sass, Figma",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 49,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eab"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ead"
+      },
+      "name": "Zied Hammami",
+      "email": "zied.hammami.49@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Sass, Storybook, Node.js, Vue.js, Accessibility, Angular, Jest",
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100%",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ],
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 3,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b59786"
+      },
+      "name": "Slim Sellami",
+      "email": "slim.sellami.3@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:09:46.041Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 8,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b5978c"
+      },
+      "name": "Hamza Karray",
+      "email": "hamza.karray.8@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:09:47.814Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 19,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "userId": {
+        "$oid": "69edfea69930ec5e03b59792"
+      },
+      "name": "Jawher Slama",
+      "email": "jawher.slama.19@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:09:49.569Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 22,
+      "employeeId": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "userId": {
+        "$oid": "69edfea79930ec5e03b59798"
+      },
+      "name": "Lotfi Rouissi",
+      "email": "lotfi.rouissi.22@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:10:13.257Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 27,
+      "employeeId": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "userId": {
+        "$oid": "69edfea79930ec5e03b5979e"
+      },
+      "name": "Rihab Abidi",
+      "email": "rihab.abidi.27@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:10:14.914Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 34,
+      "employeeId": null,
+      "userId": null,
+      "name": "Amine Letaief",
+      "email": "amine.letaief.34@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:10:37.696Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 37,
+      "employeeId": null,
+      "userId": null,
+      "name": "Sirine Mhiri",
+      "email": "sirine.mhiri.37@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:10:39.397Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 42,
+      "employeeId": null,
+      "userId": null,
+      "name": "Oumaima Fakhfakh",
+      "email": "oumaima.fakhfakh.42@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:11:02.061Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 48,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ea1"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ea3"
+      },
+      "name": "Manel Chaouachi",
+      "email": "manel.chaouachi@tonentreprise.com",
+      "score": 41.42,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:11:25.139Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 49,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eab"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8ead"
+      },
+      "name": "Zied Hammami",
+      "email": "zied.hammami.49@tonentreprise.com",
+      "score": 41.42,
+      "status": "ACCEPTED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-26T23:11:47.922Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-26T23:46:06.188Z"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T22:29:45.086Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:46:06.196Z"
+  },
+  "__v": 8
+},
+{
+  "_id": {
+    "$oid": "69ee97cf07040fb43547afe4"
+  },
+  "title": "angular",
+  "description": "frontend",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "frontend",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 5,
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : angular\nDescription : frontend\nType : TRAINING\nCompétences requises : frontend\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "status": "IN_PROGRESS",
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 56,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eb5"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8eb7"
+      },
+      "name": "Hassen Derbel",
+      "email": "hassen.derbel.56@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Next.js, Cypress, HTML, CSS, Tailwind CSS, Accessibility, Node.js",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: angular",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 87,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ebf"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ec1"
+      },
+      "name": "Salma Nasr",
+      "email": "salma.nasr@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Sass, HTML, GraphQL, CSS, Accessibility, Bootstrap, Svelte",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: angular",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 244,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ed3"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ed5"
+      },
+      "name": "Tarek Fehri",
+      "email": "tarek.fehri.244@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Node.js, Bootstrap, Figma, GraphQL, Storybook, Svelte, Vue.js",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: angular",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 251,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8edd"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8edf"
+      },
+      "name": "Thouraya Wassim",
+      "email": "thouraya.wassim@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Cypress, CSS, Webpack, Next.js, Vite, Figma, Web Performance",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: angular",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 277,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5c"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5e"
+      },
+      "name": "Zeineb Xenopoulos",
+      "email": "zeineb.xenopoulos.277@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Svelte, Bootstrap, Web Performance, PWA, React, Figma, REST APIs",
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: angular",
+      "matchedInMongo": false,
+      "autoProvisioned": false
+    }
+  ],
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 56,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8eb5"
+      },
+      "userId": {
+        "$oid": "69ee7364c651a8c229bf8eb7"
+      },
+      "name": "Hassen Derbel",
+      "email": "hassen.derbel.56@tonentreprise.com",
+      "score": 50,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T00:19:58.756Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 87,
+      "employeeId": {
+        "$oid": "69ee7364c651a8c229bf8ebf"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ec1"
+      },
+      "name": "Salma Nasr",
+      "email": "salma.nasr@tonentreprise.com",
+      "score": 50,
+      "status": "ACCEPTED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T00:20:02.226Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T00:21:22.502Z"
+      }
+    },
+    {
+      "csvEmployeeId": 244,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8ed3"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8ed5"
+      },
+      "name": "Tarek Fehri",
+      "email": "tarek.fehri.244@tonentreprise.com",
+      "score": 50,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T00:20:24.903Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 251,
+      "employeeId": {
+        "$oid": "69ee7365c651a8c229bf8edd"
+      },
+      "userId": {
+        "$oid": "69ee7365c651a8c229bf8edf"
+      },
+      "name": "Thouraya Wassim",
+      "email": "thouraya.wassim@tonentreprise.com",
+      "score": 50,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T00:20:26.503Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 277,
+      "employeeId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5c"
+      },
+      "userId": {
+        "$oid": "69ee83dadf9d20ad2e7feb5e"
+      },
+      "name": "Zeineb Xenopoulos",
+      "email": "zeineb.xenopoulos.277@tonentreprise.com",
+      "score": 50,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T00:20:28.031Z"
+      },
+      "respondedAt": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T22:55:11.877Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:21:22.509Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "69efcb3b39984cbdc77404a0"
+  },
+  "title": "full stack js",
+  "description": "Rest api , angular , nest js ",
+  "type": "TRAINING",
+  "category": "TECHNICAL",
+  "requiredSkills": [
+    {
+      "name": "angular",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    },
+    {
+      "name": "nest",
+      "type": "KNOWLEDGE",
+      "desiredLevel": "MEDIUM",
+      "weight": 1
+    }
+  ],
+  "seats": 5,
+  "latestRecommendationPrompt": "Contexte activité :\nTitre : full stack js\nDescription : Rest api , angular , nest js \nType : TRAINING\nCompétences requises : angular, nest\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "status": "IN_PROGRESS",
+  "createdBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "recommendedEmployees": [
+    {
+      "csvEmployeeId": 1736,
+      "employeeId": {
+        "$oid": "69efd44520757cc34580155b"
+      },
+      "userId": {
+        "$oid": "69efd44520757cc34580155e"
+      },
+      "name": "Walid Ferchichi",
+      "email": "walid.ferchichi.1736@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Angular, REST APIs, Node.js, JavaScript, React, CSS, Webpack",
+      "score": 78.58,
+      "reason": "Couverture compétences: 87% · Compatibilité rôle: 100% · Compétences à renforcer: rest api",
+      "matchedInMongo": true,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 2381,
+      "employeeId": {
+        "$oid": "69efd45c20757cc345801570"
+      },
+      "userId": {
+        "$oid": "69efd45c20757cc345801573"
+      },
+      "name": "Ines Derbel",
+      "email": "ines.derbel.2381@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Storybook, Webpack, Angular, JavaScript, TypeScript, Node.js, REST APIs",
+      "score": 78.58,
+      "reason": "Couverture compétences: 87% · Compatibilité rôle: 100% · Compétences à renforcer: rest api",
+      "matchedInMongo": true,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 3041,
+      "employeeId": {
+        "$oid": "69efd47520757cc345801585"
+      },
+      "userId": {
+        "$oid": "69efd47520757cc345801588"
+      },
+      "name": "Oumaima Ben Ali",
+      "email": "oumaima.ben.ali.3041@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "JavaScript, REST APIs, Figma, Bootstrap, Angular, GraphQL, PWA",
+      "score": 78.58,
+      "reason": "Couverture compétences: 87% · Compatibilité rôle: 100% · Compétences à renforcer: rest api",
+      "matchedInMongo": true,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 3463,
+      "employeeId": {
+        "$oid": "69efd48c20757cc34580159a"
+      },
+      "userId": {
+        "$oid": "69efd48c20757cc34580159d"
+      },
+      "name": "Jawher Baccouche",
+      "email": "jawher.baccouche.3463@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "Bootstrap, REST APIs, TypeScript, Angular, JavaScript, Jest, Web Performance",
+      "score": 78.58,
+      "reason": "Couverture compétences: 87% · Compatibilité rôle: 100% · Compétences à renforcer: rest api",
+      "matchedInMongo": true,
+      "autoProvisioned": false
+    },
+    {
+      "csvEmployeeId": 4126,
+      "employeeId": {
+        "$oid": "69efd4a320757cc3458015af"
+      },
+      "userId": {
+        "$oid": "69efd4a320757cc3458015b2"
+      },
+      "name": "Mehdi Guizani",
+      "email": "mehdi.guizani.4126@tonentreprise.com",
+      "jobTitle": "Frontend Developer",
+      "currentSkills": "PWA, Webpack, Angular, REST APIs, Sass, JavaScript, Svelte",
+      "score": 78.58,
+      "reason": "Couverture compétences: 87% · Compatibilité rôle: 100% · Compétences à renforcer: rest api",
+      "matchedInMongo": true,
+      "autoProvisioned": false
+    }
+  ],
+  "selectedEmployees": [
+    {
+      "csvEmployeeId": 1736,
+      "employeeId": {
+        "$oid": "69efd44520757cc34580155b"
+      },
+      "userId": {
+        "$oid": "69efd44520757cc34580155e"
+      },
+      "name": "Walid Ferchichi",
+      "email": "walid.ferchichi.1736@tonentreprise.com",
+      "score": 79,
+      "status": "ACCEPTED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T21:30:54.921Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T21:32:16.171Z"
+      }
+    },
+    {
+      "csvEmployeeId": 2381,
+      "employeeId": {
+        "$oid": "69efd45c20757cc345801570"
+      },
+      "userId": {
+        "$oid": "69efd45c20757cc345801573"
+      },
+      "name": "Ines Derbel",
+      "email": "ines.derbel.2381@tonentreprise.com",
+      "score": 79,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T21:31:17.746Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 3041,
+      "employeeId": {
+        "$oid": "69efd47520757cc345801585"
+      },
+      "userId": {
+        "$oid": "69efd47520757cc345801588"
+      },
+      "name": "Oumaima Ben Ali",
+      "email": "oumaima.ben.ali.3041@tonentreprise.com",
+      "score": 79,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T21:31:19.432Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 3463,
+      "employeeId": {
+        "$oid": "69efd48c20757cc34580159a"
+      },
+      "userId": {
+        "$oid": "69efd48c20757cc34580159d"
+      },
+      "name": "Jawher Baccouche",
+      "email": "jawher.baccouche.3463@tonentreprise.com",
+      "score": 79,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T21:31:42.019Z"
+      },
+      "respondedAt": null
+    },
+    {
+      "csvEmployeeId": 4126,
+      "employeeId": {
+        "$oid": "69efd4a320757cc3458015af"
+      },
+      "userId": {
+        "$oid": "69efd4a320757cc3458015b2"
+      },
+      "name": "Mehdi Guizani",
+      "email": "mehdi.guizani.4126@tonentreprise.com",
+      "score": 79,
+      "status": "ASSIGNED",
+      "justification": "",
+      "selectedAt": {
+        "$date": "2026-04-27T21:31:43.471Z"
+      },
+      "respondedAt": null
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T20:46:51.410Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:32:16.180Z"
+  },
+  "__v": 7
+}]

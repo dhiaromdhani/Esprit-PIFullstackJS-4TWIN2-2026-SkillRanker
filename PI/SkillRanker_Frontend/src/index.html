@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontendv2</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Clash+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!--! END: Favicon-->
+    <!--! BEGIN: Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <!--! END: Bootstrap CSS-->
+    <!--! BEGIN: Vendors CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/vendors.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/css/daterangepicker.min.css" />
+    <!--! END: Vendors CSS-->
+    <!--! BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+</head>
+<body>
+  <app-root></app-root>
+   <script src="assets/vendors/js/vendors.min.js"></script>
+    <!-- vendors.min.js {always must need to be top} -->
+    <script src="assets/vendors/js/daterangepicker.min.js"></script>
+    <script src="assets/vendors/js/apexcharts.min.js"></script>
+    <script src="assets/vendors/js/circle-progress.min.js"></script>
+    <!--! END: Vendors JS !-->
+    <!--! BEGIN: Apps Init  !-->
+    <script src="assets/js/common-init.min.js"></script>
+    <script src="assets/js/dashboard-init.min.js"></script>
+    <!--! END: Apps Init !-->
+    <!--! BEGIN: Theme Customizer  !-->
+    <script src="assets/js/theme-customizer-init.min.js"></script>
+    <script>
+const OPENROUTER_API_KEY = environment.openRouterApiKey;
+const MODEL = "openrouter/free";
+const chatHistory = [];
+
+function toggleChat() {
+  const win = document.getElementById('chat-window');
+  win.style.display = win.style.display === 'none' ? 'flex' : 'none';
+  if (win.style.display === 'flex') document.getElementById('chat-input').focus();
+}
+
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('chat-input') === document.activeElement && e.key === 'Enter') sendChat();
+});
+
+function addMsg(text, cls) {
+  const box = document.getElementById('chat-box');
+  const d = document.createElement('div');
+  d.className = cls; d.textContent = text;
+  box.appendChild(d); box.scrollTop = box.scrollHeight;
+  return d;
+}
+
+async function sendChat() {
+  const input = document.getElementById('chat-input');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = '';
+  document.getElementById('chat-send').disabled = true;
+  addMsg(text, 'user-msg');
+  chatHistory.push({ role: 'user', content: text });
+  const typing = addMsg('...', 'typing');
+  try {
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + OPENROUTER_API_KEY },
+      body: JSON.stringify({ model: MODEL, messages: chatHistory })
+    });
+    const data = await res.json();
+    typing.remove();
+    const reply = data.error ? 'Error: ' + data.error.message : data.choices[0].message.content;
+    if (!data.error) chatHistory.push({ role: 'assistant', content: reply });
+    addMsg(reply, data.error ? 'error-msg' : 'bot-msg');
+  } catch(e) { typing.remove(); addMsg('Network error', 'error-msg'); }
+  document.getElementById('chat-send').disabled = false;
+}
+</script>
+</body>
+</html>

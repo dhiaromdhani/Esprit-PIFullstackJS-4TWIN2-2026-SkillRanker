@@ -1,0 +1,426 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container chat-rec-page">
+  <div class="nxl-content">
+    <div class="chat-rec-wrap">
+      <header class="chat-rec-hero">
+        <div class="chat-rec-hero__row">
+          <div class="chat-rec-hero__intro">
+            <p class="chat-rec-eyebrow">AI matching</p>
+            <h1 class="chat-rec-title">Conversational recommendations</h1>
+            <p class="chat-rec-lead">
+              Same intelligence family as Smart recommendations: describe an existing activity, choose the number of employees, get ranked profiles, then confirm and notify them.
+            </p>
+          </div>
+          <div class="chat-rec-hero__links">
+            <a routerLink="/recommondation" class="chat-rec-link">
+              <i class="feather-grid" aria-hidden="true"></i>
+              <span>Table view</span>
+            </a>
+            <a *ngIf="showProfileLink" routerLink="/profile" class="chat-rec-link" title="Modifier vos informations">
+              <i class="feather-user" aria-hidden="true"></i>
+              <span>Mon profil</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="chat-rec-panel">
+        <div class="chat-rec-shell">
+          <aside class="sidebar" aria-label="Historique des analyses">
+            <div class="sb-top">
+              <div class="brand">
+                <img src="assets/images/logo/skillranker.png" alt="" class="brand-logo" width="36" height="36" />
+                <span class="brand-text">SkillRanker <span class="brand-muted">· Chat</span></span>
+              </div>
+              <button type="button" class="new-btn" (click)="startNewAnalysis()">
+                <i class="feather-plus" aria-hidden="true"></i>
+                <span>New analysis</span>
+              </button>
+            </div>
+
+            <div class="section-label">History</div>
+            <div class="search-wrap">
+              <i class="feather-search search-ico" aria-hidden="true"></i>
+              <input
+                class="search-inp"
+                type="search"
+                [(ngModel)]="historySearchTerm"
+                placeholder="Search sessions…"
+                aria-label="Search in history"
+              />
+            </div>
+
+            <div class="hist-scroll">
+              @if (filteredHistoryEntries.length > 0) {
+                <ul class="history-list">
+                  @for (entry of filteredHistoryEntries; track trackByHistoryId($index, entry)) {
+                    <li>
+                      <button type="button" class="hist-item" (click)="restoreHistory(entry)">
+                        <span class="hist-title-text">{{ entry.title }}</span>
+                        <div class="hist-meta">
+                          <span>{{ entry.messageCount }} msgs</span>
+                          <span>{{ entry.savedAt | date:'short' }}</span>
+                        </div>
+                      </button>
+                    </li>
+                  }
+                </ul>
+              } @else if (historyEntries.length > 0) {
+                <p class="hist-empty">No results for this search.</p>
+              } @else {
+                <p class="hist-empty">No saved conversations yet.</p>
+              }
+            </div>
+          </aside>
+
+          <div class="chat-pane">
+            <header class="chat-header">
+              <div class="chat-header-left">
+                <span class="status-dot" aria-hidden="true"></span>
+                <h2 class="chat-title">Assistant</h2>
+                <span class="model-v2-badge" [attr.title]="modelV2Hint + ' — ' + flaskApiBaseUrl">Model v2</span>
+                <span class="vocal-indicator" *ngIf="vocalService.isSpeaking()" title="Playing audio">🔊</span>
+              </div>
+              <div class="chat-header-right">
+                <span class="status-label">Ready</span>
+                <span class="api-endpoint" [title]="flaskApiBaseUrl">{{ flaskApiBaseUrl }}</span>
+              </div>
+            </header>
+
+            <section #messagesSection class="messages" aria-live="polite">
+              <div class="messages-date-separator" aria-hidden="true">Aujourd'hui</div>
+
+              @for (message of messages; track trackByIndex($index)) {
+                <article class="msg-row" [class.user]="message.role === 'user'">
+                  <div class="avatar"
+                    [class.av-ai]="message.role === 'assistant'"
+                    [class.av-user]="message.role === 'user'">
+                    {{ message.role === 'assistant' ? 'AI' : 'You' }}
+                  </div>
+
+                  <div class="bubble"
+                    [class.ai]="message.role === 'assistant'"
+                    [class.user]="message.role === 'user'">
+                    <p class="bubble-text">{{ message.content }}</p>
+
+                    @if (message.role === 'assistant') {
+                      <button
+                        type="button"
+                        class="speak-btn"
+                        (click)="speakMessage(message.content)"
+                        title="Read aloud"
+                        aria-label="Read message aloud"
+                      >
+                        🔊
+                      </button>
+                    }
+
+                    @if (message.analysis) {
+                      <div class="analysis-block">
+
+                        <div class="badge-counts">
+                          <span class="cnt-badge">Requested: {{ message.analysis.requested_count }}</span>
+                          <span class="cnt-badge success">Returned: {{ message.analysis.returned_count }}</span>
+                        </div>
+
+                        @if (message.analysis.activity) {
+                          <div class="ai-card summary-card">
+                            <div class="ai-card-label">Matched MongoDB activity</div>
+                            <p class="ai-card-text">
+                              <strong>{{ message.analysis.activity.title }}</strong>
+                              @if (message.analysis.activity.description) {
+                                <span> — {{ message.analysis.activity.description }}</span>
+                              }
+                            </p>
+                            <p class="ai-card-text">
+                              {{ message.analysis.activity.type }} • {{ message.analysis.activity.category }}
+                            </p>
+                          </div>
+                        }
+
+                        @if (message.analysis.requirement_summary) {
+                          <div class="ai-card summary-card">
+                            <div class="ai-card-label">Votre besoin</div>
+                            <p class="ai-card-text">{{ message.analysis.requirement_summary }}</p>
+                          </div>
+                        }
+
+                        @if (message.analysis.target_skills.length > 0 || message.analysis.target_roles.length > 0) {
+                          <div class="chips-section">
+                            <span class="chips-label">Skills & roles</span>
+                            <div class="chips-row">
+                              @for (skill of message.analysis.target_skills; track skill) {
+                                <span class="chip skill">{{ skill }}</span>
+                              }
+                              @for (role of message.analysis.target_roles; track role) {
+                                <span class="chip role">{{ role }}</span>
+                              }
+                            </div>
+                          </div>
+                        }
+
+                        @if (message.analysis.activity?.requiredSkills; as requiredSkills) {
+                          @if (requiredSkills.length > 0) {
+                            <div class="chips-section">
+                              <span class="chips-label">Required skills from activity</span>
+                              <div class="chips-row">
+                                @for (skill of requiredSkills; track trackByIndex($index)) {
+                                  <span class="chip skill">{{ skill.name }}</span>
+                                }
+                              </div>
+                            </div>
+                          }
+                        }
+
+                        @if (message.analysis.skill_analysis) {
+                          <div class="ai-card insight-card">
+                            <div class="ai-card-label">Skill analysis</div>
+                            <p class="ai-card-text">{{ message.analysis.skill_analysis }}</p>
+                          </div>
+                        }
+
+                        @if (message.analysis.ai_justification) {
+                          <p class="justification">{{ message.analysis.ai_justification }}</p>
+                        }
+
+                        @if (message.analysis.recommendation_summary) {
+                          <div class="ai-card rec-card">
+                            <div class="ai-card-label">Recommandation</div>
+                            <p class="ai-card-text">{{ message.analysis.recommendation_summary }}</p>
+                          </div>
+                        }
+
+                        <div class="employees-block">
+                          <div class="employees-header">
+                            <span class="employees-title">Profils recommandés</span>
+                            <span class="employees-count">{{ message.analysis.employees.length }} profile(s)</span>
+                          </div>
+
+                          @if (message.analysis.employees.length > 1) {
+                            <p class="employees-scroll-hint">Faites défiler pour voir tous les profils</p>
+                          }
+
+                          <div
+                            class="employees-scroll"
+                            tabindex="0"
+                            role="region"
+                            aria-label="Liste des profils recommandés"
+                          >
+                            <ul class="employees-list">
+                              @for (employee of message.analysis.employees; track employee.id) {
+                                <li class="emp-item">
+                                  <div class="emp-avatar">{{ employee.name | slice:0:1 }}</div>
+                                  <div class="emp-body">
+                                    <div class="emp-top-row">
+                                      <span class="emp-name">{{ employee.name }}</span>
+                                      <span class="score-badge"
+                                        [class.score-high]="employee.score >= 90"
+                                        [class.score-mid]="employee.score >= 70 && employee.score < 90"
+                                        [class.score-low]="employee.score < 70">
+                                        Score {{ employee.score }}
+                                      </span>
+                                    </div>
+
+                                    <p class="emp-role">{{ employee.jobTitle }}</p>
+
+                                    @if (employee.email) {
+                                      <p class="emp-role">{{ employee.email }}</p>
+                                    }
+
+                                    @if (employee.missing_skills.length > 0) {
+                                      <div class="emp-missing">
+                                        <span class="emp-missing-label">To strengthen</span>
+                                        <div class="emp-missing-chips">
+                                          @for (skill of employee.missing_skills; track skill) {
+                                            <span class="chip-missing">{{ skill }}</span>
+                                          }
+                                        </div>
+                                      </div>
+                                    } @else {
+                                      <p class="emp-complete">✓ Strong fit for this need</p>
+                                    }
+                                  </div>
+                                </li>
+                              }
+                            </ul>
+                          </div>
+
+                          @if (showChatConfirmButton) {
+                            <div class="confirm-rh-block">
+                              @if (confirmMsgMap[$index]) {
+                                <div class="confirm-success-banner">
+                                  {{ confirmMsgMap[$index] }}
+                                </div>
+                              }
+
+                              @if (confirmErrMap[$index]) {
+                                <div class="confirm-error-banner">
+                                  {{ confirmErrMap[$index] }}
+                                </div>
+                              }
+
+                              <button
+                                type="button"
+                                class="confirm-rh-btn"
+                                [class.confirm-rh-btn--done]="confirmedMap[$index]"
+                                [disabled]="confirmingMap[$index] || confirmedMap[$index]"
+                                (click)="confirmAnalysis(message.analysis!, $index)"
+                              >
+                                @if (confirmingMap[$index]) {
+                                  <span class="confirm-spinner"></span>
+                                  <span>Envoi en cours…</span>
+                                } @else if (confirmedMap[$index]) {
+                                  <span>✔ Confirmé — employés notifiés</span>
+                                } @else {
+                                  <span>✅ Confirmer et notifier les employés</span>
+                                }
+                              </button>
+                            </div>
+                          }
+                        </div>
+                      </div>
+                    }
+                  </div>
+                </article>
+              }
+
+              @if (isLoading) {
+                <article class="msg-row">
+                  <div class="avatar av-ai">AI</div>
+                  <div class="bubble ai loading-bubble">
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                  </div>
+                </article>
+              }
+            </section>
+
+            <footer class="composer">
+              <div class="voice-toolbar">
+                <button type="button" class="tool-btn" [class.mic-on]="isListening"
+                  (click)="toggleVoiceInput()" [disabled]="!voiceSupported">
+                  {{ isListening ? '🎙 Stop' : '🎙 Mic' }}
+                </button>
+                <button type="button" class="tool-btn stop-btn"
+                  (click)="stopVoiceInput()" [disabled]="!isListening">Stop</button>
+                <label class="lang-label" for="voiceLang">Language</label>
+                <select id="voiceLang" class="lang-select"
+                  [ngModel]="voiceLanguage" (ngModelChange)="onVoiceLanguageChange($event)"
+                  [disabled]="isListening || !voiceSupported">
+                  <option value="fr-FR">Français</option>
+                  <option value="en-US">English</option>
+                </select>
+                <span class="voice-state"
+                  [class.listening]="voiceStatusTone === 'listening'"
+                  [class.muted]="voiceStatusTone === 'muted'"
+                  [class.warn]="voiceStatusTone === 'warn'"
+                  [class.error]="voiceStatusTone === 'error'">
+                  {{ voiceStatusText }}
+                </span>
+              </div>
+
+              <details class="voice-diagnostics">
+                <summary class="voice-diag-summary">
+                  Voice diagnostics
+                  <span class="voice-diag-badge" [class.active]="isListening">
+                    {{ isListening ? 'ON' : 'OFF' }}
+                  </span>
+                </summary>
+                <div class="voice-diag-body">
+                  <p class="voice-preview" *ngIf="liveTranscript; else noLive">Live: {{ liveTranscript }}</p>
+                  <ng-template #noLive><p class="voice-preview muted">No live transcript.</p></ng-template>
+                  <p class="voice-preview">Prompt: {{ promptInput || 'empty' }}</p>
+                  @if (!isListening && !liveTranscript && !promptInput && voiceStatusTone === 'error') {
+                    <p class="voice-preview warn">Try Chrome/Edge with microphone allowed.</p>
+                  }
+                  @if (voiceEventLog.length > 0) {
+                    <ul class="voice-events">
+                      @for (item of voiceEventLog; track item) { <li>{{ item }}</li> }
+                    </ul>
+                  }
+                </div>
+              </details>
+
+              <p class="voice-tip">Allow the microphone in the browser; transcript is merged into the prompt when you stop.</p>
+
+              <div class="prompt-tools">
+                <input #documentInput type="file"
+                  accept=".txt,.csv,.json,.md,.log,.png,.jpg,.jpeg,.webp,.tif,.tiff,text/plain,text/csv,application/json,image/png,image/jpeg,image/webp,image/tiff"
+                  (change)="onDocumentSelected($event)" hidden />
+                <button type="button" class="tool-btn"
+                  (click)="triggerDocumentPicker(documentInput)" [disabled]="isLoading">
+                  📎 Attach file
+                </button>
+                @if (selectedDocumentName) {
+                  <div class="attached-pill">
+                    <span class="attached-pill-name">{{ selectedDocumentName }}</span>
+                    <button type="button" (click)="clearAttachedDocument()" [disabled]="isLoading">✕</button>
+                  </div>
+                }
+              </div>
+
+              <div class="textarea-wrap">
+                <textarea
+                  #promptTextarea
+                  [(ngModel)]="promptInput"
+                  (ngModelChange)="onPromptInputChange($event)"
+                  (keydown)="onPromptKeyDown($event)"
+                  placeholder="Exemple: je veux 10 employees pour l'activité react"
+                  [disabled]="isLoading"
+                ></textarea>
+
+                @if (autoCompletions.length > 0) {
+                  <div class="autocomplete-panel">
+                    <p class="ac-label">
+                      Suggestions
+                      @if (suggestionLoading) { <span class="ac-loading">…</span> }
+                      <span class="ac-hint">Tab to apply</span>
+                    </p>
+                    @for (completion of autoCompletions; track trackByValue($index, completion)) {
+                      <button type="button" class="ac-option"
+                        [class.selected]="$index === selectedCompletionIndex"
+                        (click)="applyCompletion(completion)">
+                        {{ completion }}
+                      </button>
+                    }
+                  </div>
+                }
+              </div>
+
+              @if (voiceError) { <p class="err-msg">⚠ {{ voiceError }}</p> }
+              @if (documentError) { <p class="doc-note">{{ documentError }}</p> }
+
+              @if (suggestedPrompt || promptSuggestions.length > 0) {
+                <div class="live-helper">
+                  @if (suggestedPrompt) {
+                    <p class="helper-label">Suggested prompt</p>
+                    <p class="helper-prompt">{{ suggestedPrompt }}</p>
+                  }
+                  @for (hint of promptSuggestions; track hint) {
+                    <p class="helper-hint">→ {{ hint }}</p>
+                  }
+                </div>
+              }
+
+              <div class="composer-actions">
+                <button type="button" class="btn-ghost"
+                  (click)="optimizeOnly()" [disabled]="isLoading || !promptInput.trim()">
+                  Optimize
+                </button>
+                <button type="button" class="btn-send"
+                  (click)="sendPrompt()"
+                  [disabled]="isLoading || (!promptInput.trim() && !selectedDocumentName.trim() && !selectedDocumentContent.trim() && !selectedDocumentBase64.trim())">
+                  <i class="feather-send" aria-hidden="true"></i>
+                  Send
+                </button>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

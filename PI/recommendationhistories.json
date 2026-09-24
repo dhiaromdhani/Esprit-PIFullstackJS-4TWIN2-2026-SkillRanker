@@ -1,0 +1,2493 @@
+[{
+  "_id": {
+    "$oid": "69dea9e264914a49e3d9a56a"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": null,
+  "notes": "ML recommendation for \"formation python \" — prompt: \"machine learning\"",
+  "decisionDate": {
+    "$date": "2026-04-14T20:56:02.267Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e52f1899cc80afa57582e6"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": null,
+  "notes": "ML recommendation for \"formation python \" — prompt: \"machine learning\"",
+  "decisionDate": {
+    "$date": "2026-04-19T19:38:00.158Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e539e17f4ab2c63f5cb6b0"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": null,
+  "notes": "ML recommendation for \"devops\" — prompt: \"pipeline CI/Cd docker\"",
+  "decisionDate": {
+    "$date": "2026-04-19T20:24:01.945Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69e53ca59f78160294d0d28b"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": null,
+  "notes": "ML recommendation for \"devops\" — prompt: \"pipeline CI/Cd docker\"",
+  "decisionDate": {
+    "$date": "2026-04-19T20:35:49.104Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed36e7fe24a7ad31cef9c7"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T21:49:27.824Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3708fe24a7ad31cef9e0"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T21:50:00.583Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed373bfe24a7ad31cef9f9"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T21:50:51.255Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3758fe24a7ad31cefa14"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T21:51:20.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3b28a028c11d0a4a19c3"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ed3b28a028c11d0a4a19c4"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ed3b28a028c11d0a4a19c5"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ed3b28a028c11d0a4a19c6"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ed3b28a028c11d0a4a19c7"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ed3b28a028c11d0a4a19c8"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T22:07:36.493Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ed3fa735cc27db077fb96c"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ed3fa735cc27db077fb96d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ed3fa735cc27db077fb96e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ed3fa735cc27db077fb96f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ed3fa735cc27db077fb970"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-25T22:26:47.267Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfc410c8bcf4720107bb5"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69edfc410c8bcf4720107bb6"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69edfc410c8bcf4720107bb7"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69edfc410c8bcf4720107bb8"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69edfc410c8bcf4720107bb9"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69edfc410c8bcf4720107bba"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : devops\nDescription : pipeline CI/Cd\nType : TRAINING\nCompétences requises : docker\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T11:51:29.582Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edfea79930ec5e03b597a2"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69edfea79930ec5e03b597a3"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69edfea79930ec5e03b597a4"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69edfea79930ec5e03b597a5"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69edfea79930ec5e03b597a6"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69edfea79930ec5e03b597a7"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T12:01:43.781Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69edff159930ec5e03b597ea"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69edff159930ec5e03b597eb"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69edff159930ec5e03b597ec"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69edff159930ec5e03b597ed"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69edff159930ec5e03b597ee"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T12:03:33.461Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee03479930ec5e03b59836"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee03479930ec5e03b59837"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee03479930ec5e03b59838"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee03479930ec5e03b59839"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee03479930ec5e03b5983a"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T12:21:27.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee059f9930ec5e03b5988f"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee059f9930ec5e03b59890"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee059f9930ec5e03b59891"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee059f9930ec5e03b59892"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee059f9930ec5e03b59893"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T12:31:27.221Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee116a8b788a6d4f2378cc"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee116a8b788a6d4f2378cd"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee116a8b788a6d4f2378ce"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee116a8b788a6d4f2378cf"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee116a8b788a6d4f2378d0"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee116a8b788a6d4f2378d1"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:21:46.471Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee118f8b788a6d4f2378e8"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee118f8b788a6d4f2378e9"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee118f8b788a6d4f2378ea"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee118f8b788a6d4f2378eb"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee118f8b788a6d4f2378ec"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:22:23.125Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee124a8b788a6d4f23792d"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee124a8b788a6d4f23792e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee124a8b788a6d4f23792f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee124a8b788a6d4f237930"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee124a8b788a6d4f237931"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:25:30.950Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee12928b788a6d4f237949"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee12928b788a6d4f23794a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee12928b788a6d4f23794b"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee12928b788a6d4f23794c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee12928b788a6d4f23794d"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:26:42.768Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee14f5ae898e5bba3f4b59"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee14f5ae898e5bba3f4b5a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee14f5ae898e5bba3f4b5b"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee14f5ae898e5bba3f4b5c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee14f5ae898e5bba3f4b5d"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:36:53.718Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1756b1bdb5e916937adc"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1756b1bdb5e916937add"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1756b1bdb5e916937ade"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1756b1bdb5e916937adf"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1756b1bdb5e916937ae0"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:47:02.039Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee18b2117de61b7bef80c1"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee18b2117de61b7bef80c2"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee18b2117de61b7bef80c3"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee18b2117de61b7bef80c4"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee18b2117de61b7bef80c5"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:52:50.059Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1935117de61b7bef8141"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1935117de61b7bef8142"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1935117de61b7bef8143"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1935117de61b7bef8144"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1935117de61b7bef8145"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T13:55:01.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1c71117de61b7bef81ec"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee1c71117de61b7bef81ed"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a199f"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee1c71117de61b7bef81ee"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19a9"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee1c71117de61b7bef81ef"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a19b3"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee1c71117de61b7bef81f0"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3b28a028c11d0a4a19bd"
+      },
+      "score": 41.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee1c71117de61b7bef81f1"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : Aucune\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:08:49.472Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1e69117de61b7bef839e"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1e69117de61b7bef839f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1e69117de61b7bef83a0"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1e69117de61b7bef83a1"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee1e69117de61b7bef83a2"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:17:13.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1ed3117de61b7bef8404"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee1ed3117de61b7bef8405"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee1ed3117de61b7bef8406"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee1ed3117de61b7bef8407"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee1ed3117de61b7bef8408"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee1ed3117de61b7bef8409"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : devops\nDescription : pipeline CI/Cd\nType : TRAINING\nCompétences requises : docker\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:18:59.796Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef844d"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f10117de61b7bef844e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f10117de61b7bef844f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f10117de61b7bef8450"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f10117de61b7bef8451"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f10117de61b7bef8452"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python ,AI\nDescription : AI \nType : TRAINING\nCompétences requises : Python\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:20:00.890Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1f6d117de61b7bef846b"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f6d117de61b7bef846c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f6d117de61b7bef846d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f6d117de61b7bef846e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f6d117de61b7bef846f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1f6d117de61b7bef8470"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python\nDescription : Python\nType : TRAINING\nCompétences requises : Python\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:21:33.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef851c"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef851d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef851e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef851f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8520"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8521"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef848d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8522"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef8497"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8523"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84a1"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8524"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84ab"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8525"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84b5"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8526"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84bf"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8527"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84c9"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8528"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84d3"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8529"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84dd"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84e7"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852b"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84f1"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84fb"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef8505"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84fb"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef852f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef8516"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1fa8117de61b7bef8530"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python\nDescription : Python\nType : TRAINING\nCompétences requises : Python\nNombre de places : 20\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:22:32.654Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1ff6117de61b7bef8589"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858b"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef848d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef858f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef8497"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8590"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84a1"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8591"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84ab"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8592"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84b5"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8593"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84bf"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8594"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84c9"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8595"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84d3"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8596"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84dd"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8597"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84e7"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8598"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84f1"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef8599"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84fb"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef859a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef8505"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef859b"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef84fb"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef859c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa8117de61b7bef8516"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee1ff6117de61b7bef859d"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python\nDescription : Python\nType : TRAINING\nCompétences requises : Python\nNombre de places : 20\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:23:50.201Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee203d117de61b7bef85c0"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee203d117de61b7bef85c1"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee203d117de61b7bef85c2"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee203d117de61b7bef85c3"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee203d117de61b7bef85c4"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee203d117de61b7bef85c5"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python\nDescription : Python\nType : TRAINING\nCompétences requises : Python\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T14:25:01.202Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee6aff9fb99896dd56e607"
+  },
+  "activity": {
+    "$oid": "69cceb939a42bd5e35c8ea97"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3fa535cc27db077fb948"
+      },
+      "score": 76.73,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee6aff9fb99896dd56e608"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb952"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee6aff9fb99896dd56e609"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb95c"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee6aff9fb99896dd56e60a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ed3fa635cc27db077fb966"
+      },
+      "score": 75.3,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: machine learning",
+      "_id": {
+        "$oid": "69ee6aff9fb99896dd56e60b"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : python \nDescription : machine learning\nType : TRAINING\nCompétences requises : python\nNombre de places : 4\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T19:43:59.805Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee6b9d9fb99896dd56e6ad"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee6b9d9fb99896dd56e6ae"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee6b9d9fb99896dd56e6af"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee6b9d9fb99896dd56e6b0"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee6b9d9fb99896dd56e6b1"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee6b9d9fb99896dd56e6b2"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : devops\nDescription : pipeline CI/Cd\nType : TRAINING\nCompétences requises : docker\nNombre de places : 5\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T19:46:37.386Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8f01"
+  },
+  "activity": {
+    "$oid": "69ee7356c651a8c229bf8e90"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee7364c651a8c229bf8ea1"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f02"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7364c651a8c229bf8eab"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f03"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7364c651a8c229bf8eb5"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f04"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7364c651a8c229bf8ebf"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f05"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8ec9"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f06"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8ed3"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f07"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8edd"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f08"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8ee7"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f09"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8ef1"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f0a"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8efb"
+      },
+      "score": 50.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: react",
+      "_id": {
+        "$oid": "69ee7365c651a8c229bf8f0b"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : react\nDescription : frontend\nType : TRAINING\nCompétences requises : bootstrap\nNombre de places : 10\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T20:19:49.520Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7febb0"
+  },
+  "activity": {
+    "$oid": "69ee7356c651a8c229bf8e90"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ed3b27a028c11d0a4a1995"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb1"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb5c"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb2"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb66"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb3"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb70"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb4"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb7a"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb5"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee7365c651a8c229bf8efb"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb6"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb8c"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb7"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feb96"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb8"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7feba0"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febb9"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee83dadf9d20ad2e7febaa"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: spring boot",
+      "_id": {
+        "$oid": "69ee83dadf9d20ad2e7febba"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Formation specialisee en spring boot pour frontend, top 10 employees",
+  "decisionDate": {
+    "$date": "2026-04-26T21:30:02.841Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee884fbc09f169aa84f104"
+  },
+  "activity": {
+    "$oid": "69e5343a976aa54781663e1e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69edfc3f0c8bcf4720107b87"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee884fbc09f169aa84f105"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b91"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee884fbc09f169aa84f106"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107b9b"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee884fbc09f169aa84f107"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc400c8bcf4720107ba5"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee884fbc09f169aa84f108"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69edfc410c8bcf4720107baf"
+      },
+      "score": 67.83,
+      "reason": "Couverture compétences: 50% · Compatibilité rôle: 100% · Compétences à renforcer: ci cd",
+      "_id": {
+        "$oid": "69ee884fbc09f169aa84f109"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Formation specialisee pour devops, top 10 employees",
+  "decisionDate": {
+    "$date": "2026-04-26T21:49:03.348Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee88efbc09f169aa84f15b"
+  },
+  "activity": {
+    "$oid": "69ee1f01117de61b7bef840e"
+  },
+  "recommendedEmployees": [
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef841f"
+      },
+      "score": 56.42,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f15c"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8429"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f15d"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8433"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f15e"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef843d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f15f"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1f10117de61b7bef8447"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f160"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef848d"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f161"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef8497"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f162"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84a1"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f163"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84ab"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f164"
+      }
+    },
+    {
+      "employee": {
+        "$oid": "69ee1fa7117de61b7bef84b5"
+      },
+      "score": 55.17,
+      "reason": "Couverture compétences: 0% · Compatibilité rôle: 100% · Compétences à renforcer: python",
+      "_id": {
+        "$oid": "69ee88efbc09f169aa84f165"
+      }
+    }
+  ],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Merci de proposer top 10 employees avec priorite sur python",
+  "decisionDate": {
+    "$date": "2026-04-26T21:51:43.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee89c2bc09f169aa84f279"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : java\nNombre de places : 20\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T21:55:14.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee8ce87492439c8f7898b7"
+  },
+  "activity": {
+    "$oid": "69a7e86a5c103477b4fe731a"
+  },
+  "recommendedEmployees": [],
+  "selectedEmployees": [],
+  "decisionBy": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "notes": "Prompt RH: Contexte activité :\nTitre : spring\nDescription : spring\nType : TRAINING\nCompétences requises : java\nNombre de places : 20\n\nInstructions RH :\nJe veux les employés les plus adaptés à cette activité.",
+  "decisionDate": {
+    "$date": "2026-04-26T22:08:40.663Z"
+  },
+  "__v": 0
+}]

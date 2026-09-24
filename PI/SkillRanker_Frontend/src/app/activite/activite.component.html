@@ -1,0 +1,497 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+    <div class="container-fluid py-4 px-4">
+
+      <!-- HEADER -->
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+        <div>
+          <p class="text-muted text-uppercase fw-semibold mb-1"
+             style="font-size:.72rem;letter-spacing:.15em">
+            Gestion des activités
+          </p>
+          <h1 class="fw-bold mb-0" style="font-size:2rem;letter-spacing:-.02em">
+            Activités
+            <span class="badge bg-dark ms-2"
+                  style="font-size:.75rem;vertical-align:middle;border-radius:100px">
+              {{ filteredActivities.length }}
+            </span>
+          </h1>
+        </div>
+        <button class="btn btn-danger d-flex align-items-center gap-2 fw-semibold px-4"
+                style="border-radius:12px" (click)="openModal()">
+          <span class="fs-5 lh-1">+</span> Nouvelle activité
+        </button>
+      </div>
+
+      <!-- FILTRES -->
+      <div class="row g-2 mb-4">
+        <div class="col-md-3">
+          <input type="text" class="form-control" placeholder="Rechercher par titre, description..."
+                 [(ngModel)]="searchText" (ngModelChange)="applySearch()"
+                 style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+        </div>
+        <div class="col-md-2">
+          <select class="form-select" [(ngModel)]="filterType" (change)="onFilterChange()"
+                  style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+            <option value="">Tous les types</option>
+            <option *ngFor="let t of types" [value]="t.value">{{ t.label }}</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <select class="form-select" [(ngModel)]="filterCategory" (change)="onFilterChange()"
+                  style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+            <option value="">Toutes catégories</option>
+            <option *ngFor="let c of categories" [value]="c.value">{{ c.label }}</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <select class="form-select" [(ngModel)]="filterStatus" (change)="onFilterChange()"
+                  style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+            <option value="">Tous statuts</option>
+            <option *ngFor="let s of statuses" [value]="s.value">{{ s.label }}</option>
+          </select>
+        </div>
+        <div class="col-md-3 d-flex align-items-center">
+          <button class="btn btn-outline-secondary btn-sm"
+                  style="border-radius:8px" (click)="clearFilters()">
+            Réinitialiser
+          </button>
+        </div>
+      </div>
+
+      <!-- EMPTY STATE -->
+      <div class="text-center py-5 my-4" *ngIf="filteredActivities.length === 0">
+        <div class="mb-3" style="font-size:3rem;opacity:.3">📋</div>
+        <p class="text-muted fw-semibold fs-6">Aucune activité trouvée</p>
+        <button class="btn btn-outline-danger mt-2"
+                style="border-radius:10px" (click)="openModal()">
+          Ajouter une activité
+        </button>
+      </div>
+
+      <!-- CARDS GRID -->
+      <div class="row g-3" *ngIf="filteredActivities.length > 0">
+        <div class="col-md-6 col-lg-4" *ngFor="let act of filteredActivities">
+          <div class="card h-100 border shadow-sm"
+               style="border-radius:16px; border-color:#e8e3da !important; transition:all .25s ease; cursor:pointer"
+               (click)="viewDetail(act._id!)">
+
+            <!-- Top bar color by type -->
+            <div style="height:4px; border-radius:16px 16px 0 0"
+                 [ngStyle]="{'background':
+                   act.type === 'TRAINING'      ? 'linear-gradient(90deg,#dc3545,#f08070)' :
+                   act.type === 'CERTIFICATION' ? 'linear-gradient(90deg,#0d6efd,#6ea8fe)' :
+                   act.type === 'PROJECT'       ? 'linear-gradient(90deg,#198754,#75b798)' :
+                   act.type === 'MISSION'       ? 'linear-gradient(90deg,#ffc107,#ffda6a)' :
+                                                  'linear-gradient(90deg,#6f42c1,#a370f7)'}">
+            </div>
+
+            <div class="card-body p-4">
+              <!-- Type + Status -->
+              <div class="d-flex align-items-center justify-content-between mb-2">
+                <span class="badge rounded-pill text-muted fw-normal"
+                      style="background:#f0ece4; font-size:.7rem">
+                  {{ getTypeLabel(act.type) }}
+                </span>
+                <span class="badge rounded-pill"
+                      [ngClass]="'bg-' + getStatusColor(act.status)"
+                      style="font-size:.68rem">
+                  {{ getStatusLabel(act.status) }}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <h5 class="fw-bold mb-2" style="letter-spacing:-.01em; line-height:1.2">
+                {{ act.title }}
+              </h5>
+
+              <!-- Description -->
+              <p class="text-muted fst-italic mb-3"
+                 style="font-size:.85rem; line-height:1.6;
+                        display:-webkit-box; -webkit-line-clamp:2;
+                        -webkit-box-orient:vertical; overflow:hidden"
+                 *ngIf="act.description">
+                {{ act.description }}
+              </p>
+
+              <!-- Quick info -->
+              <div class="d-flex flex-wrap gap-2" style="font-size:.75rem">
+                <span class="badge bg-light text-muted" *ngIf="act.seats">
+                  🪑 {{ act.seats }} places
+                </span>
+                <span class="badge bg-light text-muted" *ngIf="act.category">
+                  📂 {{ getCategoryLabel(act.category) }}
+                </span>
+                <span class="badge bg-light text-muted" *ngIf="act.startDate">
+                  📅 {{ act.startDate | date:'dd/MM/yyyy' }}
+                </span>
+                <span class="badge bg-light text-muted" *ngIf="act.requiredSkills?.length">
+                  🎯 {{ act.requiredSkills!.length }} compétences
+                </span>
+                <span class="badge bg-light text-muted" *ngIf="act.location">
+                  📍 {{ act.location }}
+                </span>
+              </div>
+            </div>
+
+            <!-- Footer actions -->
+            <div class="card-footer bg-transparent d-flex justify-content-end gap-2 px-4 py-3"
+                 style="border-top:1px solid #e8e3da"
+                 (click)="$event.stopPropagation()">
+              <button class="btn btn-sm btn-outline-primary"
+                      style="border-radius:8px; width:34px; height:34px; padding:0"
+                      title="Modifier" (click)="editActivity(act)">
+                ✏️
+              </button>
+              <button class="btn btn-sm btn-outline-danger"
+                      style="border-radius:8px; width:34px; height:34px; padding:0"
+                      title="Supprimer" (click)="deleteActivity(act._id)">
+                🗑️
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /container-fluid -->
+
+    <!-- DETAIL PANEL -->
+    <div *ngIf="showDetail" class="position-fixed top-0 start-0 w-100 h-100"
+         style="background:rgba(0,0,0,.35); z-index:1040" (click)="closeDetail()"></div>
+
+    <div *ngIf="showDetail && selectedActivity"
+         class="position-fixed top-0 end-0 h-100 bg-white shadow-lg"
+         style="width:560px; z-index:1050; overflow-y:auto; border-left:1px solid #e8e3da">
+
+      <div class="p-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h4 class="fw-bold mb-0">Détail de l'activité</h4>
+          <button class="btn-close" (click)="closeDetail()"></button>
+        </div>
+
+        <!-- Status -->
+        <div class="d-flex align-items-center gap-2 mb-4">
+          <span class="badge fs-6 rounded-pill"
+                [ngClass]="'bg-' + getStatusColor(selectedActivity.status)">
+            {{ getStatusLabel(selectedActivity.status) }}
+          </span>
+          <div class="dropdown" *ngIf="selectedActivity.status !== 'CANCELLED'">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                    style="border-radius:8px" data-bs-toggle="dropdown">
+              Changer statut
+            </button>
+            <ul class="dropdown-menu">
+              <li *ngFor="let s of statuses">
+                <a class="dropdown-item" href="javascript:void(0)"
+                   (click)="changeStatus(selectedActivity._id!, s.value)">
+                  {{ s.label }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="fw-bold mb-1">{{ selectedActivity.title }}</h3>
+        <p class="text-muted fst-italic" *ngIf="selectedActivity.description">
+          {{ selectedActivity.description }}
+        </p>
+
+        <hr>
+
+        <!-- Informations -->
+        <div class="row g-3 mb-4">
+          <div class="col-6">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Type</small>
+            <span class="fw-semibold">{{ getTypeLabel(selectedActivity.type) }}</span>
+          </div>
+          <div class="col-6">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Catégorie</small>
+            <span class="fw-semibold">{{ getCategoryLabel(selectedActivity.category) }}</span>
+          </div>
+          <div class="col-6">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Places</small>
+            <span class="fw-semibold">{{ selectedActivity.seats || '—' }}</span>
+          </div>
+          <div class="col-6">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Priorité</small>
+            <span class="fw-semibold">{{ getPriorityLabel(selectedActivity.priorityContext) }}</span>
+          </div>
+          <div class="col-6" *ngIf="selectedActivity.location">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Lieu</small>
+            <span class="fw-semibold">{{ selectedActivity.location }}</span>
+          </div>
+          <div class="col-6" *ngIf="selectedActivity.duration">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Durée</small>
+            <span class="fw-semibold">{{ selectedActivity.duration }}</span>
+          </div>
+          <div class="col-6" *ngIf="selectedActivity.startDate">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Début</small>
+            <span class="fw-semibold">{{ selectedActivity.startDate | date:'dd/MM/yyyy' }}</span>
+          </div>
+          <div class="col-6" *ngIf="selectedActivity.endDate">
+            <small class="text-muted text-uppercase fw-semibold d-block" style="font-size:.68rem;letter-spacing:.1em">Fin</small>
+            <span class="fw-semibold">{{ selectedActivity.endDate | date:'dd/MM/yyyy' }}</span>
+          </div>
+        </div>
+
+        <!-- Required Skills -->
+        <div *ngIf="selectedActivity.requiredSkills?.length">
+          <h6 class="fw-bold mb-3">Compétences requises</h6>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered" style="font-size:.85rem">
+              <thead class="table-light">
+                <tr>
+                  <th>Compétence</th>
+                  <th>Type</th>
+                  <th>Niveau requis</th>
+                  <th>Poids</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let sk of selectedActivity.requiredSkills">
+                  <td class="fw-semibold">{{ sk.name }}</td>
+                  <td>{{ getSkillTypeLabel(sk.type) }}</td>
+                  <td>
+                    <span class="badge rounded-pill"
+                          [ngClass]="sk.desiredLevel === 'EXPERT' ? 'bg-danger' :
+                                     sk.desiredLevel === 'HIGH'   ? 'bg-warning text-dark' :
+                                     sk.desiredLevel === 'MEDIUM' ? 'bg-info text-dark' : 'bg-secondary'">
+                      {{ getLevelLabel(sk.desiredLevel) }}
+                    </span>
+                  </td>
+                  <td>{{ sk.weight || 1 }}/10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Selected Employees -->
+        <div *ngIf="selectedActivity.selectedEmployees?.length" class="mt-4">
+          <h6 class="fw-bold mb-3">Employés sélectionnés</h6>
+          <div *ngFor="let emp of selectedActivity.selectedEmployees" 
+               class="d-flex align-items-center justify-content-between p-2 mb-2 border rounded"
+               style="border-radius:10px !important">
+            <span class="fw-semibold">{{ emp.employeeId }}</span>
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-success" *ngIf="emp.score">
+                Score: {{ (emp.score! * 100) | number:'1.0-0' }}%
+              </span>
+              <span class="badge"
+                    [ngClass]="'bg-' + (emp.status === 'ACCEPTED' ? 'success' :
+                                        emp.status === 'DECLINED' ? 'danger'  :
+                                        emp.status === 'COMPLETED' ? 'dark' : 'warning')">
+                {{ emp.status }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="d-flex gap-2 mt-4">
+          <button class="btn btn-outline-primary flex-fill" style="border-radius:10px"
+                  (click)="closeDetail(); editActivity(selectedActivity!)">
+            ✏️ Modifier
+          </button>
+          <a class="btn btn-danger flex-fill" style="border-radius:10px"
+             [routerLink]="'/recommondation'"
+             [queryParams]="{ activityId: selectedActivity._id }">
+            🤖 Recommander
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CREATE / EDIT -->
+    <div class="modal-backdrop fade show" *ngIf="showModal" style="z-index:1040" (click)="closeModal()"></div>
+
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1050" *ngIf="showModal" (click)="closeModal()">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+           (click)="$event.stopPropagation()">
+        <div class="modal-content border-0 shadow" style="border-radius:20px; overflow:hidden">
+
+          <!-- Header -->
+          <div class="modal-header border-bottom px-4 py-3">
+            <h5 class="modal-title fw-bold" style="letter-spacing:-.01em">
+              {{ editMode ? 'Modifier' : 'Nouvelle' }} <span class="text-danger">activité</span>
+            </h5>
+            <button type="button" class="btn-close" (click)="closeModal()"></button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body px-4 py-3">
+            <form [formGroup]="activityForm" (ngSubmit)="submitActivity()" id="activityForm">
+
+              <!-- Titre -->
+              <div class="mb-3">
+                <label class="form-label text-muted text-uppercase fw-semibold"
+                       style="font-size:.68rem;letter-spacing:.12em">Titre *</label>
+                <input type="text" class="form-control" formControlName="title"
+                       placeholder="Ex: Formation Python avancé"
+                       style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                <div class="text-danger small mt-1" *ngIf="hasError('title', 'required')">Le titre est obligatoire</div>
+                <div class="text-danger small mt-1" *ngIf="hasError('title', 'minlength')">Minimum 5 caractères</div>
+              </div>
+
+              <!-- Type + Catégorie + Priorité -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-4">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Type *</label>
+                  <select class="form-select" formControlName="type"
+                          style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                    <option *ngFor="let t of types" [value]="t.value">{{ t.label }}</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Catégorie</label>
+                  <select class="form-select" formControlName="category"
+                          style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                    <option *ngFor="let c of categories" [value]="c.value">{{ c.label }}</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Priorité</label>
+                  <select class="form-select" formControlName="priorityContext"
+                          style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                    <option *ngFor="let p of priorities" [value]="p.value">{{ p.label }}</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Description -->
+              <div class="mb-3">
+                <label class="form-label text-muted text-uppercase fw-semibold"
+                       style="font-size:.68rem;letter-spacing:.12em">Description</label>
+                <textarea class="form-control" formControlName="description"
+                          placeholder="Décrivez l'activité, ses objectifs et contraintes..."
+                          rows="3"
+                          style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da;resize:vertical"></textarea>
+                                          <div class="text-danger small mt-1" *ngIf="hasError('description', 'required')">Le description est obligatoire</div>
+
+              </div>
+
+              <!-- Places + Lieu -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-3">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Places *</label>
+                  <input type="number" class="form-control" formControlName="seats" min="1" max="100"
+                         style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                  <div class="text-danger small mt-1" *ngIf="hasError('seats', 'required')">Nombre de places requis</div>
+                  <div class="text-danger small mt-1" *ngIf="hasError('seats', 'min')">Minimum 1 place</div>
+                </div>
+                <div class="col-md-5">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Lieu</label>
+                  <input type="text" class="form-control" formControlName="location"
+                         placeholder="Salle A3 / En ligne"
+                         style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                 <div class="text-danger small mt-1" *ngIf="hasError('location', 'required')">Le lieu est obligatoire</div>
+                 <div class="text-danger small mt-1" *ngIf="hasError('location', 'maxLength')">Le lieu ne doit pas dépasser 100 caractères</div>
+
+                </div>
+              </div>
+
+              <!-- Dates -->
+              <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Date début</label>
+                  <input type="date" class="form-control" formControlName="startDate"
+                         style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted text-uppercase fw-semibold"
+                         style="font-size:.68rem;letter-spacing:.12em">Date fin</label>
+                  <input type="date" class="form-control" formControlName="endDate"
+                         style="border-radius:10px;background:#f7f5f0;border-color:#e8e3da">
+                </div>
+              </div>
+
+              <!-- Required Skills -->
+              <div class="border-top pt-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h6 class="fw-bold mb-0">Compétences requises *</h6>
+                  <button type="button" class="btn btn-sm btn-outline-primary"
+                          style="border-radius:8px" (click)="addSkill()">
+                    + Ajouter
+                  </button>
+                </div>
+
+                <div *ngIf="requiredSkills.length === 0" class="text-center text-muted py-3" style="font-size:.85rem">
+                  Aucune compétence requise pour le moment
+                </div>
+
+                <!-- Message d'erreur global pour requiredSkills -->
+                <div class="text-danger small mb-2" 
+                     *ngIf="activityForm.get('requiredSkills')?.hasError('atLeastOneSkill') && activityForm.get('requiredSkills')?.touched">
+                  Vous devez ajouter au moins une compétence requise.
+                </div>
+
+                <div formArrayName="requiredSkills">
+                  <div *ngFor="let skill of requiredSkills.controls; let i = index"
+                       [formGroupName]="i"
+                       class="row g-2 mb-2 align-items-end p-2 border rounded"
+                       style="border-radius:10px !important; background:#fafaf7">
+
+                    <div class="col-md-3">
+                      <label class="form-label" style="font-size:.7rem">Nom *</label>
+                      <input type="text" class="form-control form-control-sm" formControlName="name"
+                             placeholder="Python" style="border-radius:8px">
+                    </div>
+                    <div class="col-md-3">
+                      <label class="form-label" style="font-size:.7rem">Type</label>
+                      <select class="form-select form-select-sm" formControlName="type" style="border-radius:8px">
+                        <option *ngFor="let st of skillTypes" [value]="st.value">{{ st.label }}</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="form-label" style="font-size:.7rem">Niveau</label>
+                      <select class="form-select form-select-sm" formControlName="desiredLevel" style="border-radius:8px">
+                        <option *ngFor="let l of skillLevels" [value]="l.value">{{ l.label }}</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label class="form-label" style="font-size:.7rem">Poids</label>
+                      <input type="number" class="form-control form-control-sm" formControlName="weight"
+                             min="1" max="10" style="border-radius:8px">
+                    </div>
+                    <div class="col-md-2 text-end">
+                      <button type="button" class="btn btn-sm btn-outline-danger"
+                              style="border-radius:8px" (click)="removeSkill(i)">
+                        ✕
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Footer -->
+          <div class="modal-footer border-top px-4 py-3 gap-2">
+            <button type="button" class="btn btn-outline-secondary"
+                    style="border-radius:10px" (click)="closeModal()">
+              Annuler
+            </button>
+            <button type="submit" form="activityForm"
+                    class="btn btn-danger fw-semibold px-4"
+                    style="border-radius:10px"
+                    [disabled]="activityForm.invalid">
+              {{ editMode ? 'Enregistrer' : "Créer l'activité" }}
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

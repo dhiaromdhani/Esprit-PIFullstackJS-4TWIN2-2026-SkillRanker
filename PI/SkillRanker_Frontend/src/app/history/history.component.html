@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+<main class="nxl-container">
+  <div class="nxl-content">
+    
+      <div class="page-header-title">
+        <h2 class="m-b-10">Recommendation History</h2>
+      </div>
+    
+
+    <div class="row">
+      <div class="col-12">
+        <!-- Loading State -->
+        <div class="text-center py-5" *ngIf="loading">
+          <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Chargement...</span>
+          </div>
+          <p class="text-muted mt-2">Chargement de l'historique...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="alert alert-danger" *ngIf="error && !loading">
+          <strong>Erreur:</strong> {{ error }}
+          <button class="btn btn-sm btn-outline-danger ms-2" (click)="loadHistory()">Réessayer</button>
+        </div>
+
+        <!-- History Table -->
+        <div class="card" *ngIf="!loading && !error">
+          <div class="card-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Activity</th>
+                  <th>Recommended Employees</th>
+                  <th>Selected Employees</th>
+                  <th>Decision Date</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let h of history">
+                  <td>{{ h.activity?.title }}</td>
+                  <td>{{ h.recommendedEmployees.length || 0 }}</td>
+                  <td>{{ h.selectedEmployees.length || 0 }}</td>
+                  <td>{{ h.decisionDate | date }}</td>
+                  <td>{{ h.notes }}</td>
+                </tr>
+                <tr *ngIf="history.length === 0">
+                  <td colspan="5" class="text-center text-muted">Aucun historique disponible</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

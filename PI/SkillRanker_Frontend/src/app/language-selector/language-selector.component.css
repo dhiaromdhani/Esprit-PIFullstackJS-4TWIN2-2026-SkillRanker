@@ -1,0 +1,43 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sr-language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  min-height: 36px;
+  border-radius: 16px;
+  border: 1px solid var(--sr-border);
+  background: var(--sr-surface-3);
+}
+
+.sr-lang-option {
+  min-width: 42px;
+  height: 28px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: var(--sr-muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  transition: .2s ease;
+}
+
+.sr-lang-option:hover {
+  color: var(--sr-text);
+}
+
+.sr-lang-option.active {
+  color: #fff;
+  background: linear-gradient(135deg, #625df5, #2db7ff);
+  box-shadow: 0 10px 22px rgba(45, 183, 255, .25);
+}
+
+:host-context(html[dir='rtl']) .sr-language-switch {
+  direction: ltr;
+}

@@ -1,0 +1,371 @@
+<app-navemp></app-navemp>
+<app-header></app-header>
+
+<main class="nxl-container emp-page">
+  <div class="nxl-content">
+    <div class="emp-shell">
+
+      <header class="emp-hero">
+        <div class="emp-hero__text">
+          <h1 class="emp-workspace-title">Employee workspace</h1>
+          <p class="emp-page-subtitle">My activities</p>
+          <p class="emp-lead">
+            Review assignments, accept or decline tasks, follow your training progress,
+            and view the manager evaluation when it is available.
+          </p>
+        </div>
+
+        <div class="notif-bell-wrapper" (click)="$event.stopPropagation()">
+          <button
+            type="button"
+            class="notif-bell-btn"
+            (click)="toggleNotifPanel()"
+            [attr.aria-expanded]="showNotifPanel"
+            title="Notifications"
+          >
+            <i class="feather-bell" aria-hidden="true"></i>
+
+            <span *ngIf="unreadCount > 0" class="notif-badge">
+              {{ unreadCount > 9 ? '9+' : unreadCount }}
+            </span>
+          </button>
+
+          <div
+            class="notif-dropdown"
+            *ngIf="showNotifPanel"
+            role="region"
+            aria-label="Notification list"
+          >
+            <div class="notif-dropdown-header">
+              <span>Notifications</span>
+            </div>
+
+            <div class="notif-dropdown-body">
+              <div *ngIf="notifications.length === 0" class="notif-panel-empty">
+                No notifications yet
+              </div>
+
+              <div
+                *ngFor="let n of notifications"
+                class="notif-item"
+                [class.notif-unread]="!n.read"
+                (click)="onNotificationClick(n)"
+                style="cursor: pointer;"
+              >
+                <div class="notif-item-dot" *ngIf="!n.read" aria-hidden="true"></div>
+
+                <div class="notif-item-content">
+                  <div class="notif-item-title">{{ n.title }}</div>
+                  <div class="notif-item-msg">{{ n.message }}</div>
+                  <div class="notif-item-time">
+                    {{ n.createdAt | date:'dd/MM/yyyy HH:mm' }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div *ngIf="errorMessage" class="alert alert-danger mt-3">
+        {{ errorMessage }}
+      </div>
+
+      <div *ngIf="loading" class="emp-loading">
+        <div class="spinner-border" role="status" aria-label="Loading"></div>
+        <p>Loading your activities…</p>
+      </div>
+
+      <section class="emp-stats" aria-label="Activity summary" *ngIf="!loading">
+        <div class="row g-3 g-lg-4">
+
+          <div class="col-6 col-lg-3">
+            <div class="emp-stat">
+              <div class="emp-stat__icon emp-stat__icon--amber">
+                <i class="feather-clock"></i>
+              </div>
+
+              <div class="emp-stat__body">
+                <div class="emp-stat__value">{{ pendingResponseCount }}</div>
+                <div class="emp-stat__label">Pending response</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="emp-stat">
+              <div class="emp-stat__icon emp-stat__icon--indigo">
+                <i class="feather-check-circle"></i>
+              </div>
+
+              <div class="emp-stat__body">
+                <div class="emp-stat__value">{{ acceptedCount }}</div>
+                <div class="emp-stat__label">Accepted / Completed</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="emp-stat">
+              <div class="emp-stat__icon emp-stat__icon--emerald">
+                <i class="feather-award"></i>
+              </div>
+
+              <div class="emp-stat__body">
+                <div class="emp-stat__value">{{ certificationCount }}</div>
+                <div class="emp-stat__label">Certifications</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="emp-stat">
+              <div class="emp-stat__icon emp-stat__icon--blue">
+                <i class="feather-bell"></i>
+              </div>
+
+              <div class="emp-stat__body">
+                <div class="emp-stat__value">{{ unreadCount }}</div>
+                <div class="emp-stat__label">Unread</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <nav class="emp-tabs" aria-label="Activity sections" *ngIf="!loading">
+        <button
+          type="button"
+          class="emp-tab"
+          [class.emp-tab--active]="selectedTab === 'NEW'"
+          (click)="selectTab('NEW')"
+        >
+          <i class="feather-inbox"></i>
+          New
+        </button>
+
+        <button
+          type="button"
+          class="emp-tab"
+          [class.emp-tab--active]="selectedTab === 'IN_PROGRESS'"
+          (click)="selectTab('IN_PROGRESS')"
+        >
+          <i class="feather-play-circle"></i>
+          In progress
+        </button>
+
+        <button
+          type="button"
+          class="emp-tab"
+          [class.emp-tab--active]="selectedTab === 'CERTIFIED'"
+          (click)="selectTab('CERTIFIED')"
+        >
+          <i class="feather-award"></i>
+          Certified
+        </button>
+      </nav>
+
+      <div *ngIf="!loading" class="emp-panel">
+
+        <div *ngIf="filteredAssignments.length === 0" class="emp-empty">
+          <i class="feather-inbox emp-empty__icon" aria-hidden="true"></i>
+
+          <h3 class="emp-empty__title">You're all caught up</h3>
+
+          <p class="emp-empty__text">
+            No new assignments. We'll notify you when something arrives.
+          </p>
+        </div>
+
+        <div
+          *ngFor="let item of filteredAssignments; let i = index"
+          class="emp-card"
+          [attr.id]="'activity-' + item.activityId"
+          [style.animation-delay.ms]="i * 40"
+        >
+          <div class="emp-card__head">
+            <div>
+              <h2 class="emp-card__title">{{ item.title }}</h2>
+
+              <div class="emp-card__badges">
+                <span class="emp-pill emp-pill--amber" *ngIf="item.uiStatus === 'NEW'">
+                  Pending
+                </span>
+
+                <span class="emp-pill emp-pill--indigo" *ngIf="item.uiStatus === 'IN_PROGRESS'">
+                  In progress
+                </span>
+
+                <span class="emp-pill emp-pill--emerald" *ngIf="item.uiStatus === 'CERTIFIED'">
+                  Certified
+                </span>
+
+                <span class="emp-pill emp-pill--soft" *ngIf="item.type">
+                  {{ item.type }}
+                </span>
+
+                <span class="emp-pill emp-pill--soft" *ngIf="item.category">
+                  {{ item.category }}
+                </span>
+              </div>
+
+              <p class="emp-card__meta" *ngIf="item.assignedAt">
+                Assigned {{ item.assignedAt | date:'dd/MM/yyyy' }}
+              </p>
+
+              <p class="emp-card__meta" *ngIf="item.activity?.endDate">
+                End date {{ item.activity.endDate | date:'dd/MM/yyyy' }}
+              </p>
+            </div>
+          </div>
+
+          <p class="emp-card__desc" *ngIf="item.description">
+            {{ item.description }}
+          </p>
+
+          <div class="emp-manager-eval" *ngIf="hasManagerEvaluation(item)">
+            <div class="emp-manager-eval__title">
+              Évaluation du manager
+            </div>
+
+            <div class="emp-manager-eval__score" *ngIf="item.managerScore">
+              <strong>Note :</strong>
+              {{ item.managerScore }}/5
+              <span class="ms-2">{{ getManagerScoreStars(item.managerScore) }}</span>
+            </div>
+
+            <div class="emp-manager-eval__comment" *ngIf="item.managerComment">
+              <strong>Commentaire :</strong>
+              {{ item.managerComment }}
+            </div>
+
+            <div class="emp-manager-eval__date" *ngIf="item.managerEvaluatedAt">
+              <small>
+                Évalué le {{ item.managerEvaluatedAt | date:'dd/MM/yyyy HH:mm' }}
+              </small>
+            </div>
+          </div>
+
+          <div class="emp-card__actions" *ngIf="item.uiStatus === 'NEW'">
+            <button
+              type="button"
+              class="emp-btn emp-btn--success"
+              [disabled]="respondingMap[item.activityId]"
+              (click)="acceptActivity(item.activityId)"
+            >
+              <span *ngIf="!respondingMap[item.activityId]">Accept</span>
+              <span
+                *ngIf="respondingMap[item.activityId]"
+                class="spinner-border spinner-border-sm"
+              ></span>
+            </button>
+
+            <button
+              type="button"
+              class="emp-btn emp-btn--ghost"
+              [disabled]="respondingMap[item.activityId]"
+              (click)="toggleRefusalReason(item.activityId)"
+            >
+              Decline
+            </button>
+
+            <button
+              type="button"
+              class="emp-btn emp-btn--outline"
+              (click)="openActivity(item)"
+            >
+              View details
+            </button>
+          </div>
+
+          <div *ngIf="showReasonMap[item.activityId]" class="emp-refuse">
+            <label class="emp-refuse__label">
+              Decline reason
+            </label>
+
+            <textarea
+              class="emp-textarea"
+              rows="3"
+              placeholder="Write a short reason..."
+              [(ngModel)]="refusalReason[item.activityId]"
+            ></textarea>
+
+            <button
+              type="button"
+              class="emp-btn emp-btn--danger emp-btn--sm"
+              [disabled]="respondingMap[item.activityId]"
+              (click)="refuseActivity(item.activityId)"
+            >
+              Confirm decline
+            </button>
+          </div>
+
+          <p
+            *ngIf="respondMsg[item.activityId]"
+            class="emp-flash"
+            [class.emp-flash--ok]="respondMsg[item.activityId].indexOf('✅') >= 0"
+          >
+            {{ respondMsg[item.activityId] }}
+          </p>
+
+          <div class="emp-card__actions" *ngIf="item.uiStatus !== 'NEW'">
+            <button
+              type="button"
+              class="emp-btn emp-btn--success"
+              *ngIf="canCompleteTraining(item)"
+              [disabled]="respondingMap[item.activityId]"
+              (click)="completeTraining(item.activityId)"
+            >
+              Terminer la formation
+            </button>
+
+            <button
+              type="button"
+              class="emp-btn emp-btn--outline"
+              *ngIf="item.uiStatus === 'CERTIFIED' && item.certificateUrl"
+              (click)="openCertificate(item.certificateUrl)"
+            >
+              Voir certificat
+            </button>
+
+            <button
+              type="button"
+              class="emp-btn emp-btn--outline"
+              (click)="openActivity(item)"
+            >
+              View details
+            </button>
+
+            <span
+              *ngIf="isWaitingRhValidation(item)"
+              class="emp-pill emp-pill--amber"
+            >
+              En attente de validation RH
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div id="chatbot-wrapper">
+    <div id="chat-window" style="display:none">
+      <div id="chat-header">
+        <span><span id="chat-dot"></span> AI Assistant</span>
+        <button onclick="toggleChat()">✕</button>
+      </div>
+      <div id="chat-box">
+        <div class="bot-msg">Bonjour! Comment puis-je vous aider?</div>
+      </div>
+      <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Votre message..." />
+        <button id="chat-send" onclick="sendChat()">➤</button>
+      </div>
+    </div>
+    <button id="chat-fab" onclick="toggleChat()">💬</button>
+  </div>
+
+
+</main>

@@ -1,0 +1,549 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+
+    <!-- Page Header -->
+    <header class="mgr-hero">
+        <div>
+          <p class="mgr-eyebrow">Operations</p>
+          <h1 class="mgr-title">Manager dashboard</h1>
+          <p class="mgr-lead">
+            Activity overview, quick links, and team directory. You can update your own profile from Profile.
+          </p>
+        </div>
+        <div class="mgr-hero__actions">
+          <a class="mgr-btn-outline mgr-btn-outline--primary" routerLink="/profile">
+            <i class="feather-user" aria-hidden="true"></i>
+            Mon profil
+          </a>
+          <a class="mgr-btn-outline" routerLink="/stats">
+            <i class="feather-bar-chart-2" aria-hidden="true"></i>
+            Statistics
+          </a>
+          <a class="mgr-btn-outline" routerLink="/history">
+            <i class="feather-clock" aria-hidden="true"></i>
+            History
+          </a>
+        </div>
+      </header>
+    <!-- Loading -->
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary"></div>
+      <p class="text-muted mt-3">Chargement des statistiques...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" *ngIf="!loading && stats">
+      <div class="row">
+
+        <!-- KPI Cards -->
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.users.total || 0 }}</div>
+                  <p class="text-muted mb-0">Total Utilisateurs</p>
+                </div>
+                <div class="badge bg-primary bg-opacity-10 text-primary p-2 rounded">
+                  <i class="feather-users" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.total || 0 }}</div>
+                  <p class="text-muted mb-0">Total Activités</p>
+                </div>
+                <div class="badge bg-success bg-opacity-10 text-success p-2 rounded">
+                  <i class="feather-activity" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.byStatus.open || 0 }}</div>
+                  <p class="text-muted mb-0">Activités Ouvertes</p>
+                </div>
+                <div class="badge bg-warning bg-opacity-10 text-warning p-2 rounded">
+                  <i class="feather-folder-plus" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.byStatus.completed || 0 }}</div>
+                  <p class="text-muted mb-0">Activités Terminées</p>
+                </div>
+                <div class="badge bg-danger bg-opacity-10 text-danger p-2 rounded">
+                  <i class="feather-check-circle" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activités par Statut -->
+        <div class="col-xxl-6" *ngIf="stats.activities?.byStatus">
+          <div class="card stretch stretch-full">
+            <div class="card-header"><h5 class="card-title">Activités par Statut</h5></div>
+            <div class="card-body">
+              <div class="mb-3" *ngIf="stats.activities.byStatus.draft">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getStatusLabel('draft') }}</span><strong>{{ stats.activities.byStatus.draft }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-secondary" [style.width.%]="getStatusPercent(stats.activities.byStatus.draft)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byStatus.open">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getStatusLabel('open') }}</span><strong>{{ stats.activities.byStatus.open }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-primary" [style.width.%]="getStatusPercent(stats.activities.byStatus.open)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byStatus.inProgress">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getStatusLabel('inProgress') }}</span><strong>{{ stats.activities.byStatus.inProgress }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-warning" [style.width.%]="getStatusPercent(stats.activities.byStatus.inProgress)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byStatus.completed">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getStatusLabel('completed') }}</span><strong>{{ stats.activities.byStatus.completed }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-success" [style.width.%]="getStatusPercent(stats.activities.byStatus.completed)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activités par Type -->
+        <div class="col-xxl-6" *ngIf="stats.activities?.byType">
+          <div class="card stretch stretch-full">
+            <div class="card-header"><h5 class="card-title">Activités par Type</h5></div>
+            <div class="card-body">
+              <div class="mb-3" *ngIf="stats.activities.byType.training">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getTypeLabel('training') }}</span><strong>{{ stats.activities.byType.training }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-danger" [style.width.%]="getTypePercent(stats.activities.byType.training)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byType.certification">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getTypeLabel('certification') }}</span><strong>{{ stats.activities.byType.certification }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-info" [style.width.%]="getTypePercent(stats.activities.byType.certification)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byType.project">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getTypeLabel('project') }}</span><strong>{{ stats.activities.byType.project }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-warning" [style.width.%]="getTypePercent(stats.activities.byType.project)"></div></div>
+              </div>
+              <div class="mb-3" *ngIf="stats.activities.byType.mission">
+                <div class="d-flex justify-content-between mb-1"><span>{{ getTypeLabel('mission') }}</span><strong>{{ stats.activities.byType.mission }}</strong></div>
+                <div class="progress" style="height:8px;border-radius:4px"><div class="progress-bar bg-success" [style.width.%]="getTypePercent(stats.activities.byType.mission)"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activités Récentes -->
+        <div class="col-12" *ngIf="stats.activities?.recent?.length">
+          <div class="card stretch stretch-full">
+            <div class="card-header"><h5 class="card-title">Activités Récentes</h5></div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead>
+                    <tr><th>Titre</th><th>Type</th><th>Statut</th><th>Date</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let act of stats.activities.recent">
+                      <td class="fw-semibold">{{ act.title }}</td>
+                      <td>{{ getTypeLabel(act.type) }}</td>
+                      <td><span class="badge" [ngClass]="'bg-' + getStatusColor(act.status)">{{ getStatusLabel(act.status) }}</span></td>
+                      <td class="text-muted">{{ act.createdAt | date:'dd/MM/yyyy' }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Réponses des employés -->
+        <div class="col-12">
+          <div class="card stretch stretch-full">
+            <div class="card-header">
+              <h5 class="card-title">Réponses des employés</h5>
+            </div>
+
+            <div class="card-body">
+              <div *ngIf="responsesLoading" class="text-center py-4">
+                <div class="spinner-border text-primary"></div>
+                <p class="text-muted mt-2 mb-0">Chargement des réponses...</p>
+              </div>
+
+              <div *ngIf="!responsesLoading && responsesError" class="alert alert-danger">
+                {{ responsesError }}
+              </div>
+
+              <div *ngIf="!responsesLoading && !responsesError && !employeeResponses.length" class="text-muted">
+                Aucune réponse employé pour le moment.
+              </div>
+
+              <div class="table-responsive" *ngIf="!responsesLoading && employeeResponses.length">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Employé</th>
+                      <th>Activité</th>
+                      <th>Statut</th>
+                      <th>Justification</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let row of employeeResponses">
+                      <td>
+                        <div class="fw-semibold">{{ row.employeeName }}</div>
+                        <div class="text-muted small">{{ row.employeeEmail }}</div>
+                      </td>
+                      <td>
+                        <div class="fw-semibold">{{ row.activityTitle }}</div>
+                        <div class="text-muted small">
+                          {{ getTypeLabel(row.activityType) }}
+                          <span *ngIf="row.activityCategory">• {{ row.activityCategory }}</span>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge" [ngClass]="getResponseBadgeClass(row.responseStatus)">
+                          {{ getResponseLabel(row.responseStatus) }}
+                        </span>
+                      </td>
+                      <td>{{ row.justification || '—' }}</td>
+                      <td class="text-muted">
+                        {{ (row.respondedAt || row.selectedAt) | date:'dd/MM/yyyy HH:mm' }}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card shadow-sm border-0 mb-4">
+    <div class="card-header bg-white">
+      <h5 class="mb-0">Évaluation des employés</h5>
+    </div>
+    <div class="card-body">
+      <div *ngIf="evaluationsLoading">Chargement...</div>
+      <div *ngIf="evaluationsError" class="text-danger">{{ evaluationsError }}</div>
+
+      <div class="table-responsive" *ngIf="!evaluationsLoading && evaluationTargets.length > 0">
+        <table class="table table-hover align-middle">
+          <thead>
+            <tr>
+              <th>Employé</th>
+              <th>Activité</th>
+              <th>Type</th>
+              <th>Statut</th>
+              <th>Évaluation</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of evaluationTargets">
+              <td>
+                <div class="fw-semibold">{{ row.employeeName }}</div>
+                <small class="text-muted">{{ row.employeeEmail }}</small>
+              </td>
+              <td>{{ row.activityTitle }}</td>
+              <td>{{ row.activityType }}</td>
+              <td>{{ getEvaluationStatusLabel(row.status) }}</td>
+              <td>{{ getEvaluationScoreLabel(row.managerScore) }}</td>
+              <td>
+                <button class="btn btn-primary btn-sm" (click)="openEvaluationModal(row)">
+                  Évaluer
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div></div>
+        <!-- ACTIONS RAPIDES -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header"><h5 class="card-title">Actions Rapides</h5></div>
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <button class="btn btn-primary w-100 py-3 fw-semibold" (click)="navigateTo('/activities')">
+                    ➕ Nouvelle Activité
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-danger w-100 py-3 fw-semibold" (click)="navigateTo('/recommondation')">
+                    🤖 Recommandation IA & Notification
+                  </button>
+                </div>
+                <!-- <div class="col-md-3">
+                  <button class="btn btn-success w-100 py-3 fw-semibold" (click)="navigateTo('/scoring')">
+                    🏆 Scoring & Optimisation
+                  </button>
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-warning w-100 py-3 fw-semibold" (click)="navigateTo('/register')">
+                    ➕ Ajouter Utilisateur
+                  </button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="nxl-content">
+   
+      <div class="page-header-left d-flex align-items-center">
+        <div class="page-header-title">
+          <h5 class="m-b-10">Manager Dashboard - Employee Management</h5>
+        </div>
+      </div>
+      <div class="page-header-right ms-auto">
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline-info" routerLink="/stats">
+            <i class="feather-bar-chart-2 me-1"></i>Statistics
+          </button>
+          <button class="btn btn-outline-success" routerLink="/history">
+            <i class="feather-clock me-1"></i>History
+          </button>
+          <!-- <button class="btn btn-primary" (click)="openModal()">
+            <i class="feather-plus me-1"></i>Add Employee
+          </button> -->
+        </div>
+      </div>
+   
+
+    <!-- Search Filters -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Search by name" [(ngModel)]="searchFilters.name">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Department" [(ngModel)]="searchFilters.department">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Job Title" [(ngModel)]="searchFilters.jobTitle">
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-secondary" (click)="applyFilters()">Search</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <!-- Loading State -->
+        <div class="text-center py-5" *ngIf="loading">
+          <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Chargement...</span>
+          </div>
+          <p class="text-muted mt-2">Chargement des employés...</p>
+        </div>
+
+        <!-- Error State -->
+        <div class="alert alert-danger" *ngIf="error && !loading">
+          <strong>Erreur:</strong> {{ error }}
+          <button class="btn btn-sm btn-outline-danger ms-2" (click)="loadEmployees()">Réessayer</button>
+        </div>
+
+        <!-- Employee Table -->
+        <div class="card" *ngIf="!loading && !error">
+          <div class="card-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Job Title</th>
+                  <th>Department</th>
+                  <!-- <th>Actions</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let emp of employees">
+                  <td>{{ emp.firstName }} {{ emp.lastName }}</td>
+                  <td>{{ emp.email }}</td>
+                  <td>{{ emp.jobTitle }}</td>
+                  <td>{{ emp.department }}</td>
+                  <!-- <td>
+                    <button class="btn btn-sm btn-warning me-2" (click)="editEmployee(emp)">Edit</button>
+                    <button class="btn btn-sm btn-danger" (click)="deleteEmployee(emp._id)">Delete</button>
+                  </td> -->
+                </tr>
+                <tr *ngIf="employees.length === 0">
+                  <td colspan="5" class="text-center text-muted">Aucun employé trouvé</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" [class.show]="showModal" [style.display]="showModal ? 'block' : 'none'" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ editMode ? 'Edit Employee' : 'Add Employee' }}</h5>
+            <button type="button" class="btn-close" (click)="closeModal()"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="employeeForm" (ngSubmit)="submitEmployee()">
+              <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" formControlName="firstName" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" formControlName="lastName" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" formControlName="email" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Job Title</label>
+                <input type="text" class="form-control" formControlName="jobTitle" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Department</label>
+                <input type="text" class="form-control" formControlName="department" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Skills (comma separated)</label>
+                <input type="text" class="form-control" formControlName="skills">
+              </div>
+              <button type="submit" class="btn btn-primary" [disabled]="employeeForm.invalid">{{ editMode ? 'Update' : 'Create' }}</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-backdrop show" *ngIf="showModal" (click)="closeOnBackdrop()"></div>
+  </div>
+  <div class="modal fade show d-block" *ngIf="showEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Évaluer l’employé</h5>
+        <button
+          type="button"
+          class="btn-close"
+          [disabled]="evaluationSaving"
+          (click)="closeEvaluationModal()">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label">Note / 5</label>
+
+          <input
+            type="number"
+            class="form-control"
+            min="1"
+            max="5"
+            [(ngModel)]="evaluationScore">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Commentaire</label>
+
+          <textarea
+            class="form-control"
+            rows="4"
+            [(ngModel)]="evaluationComment">
+          </textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button
+          class="btn btn-secondary"
+          [disabled]="evaluationSaving"
+          (click)="closeEvaluationModal()">
+          Annuler
+        </button>
+
+        <button
+          class="btn btn-success"
+          [disabled]="evaluationSaving"
+          (click)="submitEvaluation()">
+
+          <span *ngIf="!evaluationSaving">Enregistrer</span>
+          <span *ngIf="evaluationSaving">Enregistrement...</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+  <!--<div class="modal fade show d-block" *ngIf="showEvaluationModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Évaluer l’employé</h5>
+        <button type="button" class="btn-close" (click)="closeEvaluationModal()"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label">Note / 5</label>
+          <input type="number" class="form-control" min="1" max="5" [(ngModel)]="evaluationScore">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Commentaire</label>
+          <textarea class="form-control" rows="4" [(ngModel)]="evaluationComment"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="closeEvaluationModal()">Annuler</button>
+        <button class="btn btn-success" (click)="submitEvaluation()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="modal-backdrop fade show" *ngIf="showEvaluationModal"></div>
+  </div>
+  <div id="chatbot-wrapper">
+  <div id="chat-window" style="display:none">
+    <div id="chat-header">
+      <span><span id="chat-dot"></span> AI Assistant</span>
+      <button onclick="toggleChat()">✕</button>
+    </div>
+    <div id="chat-box">
+      <div class="bot-msg">Bonjour! Comment puis-je vous aider?</div>
+    </div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Votre message..." />
+      <button id="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+  <button id="chat-fab" onclick="toggleChat()">💬</button>
+</div>
+</main>

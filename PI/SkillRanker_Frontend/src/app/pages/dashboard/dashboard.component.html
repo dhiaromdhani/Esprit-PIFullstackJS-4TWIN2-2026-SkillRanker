@@ -1,0 +1,259 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+
+    <!-- ====================== DASHBOARD STATS ====================== -->
+    <div class="page-header">
+      <div class="page-header-left d-flex align-items-center">
+        <div class="page-header-title">
+          <h5 class="m-b-10">Dashboard Admin</h5>
+        </div>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item">Dashboard Admin</li>
+        </ul>
+       <button class="btn btn-danger" (click)="speakDashboard()">
+  🔊 Speak Dashboard
+</button>
+<app-language-selector></app-language-selector>
+      </div>
+    </div>
+
+    <!-- Loading Stats -->
+    <div *ngIf="loadingStats" class="text-center py-5">
+      <div class="spinner-border text-primary"></div>
+      <p class="text-muted mt-3">Chargement des statistiques...</p>
+    </div>
+
+    <!-- Stats Content -->
+    <div class="main-content" *ngIf="!loadingStats && stats">
+      <div class="row">
+        <!-- KPI Cards -->
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.users.total || 0 }}</div>
+                  <p class="text-muted mb-0">Total Utilisateurs</p>
+                </div>
+                <div class="badge bg-primary bg-opacity-10 text-primary p-2 rounded">
+                  <i class="feather-users" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.total || 0 }}</div>
+                  <p class="text-muted mb-0">Total Activités</p>
+                </div>
+                <div class="badge bg-success bg-opacity-10 text-success p-2 rounded">
+                  <i class="feather-activity" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.byStatus.open || 0 }}</div>
+                  <p class="text-muted mb-0">Activités Ouvertes</p>
+                </div>
+                <div class="badge bg-warning bg-opacity-10 text-warning p-2 rounded">
+                  <i class="feather-folder-plus" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-md-6">
+          <div class="card stretch stretch-full">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="fs-5 fw-bold text-dark">{{ stats.activities.byStatus.completed || 0 }}</div>
+                  <p class="text-muted mb-0">Activités Terminées</p>
+                </div>
+                <div class="badge bg-danger bg-opacity-10 text-danger p-2 rounded">
+                  <i class="feather-check-circle" style="font-size:1.5rem"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activités par Statut & Type + Récentes + Actions Rapides -->
+        <!-- (Je les ai gardés courts pour ne pas allonger trop, tu peux remettre les tiens) -->
+        <div class="col-12 mt-4">
+          <div class="card">
+            <div class="card-header"><h5 class="card-title">Actions Rapides</h5></div>
+            <div class="card-body">
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <button class="btn btn-primary w-100 py-3" (click)="navigateTo('/activities')">➕ Nouvelle Activité</button>
+                </div>
+                <!-- <div class="col-md-3">
+                  <button class="btn btn-warning w-100 py-3" (click)="openModal()">➕ Ajouter Utilisateur</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================== GESTION DES EMPLOYÉS ====================== -->
+    <div class="page-header mt-5">
+      <div class="page-header-left">
+        <h5 class="m-b-10">Gestion des Employés</h5>
+      </div>
+      <div class="page-header-right ms-auto">
+        <button class="btn btn-primary" (click)="openModal()">
+          <i class="feather-plus me-1"></i> Add User
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Filters -->
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <input type="text" class="form-control" placeholder="Search by name" [(ngModel)]="searchFilters.name">
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-secondary" (click)="getUsers()">Search</button>
+      </div>
+    </div>
+
+    <!-- Loading Employees -->
+    <div class="text-center py-5" *ngIf="loadingEmployees">
+      <div class="spinner-border text-danger"></div>
+      <p class="text-muted mt-2">Chargement des employés...</p>
+    </div>
+
+    <!-- Error -->
+    <div class="alert alert-danger" *ngIf="error">
+      <strong>Erreur :</strong> {{ error }}
+      <button class="btn btn-sm btn-outline-danger ms-2" (click)="getUsers()">Réessayer</button>
+    </div>
+
+    <!-- Employee Table -->
+    <div class="card" *ngIf="!loadingEmployees && !error">
+      <div class="card-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Job Title</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let emp of employees">
+              <td>{{ emp.firstName }} {{ emp.lastName }}</td>
+              <td>{{ emp.email }}</td>
+              <td>{{ emp.jobTitle }}</td>
+              <td><span class="badge bg-info">{{ emp.role }}</span></td>
+              <td>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm" (click)="editEmployee(emp)">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button class="btn btn-outline-danger btn-sm" (click)="deleteEmployee(emp._id)">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr *ngIf="employees.length === 0">
+              <td colspan="5" class="text-center">Aucun utilisateur trouvé</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====================== MODAL ADD / EDIT ====================== -->
+    <div class="modal" [class.show]="showModal" [style.display]="showModal ? 'block' : 'none'" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ editMode ? 'Modifier Utilisateur' : 'Ajouter Utilisateur' }}</h5>
+            <button type="button" class="btn-close" (click)="closeModal()"></button>
+          </div>
+          <div class="modal-body">
+            <form [formGroup]="employeeForm" (ngSubmit)="submitEmployee()">
+
+              <div class="mb-3">
+                <label class="form-label">First Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="firstName">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="lastName">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" formControlName="email">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Job Title <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="jobTitle">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Role <span class="text-danger">*</span></label>
+                <select class="form-select" formControlName="role">
+                  <option value="EMPLOYEE">EMPLOYEE</option>
+                  <option value="MANAGER">MANAGER</option>
+                  <option value="HR_MANAGER">HR_MANAGER</option>
+                  <!-- <option value="ADMINISTRATOR">ADMINISTRATOR</option> -->
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100" [disabled]="employeeForm.invalid">
+                {{ editMode ? 'Mettre à jour' : 'Créer Utilisateur' }}
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-backdrop show" *ngIf="showModal" (click)="closeModal()"></div>
+
+  </div>
+  <div id="chatbot-wrapper">
+  <div id="chat-window" style="display:none">
+    <div id="chat-header">
+      <span><span id="chat-dot"></span> AI Assistant</span>
+      <button onclick="toggleChat()">✕</button>
+    </div>
+    <div id="chat-box">
+      <div class="bot-msg">Bonjour! Comment puis-je vous aider?</div>
+    </div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Votre message..." />
+      <button id="chat-send" onclick="sendChat()">➤</button>
+    </div>
+  </div>
+  <button id="chat-fab" onclick="toggleChat()">💬</button>
+</div>
+</main>

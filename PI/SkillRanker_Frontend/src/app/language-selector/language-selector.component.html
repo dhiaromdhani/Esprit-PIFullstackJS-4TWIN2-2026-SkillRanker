@@ -1,0 +1,10 @@
+<div class="sr-language-switch" role="group" aria-label="Language selector">
+  <button
+    type="button"
+    *ngFor="let lang of languages"
+    class="sr-lang-option"
+    [class.active]="(currentLanguage$ | async) === lang.code"
+    (click)="changeLanguage(lang.code)">
+    {{ lang.label }}
+  </button>
+</div>

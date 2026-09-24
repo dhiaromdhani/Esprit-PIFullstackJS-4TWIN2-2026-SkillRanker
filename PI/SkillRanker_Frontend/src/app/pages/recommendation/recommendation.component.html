@@ -1,0 +1,147 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+    <div class="container-fluid py-4 px-4">
+
+      <div class="mb-4 pb-3 border-bottom">
+        <p class="text-muted text-uppercase fw-semibold mb-1" style="font-size:.72rem;letter-spacing:.15em">
+          Module RH / IA
+        </p>
+        <h1 class="fw-bold mb-0" style="font-size:2rem;letter-spacing:-.02em">
+          Recommandation des employés
+        </h1>
+        <p class="text-muted mt-1">
+          Le modèle utilise l’activité créée par le RH et ton prompt libre comme contexte.
+        </p>
+      </div>
+
+      <div *ngIf="loadError" class="alert alert-danger mb-4">
+        {{ loadError }}
+      </div>
+
+      <div *ngIf="activity" class="card border shadow-sm mb-4" style="border-radius:16px; border-color:#e8e3da !important">
+        <div class="card-body p-4">
+          <div class="d-flex justify-content-between align-items-start gap-3 flex-wrap">
+            <div>
+              <div class="text-muted text-uppercase fw-semibold mb-1" style="font-size:.68rem;letter-spacing:.12em">
+                Activité RH
+              </div>
+              <h4 class="fw-bold mb-1">{{ activity.title }}</h4>
+              <p class="text-muted mb-2">{{ activity.description || 'Aucune description.' }}</p>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge bg-light text-dark" *ngIf="activity.type">{{ activity.type }}</span>
+                <span class="badge bg-light text-dark" *ngIf="activity.category">{{ activity.category }}</span>
+                <span class="badge bg-light text-dark" *ngIf="activity.seats">Places : {{ activity.seats }}</span>
+              </div>
+            </div>
+
+            <div *ngIf="activity.requiredSkills?.length" style="min-width:260px; max-width:420px;">
+              <div class="text-muted text-uppercase fw-semibold mb-2" style="font-size:.68rem;letter-spacing:.12em">
+                Compétences requises
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="badge rounded-pill bg-danger-subtle text-danger border" *ngFor="let s of activity.requiredSkills">
+                  {{ s.name }} · {{ s.desiredLevel }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card border shadow-sm mb-4" style="border-radius:16px; border-color:#e8e3da !important">
+        <div class="card-body p-4">
+          <label class="form-label text-muted text-uppercase fw-semibold" style="font-size:.68rem;letter-spacing:.12em">
+            Prompt RH
+          </label>
+
+          <textarea
+            class="form-control form-control-lg"
+            rows="8"
+            style="border-radius:12px; background:#f7f5f0; border-color:#e8e3da; resize:vertical;"
+            placeholder="Ajoute ici tes consignes RH…"
+            [(ngModel)]="prompt"
+            [disabled]="!activity || confirmed || loading"
+          ></textarea>
+
+          <div class="mt-3 d-flex gap-2 flex-wrap">
+            <button
+              class="btn btn-danger btn-lg px-4 fw-semibold"
+              style="border-radius:12px"
+              [disabled]="!activityId || !prompt.trim() || loading || confirmed"
+              (click)="search()"
+            >
+              <span *ngIf="!loading">🔍 Lancer la recommandation</span>
+              <span *ngIf="loading">
+                <span class="spinner-border spinner-border-sm me-2"></span>
+                Analyse en cours...
+              </span>
+            </button>
+
+            <button
+              class="btn btn-success btn-lg px-4 fw-semibold"
+              style="border-radius:12px"
+              [disabled]="!results.length || confirming || confirmed"
+              (click)="confirmAndNotifyAll()"
+            >
+              <span *ngIf="!confirming">✅ Confirmer la recommandation RH</span>
+              <span *ngIf="confirming">
+                <span class="spinner-border spinner-border-sm me-2"></span>
+                Confirmation...
+              </span>
+            </button>
+          </div>
+
+          <div *ngIf="confirmMsg" class="alert alert-success mt-3 mb-0">{{ confirmMsg }}</div>
+          <div *ngIf="confirmError" class="alert alert-danger mt-3 mb-0">{{ confirmError }}</div>
+        </div>
+      </div>
+
+      <div *ngIf="meta && searched" class="card border shadow-sm mb-4" style="border-radius:16px; border-color:#e8e3da !important">
+        <div class="card-body p-4">
+          <h5 class="fw-bold mb-3">Synthèse du modèle</h5>
+          <p class="mb-2" *ngIf="meta.modelJustification"><strong>Justification :</strong> {{ meta.modelJustification }}</p>
+          <p class="mb-2" *ngIf="meta.targetSkills?.length"><strong>Skills détectés :</strong> {{ meta.targetSkills.join(', ') }}</p>
+          <p class="mb-0" *ngIf="meta.targetRoles?.length"><strong>Rôles détectés :</strong> {{ meta.targetRoles.join(', ') }}</p>
+        </div>
+      </div>
+
+      <div *ngIf="loading" class="text-center py-5">
+        <div class="spinner-border text-danger" style="width:3.5rem;height:3.5rem"></div>
+        <p class="text-muted fw-semibold mt-3">Le modèle IA analyse les profils des employés…</p>
+      </div>
+
+      <div *ngIf="searched && !loading && results.length === 0" class="alert alert-warning">
+        Aucun employé recommandé pour cette activité.
+      </div>
+
+      <div class="row g-3" *ngIf="results.length > 0 && !loading">
+        <div class="col-md-6 col-xl-4" *ngFor="let r of results">
+          <div class="card h-100 border shadow-sm" style="border-radius:16px; border-color:#e8e3da !important">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start gap-2 mb-3">
+                <div>
+                  <h5 class="fw-bold mb-1">{{ r.name }}</h5>
+                  <div class="text-muted">{{ r.jobTitle || 'Poste non précisé' }}</div>
+                </div>
+                <span class="badge bg-danger">Score {{ getScore(r) }}%</span>
+              </div>
+
+              <p class="mb-2" *ngIf="r.email"><strong>Email :</strong> {{ r.email }}</p>
+              <p class="mb-2" *ngIf="r.currentSkills"><strong>Skills actuels :</strong> {{ r.currentSkills }}</p>
+              <p class="mb-3"><strong>Pourquoi :</strong> {{ r.reason }}</p>
+
+              <span class="badge"
+                    [ngClass]="r.matchedInMongo ? 'bg-success-subtle text-success border' : 'bg-warning-subtle text-warning border'">
+                {{ r.matchedInMongo ? 'Compte MongoDB lié' : 'Profil CSV non relié automatiquement' }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>

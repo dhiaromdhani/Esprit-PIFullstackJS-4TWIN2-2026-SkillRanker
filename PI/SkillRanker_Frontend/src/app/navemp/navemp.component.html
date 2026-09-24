@@ -1,0 +1,305 @@
+<nav class="nxl-navigation hrd-nav">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Fira+Code:wght@400;500&display=swap');
+
+    :root {
+      --nav-bg:        #0a0d14;
+      --nav-s1:        #0f1520;
+      --nav-s2:        #161f30;
+      --nav-bd:        rgba(255,255,255,0.06);
+      --nav-bdhi:      rgba(255,255,255,0.12);
+      --nav-tx:        #dde4f0;
+      --nav-mu:        #4e5d78;
+      --nav-mu2:       #7a8aa8;
+      --nav-acc:       #5b7cfa;
+      --nav-acc2:      #7b97fc;
+      --nav-accl:      rgba(91,124,250,0.12);
+      --nav-green:     #22c988;
+      --nav-amber:     #f5a623;
+      --nav-r:         10px;
+      --nav-w:         240px;
+    }
+
+    .hrd-nav {
+      width: var(--nav-w) !important;
+      background: var(--nav-bg) !important;
+      border-right: 1px solid var(--nav-bd) !important;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      overflow: hidden;
+    }
+
+    /* ── LOGO ── */
+    .hrd-nav .nav-logo {
+      padding: 20px 18px 16px;
+      border-bottom: 1px solid var(--nav-bd);
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+    }
+    .nav-logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #5b7cfa, #22c988);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(91,124,250,0.3);
+    }
+    .nav-logo-text { line-height: 1.2; }
+    .nav-logo-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--nav-tx);
+      letter-spacing: -.01em;
+    }
+    .nav-logo-role {
+      font-size: 10.5px;
+      color: var(--nav-mu2);
+      font-family: 'Fira Code', monospace;
+    }
+
+    /* ── SECTION LABEL ── */
+    .hrd-nav .nav-section {
+      font-size: 9.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--nav-mu);
+      padding: 14px 18px 5px;
+      font-weight: 600;
+    }
+
+    /* ── NAV ITEMS ── */
+    .hrd-nav .nxl-navbar {
+      list-style: none;
+      padding: 6px 10px;
+      margin: 0;
+      flex: 1;
+      overflow-y: auto;
+    }
+    .hrd-nav .nxl-navbar::-webkit-scrollbar { width: 3px; }
+    .hrd-nav .nxl-navbar::-webkit-scrollbar-track { background: transparent; }
+    .hrd-nav .nxl-navbar::-webkit-scrollbar-thumb { background: var(--nav-bd); border-radius: 99px; }
+
+    .hrd-nav .nxl-item {
+      margin-bottom: 2px;
+    }
+    .hrd-nav .nxl-caption label {
+      font-size: 9.5px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--nav-mu);
+      font-weight: 600;
+      padding: 12px 8px 4px;
+      display: block;
+      cursor: default;
+    }
+
+    .hrd-nav .nxl-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 10px;
+      border-radius: var(--nav-r);
+      color: var(--nav-mu2);
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 400;
+      transition: all .18s;
+      position: relative;
+      cursor: pointer;
+    }
+    .hrd-nav .nxl-link:hover {
+      background: rgba(255,255,255,.04);
+      color: var(--nav-tx);
+      text-decoration: none;
+    }
+    .hrd-nav .nxl-link.active,
+    .hrd-nav .nxl-item.active > .nxl-link {
+      background: var(--nav-accl);
+      color: var(--nav-acc2);
+      font-weight: 500;
+    }
+    .hrd-nav .nxl-link.active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 60%;
+      background: var(--nav-acc);
+      border-radius: 0 3px 3px 0;
+    }
+
+    .hrd-nav .nxl-micon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 15px;
+    }
+    .hrd-nav .nxl-mtext { flex: 1; }
+    .hrd-nav .nxl-arrow { margin-left: auto; font-size: 12px; opacity: .4; }
+
+    /* ── THEME TOGGLE ── */
+    .hrd-nav .theme-toggle .nxl-link {
+      color: var(--nav-mu2);
+    }
+    .hrd-nav .theme-toggle .nxl-link:hover {
+      color: var(--nav-amber);
+      background: rgba(245,166,35,.06);
+    }
+
+    /* ── LOGOUT ── */
+    .nav-logout > .nxl-link {
+      color: var(--nav-mu2);
+    }
+    .nav-logout > .nxl-link:hover {
+      color: #ff6b7a;
+      background: rgba(255,107,122,.07);
+    }
+
+    /* ── STATUS DOT ── */
+    .nav-status {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--nav-green);
+      flex-shrink: 0;
+      box-shadow: 0 0 6px rgba(34,201,136,.5);
+    }
+
+    /* ── BOTTOM USER CARD ── */
+    .nav-user-card {
+      padding: 12px 10px;
+      border-top: 1px solid var(--nav-bd);
+      flex-shrink: 0;
+    }
+    .nav-user-inner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 8px;
+      border-radius: var(--nav-r);
+      cursor: pointer;
+      transition: background .18s;
+    }
+    .nav-user-inner:hover { background: rgba(255,255,255,.04); }
+    .nav-user-av {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #5b7cfa, #22c988);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .nav-user-name { font-size: 12.5px; font-weight: 600; color: var(--nav-tx); }
+    .nav-user-role { font-size: 10.5px; color: var(--nav-mu2); font-family: 'Fira Code', monospace; }
+
+    /* ── COLLAPSED NAVBAR (original nxl classes still work) ── */
+    .nxl-navigation.minimenu .hrd-nav { width: 68px; }
+    .nxl-navigation.minimenu .nav-logo-text,
+    .nxl-navigation.minimenu .nxl-mtext,
+    .nxl-navigation.minimenu .nxl-arrow,
+    .nxl-navigation.minimenu .nav-section,
+    .nxl-navigation.minimenu .nxl-caption label,
+    .nxl-navigation.minimenu .nav-user-name,
+    .nxl-navigation.minimenu .nav-user-role { display: none; }
+
+    /* ── OVERRIDE original NXL layout push ── */
+    .nxl-container { margin-left: var(--nav-w) !important; }
+  </style>
+  <div class="navbar-wrapper">
+    <!-- <div class="m-header nav-logo">
+        <img src="assets/images/logo/skillranker.png" width="56" height="56" alt="SkillRanker" class="logo logo-lg app-brand-logo login-brand__img" />
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">SkillRanker</div>
+        <div class="nav-logo-role">{{ 'navigation.employeeDashboard' | translate }}</div>
+      </div>
+    </div> -->
+       <div class="m-header nav-logo">
+      <!-- <div class="nav-logo-mark">SR</div> -->
+        <img src="assets/images/logo/skillranker.png" width="56" height="56" alt="SkillRanker" class="logo logo-lg app-brand-logo login-brand__img" />
+        <!-- <span class="login-brand__text">SkillRanker</span> -->
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">SkillRanker</div>
+        <div class="nav-logo-role">{{ 'navigation.employeeDashboard' | translate }}</div>
+      </div>
+    </div>
+
+    <div class="navbar-content">
+      <ul class="nxl-navbar">
+        <li class="nxl-item">
+          <a [routerLink]="getDashboardRoute()" routerLinkActive="active" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-airplay"></i></span>
+            <span class="nxl-mtext">{{ 'navigation.dashboard' | translate }}</span>
+          </a>
+        </li>
+
+        <!-- <li class="nxl-item">
+          <a routerLink="/activitiesEmpl" routerLinkActive="active" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-send"></i></span>
+            <span class="nxl-mtext">{{ 'navigation.activities' | translate }}</span>
+          </a>
+        </li> -->
+
+        <li class="nxl-item">
+          <a routerLink="/profileemployee" routerLinkActive="active" class="nxl-link">
+            <span class="nxl-micon"><i class="feather-user"></i></span>
+            <span class="nxl-mtext">{{ 'navigation.profile' | translate }}</span>
+          </a>
+        </li>
+
+        <!-- <li class="nxl-item theme-toggle">
+          <a href="javascript:void(0);" class="nxl-link" (click)="toggleTheme()">
+            <span class="nxl-micon">
+              <i class="feather-moon" *ngIf="themeService.getCurrentTheme() === 'light'"></i>
+              <i class="feather-sun" *ngIf="themeService.getCurrentTheme() === 'dark'"></i>
+            </span>
+            <span class="nxl-mtext">
+              {{ themeService.getCurrentTheme() === 'light' ? ('common.darkMode' | translate) : ('common.lightMode' | translate) }}
+            </span>
+          </a>
+        </li> -->
+
+        <li *ngIf="auth.isLoggedIn()" class="nxl-item nav-logout">
+          <a href="javascript:void(0);" class="nxl-link" (click)="logout()">
+            <span class="nxl-micon"><i class="feather-log-out"></i></span>
+            <span class="nxl-mtext">{{ 'common.logout' | translate }}</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav-user-card">
+      <div class="nav-user-inner">
+        <div class="nav-user-av">EM</div>
+        <div class="nav-user-copy">
+          <div class="nav-user-name">{{ 'navigation.employeeDashboard' | translate }}</div>
+          <div class="nav-user-role">employee</div>
+        </div>
+        <div class="nav-status"></div>
+      </div>
+    </div>
+  </div>
+</nav>

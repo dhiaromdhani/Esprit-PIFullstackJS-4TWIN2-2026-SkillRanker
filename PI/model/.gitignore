@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Frontend
+claude-ui/node_modules/
+claude-ui/dist/
+
+# Local logs and temp
+*.log
+*.tmp
+
+# Optional large OCR source tree (uncomment if you don't want to version it)
+# tesseract-main/

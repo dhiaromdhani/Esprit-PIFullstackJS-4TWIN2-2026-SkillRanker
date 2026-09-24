@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "69d5530465c2b63dc872b6e4"
+  },
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T18:55:00.481Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T18:55:00.481Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5535d65c2b63dc872b700"
+  },
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T18:56:29.047Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T18:56:29.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5537065c2b63dc872b735"
+  },
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T18:56:48.141Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T18:56:48.141Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d554f147e6172bf5b55622"
+  },
+  "userId": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:03:13.804Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:03:13.804Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5551447e6172bf5b55632"
+  },
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:03:48.598Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:03:48.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5555947e6172bf5b55645"
+  },
+  "userId": {
+    "$oid": "69951a2d7b38812ed2cbd012"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:04:57.499Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:04:57.499Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5558547e6172bf5b55668"
+  },
+  "userId": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:05:41.985Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:05:41.985Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5571d47e6172bf5b5568c"
+  },
+  "userId": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:12:29.523Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:12:29.523Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d5573e47e6172bf5b556a9"
+  },
+  "userId": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:13:02.778Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:13:02.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69d559bc47e6172bf5b556b2"
+  },
+  "userId": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "action": "LOGOUT",
+  "resource": "AUTH",
+  "ipAddress": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+  "createdAt": {
+    "$date": "2026-04-07T19:23:40.691Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-07T19:23:40.691Z"
+  },
+  "__v": 0
+}]

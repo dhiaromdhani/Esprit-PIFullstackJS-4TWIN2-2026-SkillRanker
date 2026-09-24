@@ -1,0 +1,159 @@
+<header class="nxl-header sr-header">
+  <div class="header-wrapper sr-header-wrapper">
+
+    <div class="sr-header-left">
+      <!-- <a href="javascript:void(0);" class="sr-round-btn nxl-head-mobile-toggler" id="mobile-collapse" aria-label="Menu">
+        <div class="hamburger hamburger--arrowturn">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </a> -->
+
+      <div class="nxl-navigation-toggle sr-navigation-toggle">
+        <a href="javascript:void(0);" id="menu-mini-button" class="sr-round-btn" aria-label="Collapse sidebar">
+          <i class="feather-align-left"></i>
+        </a>
+
+        <a href="javascript:void(0);" id="menu-expend-button" class="sr-round-btn" style="display:none" aria-label="Expand sidebar">
+          <i class="feather-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="sr-page-context d-none d-lg-flex">
+        <span class="sr-context-dot"></span>
+        <div>
+          <div class="sr-context-title">{{ getRoleLabel() | translate }}</div>
+          <div class="sr-context-subtitle">SkillRanker</div>
+        </div>
+      </div>
+
+      <!-- <div class="header-search sr-header-search d-none d-md-flex">
+        <i class="feather-search"></i>
+        <input type="text" [placeholder]="'common.search' | translate" />
+      </div> -->
+      <div
+  class="header-search sr-header-search sr-header-search-working d-none d-md-flex"
+  [class.search-open]="isSearchOpen">
+
+  <i class="feather-search sr-search-icon"></i>
+
+  <input
+    type="text"
+    [value]="searchTerm"
+    (input)="onSearchInput($event)"
+    (focus)="openSearch()"
+    (blur)="closeSearch()"
+    (keydown.enter)="runSearch()"
+    [placeholder]="'common.search' | translate"
+    autocomplete="off"
+    aria-label="Search" />
+
+  <button
+    *ngIf="searchTerm"
+    type="button"
+    class="sr-search-clear"
+    (mousedown)="$event.preventDefault()"
+    (click)="clearSearch()">
+    <i class="feather-x"></i>
+  </button>
+
+  <div class="sr-search-dropdown" *ngIf="isSearchOpen">
+
+    <button
+      *ngFor="let item of searchResults; trackBy: trackByRoute"
+      type="button"
+      class="sr-search-result"
+      (mousedown)="$event.preventDefault()"
+      (click)="goToSearchResult(item)">
+
+      <span class="sr-search-result-icon">
+        <i [class]="item.icon"></i>
+      </span>
+
+      <span class="sr-search-result-content">
+        <strong>{{ item.labelKey | translate }}</strong>
+        <small>{{ item.descriptionKey | translate }}</small>
+      </span>
+
+      <i class="feather-arrow-right sr-search-result-arrow"></i>
+    </button>
+
+    <div class="sr-search-empty" *ngIf="searchResults.length === 0">
+      <i class="feather-search"></i>
+      <span>{{ 'headerSearch.noResults' | translate }}</span>
+    </div>
+
+  </div>
+</div>
+    </div>
+
+    <div class="sr-header-right">
+
+      <div class="sr-header-control-panel">
+
+        <app-language-selector></app-language-selector>
+
+        <div class="sr-theme-switch" role="group" aria-label="Theme selector">
+          <button
+            type="button"
+            class="sr-theme-option"
+            [class.active]="isTheme('light')"
+            (click)="setTheme('light')">
+            <span class="sr-theme-dot"></span>
+            <span>{{ 'common.lightMode' | translate }}</span>
+          </button>
+
+          <button
+            type="button"
+            class="sr-theme-option"
+            [class.active]="isTheme('dark')"
+            (click)="setTheme('dark')">
+            <span class="sr-theme-dot"></span>
+            <span>{{ 'common.darkMode' | translate }}</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- <div class="nxl-drp-link nxl-lavel-mega-menu d-none d-lg-block">
+        <div class="dropdown nxl-h-item nxl-lavel-menu">
+          <a class="sr-add-btn" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-label="Quick add">
+            <i class="feather-plus"></i>
+          </a>
+
+          <div class="dropdown-menu nxl-h-dropdown sr-header-dropdown">
+            <a routerLink="/activities" class="dropdown-item">
+              <i class="feather-send"></i>
+              <span>{{ 'common.newActivity' | translate }}</span>
+            </a>
+
+            <a routerLink="/recommondation" class="dropdown-item">
+              <i class="feather-cpu"></i>
+              <span>{{ 'common.recommendation' | translate }}</span>
+            </a>
+
+            <a routerLink="/register" class="dropdown-item">
+              <i class="feather-user-plus"></i>
+              <span>{{ 'common.addEmployee' | translate }}</span>
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="sr-header-divider d-none d-md-block"></div>
+
+      <!-- <div class="sr-user-pill dropdown" data-bs-toggle="dropdown">
+        <div class="sr-user-avatar">{{ getRoleInitials() }}</div>
+
+        <div class="sr-user-copy d-none d-sm-block">
+          <div class="sr-user-name">{{ getRoleLabel() | translate }}</div>
+          <div class="sr-user-role">{{ getRoleCode() }}</div>
+        </div>
+
+        <i class="feather-chevron-down sr-user-chevron"></i>
+      </div> -->
+
+    </div>
+  </div>
+</header>

@@ -1,0 +1,3667 @@
+[{
+  "_id": {
+    "$oid": "69714348f7ef61a87a7dd4c1"
+  },
+  "email": "test@example.com",
+  "password": "$2b$12$UrwHX5.Fe6lMPJjn6W.4/.pFr6pqiaO/cLxQKCeiEkZv6GpGN5.VW",
+  "firstName": "John",
+  "lastName": "Doe",
+  "role": "PATIENT",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-01-21T21:21:12.382Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-21T21:21:12.382Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "697926549262d96d3c46299f"
+  },
+  "email": "ali@gmail.com",
+  "password": "$2b$12$EwuU.L.husrQX5pJCEEhk.ZxMvjIjWNj.YRUHCjk3.2tNQEmm0TDy",
+  "firstName": "John",
+  "lastName": "Doe",
+  "role": "MANAGER",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-01-27T20:55:48.505Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-27T20:55:48.505Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69792b3602bf76ded2f0147c"
+  },
+  "email": "dhia@gmail.com",
+  "password": "12345678",
+  "firstName": "dz",
+  "lastName": "Doe",
+  "role": "emp",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-01-27T21:16:38.455Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T14:31:54.114Z"
+  },
+  "__v": 0,
+  "departement": "RH"
+},
+{
+  "_id": {
+    "$oid": "6979e69de9d8b499010da990"
+  },
+  "email": "fedisuper147@gmail.com",
+  "googleId": "102782747236928116316",
+  "firstName": "MR",
+  "lastName": "F",
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-01-28T10:36:13.139Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-28T10:36:13.139Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69813b26c1db4e58b5c67800"
+  },
+  "email": "fedimbarek@gmail.com",
+  "password": "$2b$12$/FbzA7AUqU7UTbG44ADSB.CYnM5fy//XfeAr1OkLeOPQZpkT9S.qe",
+  "firstName": "fedi",
+  "lastName": "dsss",
+  "role": "ADMINISTRATOR",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-02-03T00:02:46.351Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T00:02:46.351Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "698206bb1414b3fdbe9b390d"
+  },
+  "email": "ahmed2@gmail.com",
+  "password": "$2b$12$IxyzdWcotsQinwKSuOuN4.rpi4ZnaW8xk1a/oPzdmmSwwDanR.JIW",
+  "firstName": "John",
+  "lastName": "Doe",
+  "role": "HR_MANAGER",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-02-03T14:31:23.374Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T14:31:23.374Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69950835da8a67e5083767bc"
+  },
+  "name": "HR Admin",
+  "email": "hr@test.com",
+  "password": "$2b$12$HKJrBPrLeHFDkgOtuEdNAObmIjRe9Y0Pz50ed4AuKwPQhrfxQqOL6",
+  "role": "HR_MANAGER",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "createdAt": {
+    "$date": "2026-02-18T00:30:45.425Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T00:30:45.425Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69951614b27339fc4cb63afd"
+  },
+  "name": "Ali Ayadi",
+  "matricule": "162687",
+  "email": "AliAyadi@test.com",
+  "password": "12345678",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:29:56.534Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:29:56.534Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd00c"
+  },
+  "name": "Lina Trabelsi",
+  "matricule": "310327",
+  "email": "LinaTrabelsi@test.com",
+  "password": "$2b$12$NNWSvqXCvbhV4TTyatsPVeDD7drP/U9tsz6vWQa6wq8.BIuVYud/e",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.619Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.619Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd00d"
+  },
+  "name": "Ahmed Masmoudi",
+  "matricule": "248218",
+  "email": "AhmedMasmoudi@test.com",
+  "password": "$2b$12$D4bovgd1ZNH8g57dhpl6iuxRfDOjbszWgWh26HZrhxrl2PSw7fTr.",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd00e"
+  },
+  "name": "Yasmine Haddad",
+  "matricule": "959459",
+  "email": "YasmineHaddad@test.com",
+  "password": "$2b$12$zAHxJDlfvsLSxG16ZJqzAOSS16uFO.70k4ccb5RaHxLELpM4sl.sO",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd00f"
+  },
+  "name": "Rim Ayadi",
+  "matricule": "884142",
+  "email": "RimAyadi@test.com",
+  "password": "$2b$12$SUl1lAThtBCvK24THbYNeuKdvx05/rVpGKQKoHoh7HBQWeVWJaXWO",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd010"
+  },
+  "name": "Sara Kacem",
+  "matricule": "816676",
+  "email": "SaraKacem@test.com",
+  "password": "$2b$12$gIoWuhLsfP/46s8OP4sW6eTtTfw7L8.WpPTVcbtThsnuxyfp6J9nO",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd011"
+  },
+  "name": "Yassine Ben Salah",
+  "matricule": "630870",
+  "email": "YassineBen Salah@test.com",
+  "password": "$2b$12$iIpffgPMG3NcRRKbP/kZIek0gWADzirw36fS92lYWv8WI1kEkgp.C",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd012"
+  },
+  "name": "Yasmine Gharbi",
+  "matricule": "425941",
+  "email": "benkhalifafedi855@gmail.com",
+  "password": "$2b$12$5bOvRu8iqleVXFokZfnD6uB/pJZHfWfsPvLAQt1l8BuWUMZCcqaiC",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd013"
+  },
+  "name": "Ines Ayadi",
+  "matricule": "455837",
+  "email": "InesAyadi@test.com",
+  "password": "$2b$12$STvOubIpZRIvSdHwn/Bq0OdNXglANW6yqZYWz6BWjwYxQmuoXD/3q",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 1,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-05T12:33:44.846Z"
+  },
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-05T12:33:44.843Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69d256a89de7d756a71caf20"
+      }
+    }
+  ],
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd014"
+  },
+  "name": "Omar Ayadi",
+  "matricule": "362985",
+  "email": "OmarAyadi@test.com",
+  "password": "$2b$12$iY8BfoNdPU84VpX.4hg5Duj.Ax.e/Ko30YpnmQAnqcm1MoTCBISY6",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69951a2d7b38812ed2cbd015"
+  },
+  "name": "Amira Haddad",
+  "matricule": "569303",
+  "email": "AmiraHaddad@test.com",
+  "password": "$2b$12$7be0D1UJhjArTS0mu2CIw./qVFTwzBjqLf84qF7/rgfwkYlRkVAGi",
+  "role": "EMPLOYEE",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "__v": 0,
+  "createdAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-18T01:47:25.620Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "699d3726c26e6d1ec8cc2e9d"
+  },
+  "name": "fedi",
+  "email": "fediMbarek@gmail.com",
+  "password": "$2b$12$BksmNOTDUhM/jXsOO2nHX.2C6y.5FHNVGtQk9vwvuxpkiu56iDzbO",
+  "role": "ADMINISTRATOR",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "createdAt": {
+    "$date": "2026-02-24T05:29:10.549Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-24T05:29:10.549Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69a739506c3eb0743ab1040e"
+  },
+  "email": "fedimbarekabidi@gmail.com",
+  "googleId": "102150475183382152702",
+  "firstName": "fedimbarek",
+  "lastName": "abidi",
+  "status": "ACTIVE",
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-03-03T19:41:04.234Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-03T19:41:04.234Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69a768cbd1b1fc087a71db85"
+  },
+  "email": "mohameddhiaromdhaneey@gmail.com",
+  "googleId": "103649814889525692161",
+  "firstName": "Romdhaneey",
+  "lastName": "Mohamed dhia",
+  "status": "ACTIVE",
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2026-03-03T23:03:39.546Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:41:17.508Z"
+  },
+  "__v": 12,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-05T12:34:29.090Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69d256d59de7d756a71caf4c"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python ",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T13:37:04.970Z"
+      },
+      "status": "CERTIFIED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": {
+        "$date": "2026-04-27T22:41:07.445Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:41:17.505Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee995207040fb43547b04d"
+      }
+    }
+  ],
+  "enLigne": false,
+  "name": "Dorra Belhaj",
+  "password": "$2b$12$1vLYz5.9LmH2WaOkajzLi.BRoroi1pO5KotmyHcpauf/jOMItrYyq",
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a1997"
+  },
+  "email": "slim.sellami.3@skillranker.local",
+  "password": "$2b$12$tGuYsWEXMQ2jqMp9Lm4M/uebf7FMvjGtYTeJB2I2GLnHtomdM/3wS",
+  "firstName": "Slim",
+  "lastName": "Sellami",
+  "name": "Slim Sellami",
+  "matricule": "3",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:08:01.614Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3b41a028c11d0a4a19ce"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.090Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.615Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a19a1"
+  },
+  "email": "hamza.karray.8@skillranker.local",
+  "password": "$2b$12$zd/5q2GkisDRU0aR16uhiOQa16yHN1LIIRj6i8rPcb5jKSIduhLpu",
+  "firstName": "Hamza",
+  "lastName": "Karray",
+  "name": "Hamza Karray",
+  "matricule": "8",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:08:01.641Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3b41a028c11d0a4a19d3"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.402Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.641Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a19ab"
+  },
+  "email": "jawher.slama.19@skillranker.local",
+  "password": "$2b$12$gjD0kilcF2jNbhC/v2/q2uLj92awl.Gng/dQXiTA0mf23BeXYOn22",
+  "firstName": "Jawher",
+  "lastName": "Slama",
+  "name": "Jawher Slama",
+  "matricule": "19",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:08:01.646Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3b41a028c11d0a4a19d8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.685Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.647Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3b27a028c11d0a4a19b5"
+  },
+  "email": "lotfi.rouissi.22@skillranker.local",
+  "password": "$2b$12$n9ooczXEPnONgBtpevQZXuEYvhnL3E1BrHdYqKBaoBR59cJ.LcKSS",
+  "firstName": "Lotfi",
+  "lastName": "Rouissi",
+  "name": "Lotfi Rouissi",
+  "matricule": "22",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:08:01.651Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3b41a028c11d0a4a19dd"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:35.954Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.652Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3b28a028c11d0a4a19bf"
+  },
+  "email": "rihab.abidi.27@skillranker.local",
+  "password": "$2b$12$BiR6LWg1vFJmcd8w2gxuEOl56/XNxxden7VJS7mjXQ350XmSBACTW",
+  "firstName": "Rihab",
+  "lastName": "Abidi",
+  "name": "Rihab Abidi",
+  "matricule": "27",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:08:01.657Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3b41a028c11d0a4a19e2"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:07:36.228Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:08:01.657Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3fa535cc27db077fb94a"
+  },
+  "email": "dorra.belhaj.3527@skillranker.local",
+  "password": "$2b$12$mIBlfEUZKtnwdRIHWgj77er/kX.jVUmPP./fHxqWwUcs/nwjrLtom",
+  "firstName": "Dorra",
+  "lastName": "Belhaj",
+  "name": "Dorra Belhaj",
+  "matricule": "3527",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:27:10.133Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3fbe35cc27db077fb976"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:45.983Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.138Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb954"
+  },
+  "email": "rim.karoui.562@skillranker.local",
+  "password": "$2b$12$K2lMjGFF4Pnfcbq9w6Tyt.8f0cb2ToBKP06VfXOzNjTVcSVe59FFy",
+  "firstName": "Rim",
+  "lastName": "Karoui",
+  "name": "Rim Karoui",
+  "matricule": "562",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:27:10.173Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3fbe35cc27db077fb97b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.325Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.175Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb95e"
+  },
+  "email": "brahim.belhaj.1181@skillranker.local",
+  "password": "$2b$12$q2irAac6yDBkmLEbgZ5F1utF7Da4c.j/olBiT3IoCeIbl3gPDEHEy",
+  "firstName": "Brahim",
+  "lastName": "Belhaj",
+  "name": "Brahim Belhaj",
+  "matricule": "1181",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:27:10.192Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3fbe35cc27db077fb980"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.648Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.194Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69ed3fa635cc27db077fb968"
+  },
+  "email": "maher.haddad.1943@skillranker.local",
+  "password": "$2b$12$umJompoGGGQBqGUpZy6fzeRJVKW1u512OR2mIeeHIYMdECB/uOo7e",
+  "firstName": "Maher",
+  "lastName": "Haddad",
+  "name": "Maher Haddad",
+  "matricule": "1943",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "assignedAt": {
+        "$date": "2026-04-25T22:27:10.213Z"
+      },
+      "status": "ASSIGNED",
+      "_id": {
+        "$oid": "69ed3fbe35cc27db077fb985"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-25T22:26:46.979Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-25T22:27:10.217Z"
+  },
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "69edfc3f0c8bcf4720107b89"
+  },
+  "email": "rami.nasri.111@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Rami",
+  "lastName": "Nasri",
+  "name": "Rami Nasri",
+  "matricule": "111",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T11:51:40.108Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8867bc09f169aa84f111"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:27.947Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:49:27.756Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107b93"
+  },
+  "email": "dhia.ben.hassine.118@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Dhia",
+  "lastName": "Ben Hassine",
+  "name": "Dhia Ben Hassine",
+  "matricule": "118",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T11:51:40.128Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee887ebc09f169aa84f119"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.298Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:49:50.620Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107b9d"
+  },
+  "email": "bilel.ferchichi@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Bilel",
+  "lastName": "Ferchichi",
+  "name": "Bilel Ferchichi",
+  "matricule": "177",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T11:51:40.140Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8895bc09f169aa84f121"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.628Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:50:13.257Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfc400c8bcf4720107ba7"
+  },
+  "email": "mohamed.turki.187@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Mohamed",
+  "lastName": "Turki",
+  "name": "Mohamed Turki",
+  "matricule": "187",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T11:51:40.151Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8897bc09f169aa84f129"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:28.958Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:50:15.003Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfc410c8bcf4720107bb1"
+  },
+  "email": "ahmed.chebbi.217@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Ahmed",
+  "lastName": "Chebbi",
+  "name": "Ahmed Chebbi",
+  "matricule": "217",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69e5343a976aa54781663e1e"
+      },
+      "title": "devops",
+      "description": "pipeline CI/Cd",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T11:51:40.160Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T20:17:01.938Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee88adbc09f169aa84f131"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T11:51:29.314Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:50:37.705Z"
+  },
+  "__v": 7,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfea69930ec5e03b59786"
+  },
+  "email": "slim.sellami.3@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Slim",
+  "lastName": "Sellami",
+  "name": "Slim Sellami",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-26T12:01:57.479Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69edfeb59930ec5e03b597ad"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:04:00.915Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee83e4df9d20ad2e7febc3"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:07.237Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee9b3a07040fb43547b126"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:01:42.173Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:09:46.063Z"
+  },
+  "__v": 10,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfea69930ec5e03b5978c"
+  },
+  "email": "hamza.karray.8@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Hamza",
+  "lastName": "Karray",
+  "name": "Hamza Karray",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-26T12:01:57.525Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69edfeb59930ec5e03b597b2"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:08.854Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee9b3b07040fb43547b12f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:01:42.510Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:09:47.818Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfea69930ec5e03b59792"
+  },
+  "email": "jawher.slama.19@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Jawher",
+  "lastName": "Slama",
+  "name": "Jawher Slama",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-26T12:01:57.547Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69edfeb59930ec5e03b597b7"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:32.664Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee9b3d07040fb43547b138"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:01:42.849Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:09:49.579Z"
+  },
+  "__v": 5,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfea79930ec5e03b59798"
+  },
+  "email": "lotfi.rouissi.22@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Lotfi",
+  "lastName": "Rouissi",
+  "name": "Lotfi Rouissi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-26T12:01:57.571Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69edfeb59930ec5e03b597bc"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:55.988Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T22:53:50.599Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee9b5507040fb43547b141"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:01:43.179Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:10:13.270Z"
+  },
+  "__v": 6,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edfea79930ec5e03b5979e"
+  },
+  "email": "rihab.abidi.27@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Rihab",
+  "lastName": "Abidi",
+  "name": "Rihab Abidi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "",
+      "description": "",
+      "type": "",
+      "category": "",
+      "assignedAt": {
+        "$date": "2026-04-26T12:01:57.597Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": false,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69edfeb59930ec5e03b597c1"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:30:58.008Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T22:41:30.871Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee9b5607040fb43547b14a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:01:43.513Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:10:14.918Z"
+  },
+  "__v": 6,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edff149930ec5e03b597d4"
+  },
+  "email": "dorra.belhaj.3527@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Dorra",
+  "lastName": "Belhaj",
+  "name": "Dorra Belhaj",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "assignedAt": {
+        "$date": "2026-04-26T12:03:35.948Z"
+      },
+      "status": "ASSIGNED",
+      "respondedAt": null,
+      "_id": {
+        "$oid": "69ee119a8b788a6d4f2378f4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:03:32.190Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T13:22:34.259Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69edff149930ec5e03b597da"
+  },
+  "email": "rim.karoui.562@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Rim",
+  "lastName": "Karoui",
+  "name": "Rim Karoui",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python ",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T12:03:35.977Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T23:04:38.099Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee995507040fb43547b055"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:03:32.523Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:04:38.101Z"
+  },
+  "__v": 12,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edff149930ec5e03b597e0"
+  },
+  "email": "brahim.belhaj.1181@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Brahim",
+  "lastName": "Belhaj",
+  "name": "Brahim Belhaj",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python ",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T12:03:35.994Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee995707040fb43547b05d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:03:32.857Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:01:43.078Z"
+  },
+  "__v": 10,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69edff159930ec5e03b597e6"
+  },
+  "email": "maher.haddad.1943@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Maher",
+  "lastName": "Haddad",
+  "name": "Maher Haddad",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69cceb939a42bd5e35c8ea97"
+      },
+      "title": "python ",
+      "description": "machine learning",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T12:03:36.008Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee995807040fb43547b065"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T12:03:33.193Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:01:44.761Z"
+  },
+  "__v": 10,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8421"
+  },
+  "email": "zied.ben.ammar.2926@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Zied",
+  "lastName": "Ben Ammar",
+  "name": "Zied Ben Ammar",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:25.561Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T14:29:23.565Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie",
+      "_id": {
+        "$oid": "69ee8907bc09f169aa84f16d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.525Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:52:07.044Z"
+  },
+  "__v": 4,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef842b"
+  },
+  "email": "walid.ezzine@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Walid",
+  "lastName": "Ezzine",
+  "name": "Walid Ezzine",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:48.567Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8909bc09f169aa84f175"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.617Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:52:09.088Z"
+  },
+  "__v": 3,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8435"
+  },
+  "email": "imed.ben.dhiab.134@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Imed",
+  "lastName": "Ben Dhiab",
+  "name": "Imed Ben Dhiab",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:27:50.773Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T21:54:19.567Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie",
+      "_id": {
+        "$oid": "69ee891fbc09f169aa84f17d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.699Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:54:19.568Z"
+  },
+  "__v": 4,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef843f"
+  },
+  "email": "lotfi.turki.509@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Lotfi",
+  "lastName": "Turki",
+  "name": "Lotfi Turki",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:28:13.656Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8936bc09f169aa84f185"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.792Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:52:54.773Z"
+  },
+  "__v": 3,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1f10117de61b7bef8449"
+  },
+  "email": "tarek.fakhfakh.1098@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Tarek",
+  "lastName": "Fakhfakh",
+  "name": "Tarek Fakhfakh",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T14:28:37.414Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8938bc09f169aa84f18d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:20:00.883Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:52:56.577Z"
+  },
+  "__v": 3,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef848f"
+  },
+  "email": "tarek.mekki.1186@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Tarek",
+  "lastName": "Mekki",
+  "name": "Tarek Mekki",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:52:59.176Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee893bbc09f169aa84f194"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.503Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:22.287Z"
+  },
+  "__v": 2,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef8499"
+  },
+  "email": "mondher.mabrouk.1742@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Mondher",
+  "lastName": "Mabrouk",
+  "name": "Mondher Mabrouk",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:22.294Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8952bc09f169aa84f19c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.587Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:24.970Z"
+  },
+  "__v": 2,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84a3"
+  },
+  "email": "omar.ben.fredj.1797@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Omar",
+  "lastName": "Ben Fredj",
+  "name": "Omar Ben Fredj",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:24.976Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8954bc09f169aa84f1a4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.677Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:27.024Z"
+  },
+  "__v": 2,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84ad"
+  },
+  "email": "oussama.ferchichi.1998@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Oussama",
+  "lastName": "Ferchichi",
+  "name": "Oussama Ferchichi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:27.032Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8957bc09f169aa84f1ac"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.753Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:29.339Z"
+  },
+  "__v": 2,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84b7"
+  },
+  "email": "khawla.hamdi@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Khawla",
+  "lastName": "Hamdi",
+  "name": "Khawla Hamdi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee1f01117de61b7bef840e"
+      },
+      "title": "python",
+      "description": "Python",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:53:29.365Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8959bc09f169aa84f1b4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.840Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:53:53.132Z"
+  },
+  "__v": 2,
+  "departement": "",
+  "telephone": ""
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84c1"
+  },
+  "email": "rania.belhaj@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Rania",
+  "lastName": "Belhaj",
+  "name": "Rania Belhaj",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.918Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:31.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa7117de61b7bef84cb"
+  },
+  "email": "ines.ghannouchi.3053@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Ines",
+  "lastName": "Ghannouchi",
+  "name": "Ines Ghannouchi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:31.996Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:31.996Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84d5"
+  },
+  "email": "houda.karray.3493@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Houda",
+  "lastName": "Karray",
+  "name": "Houda Karray",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.079Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.079Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84df"
+  },
+  "email": "khawla.khelifi.3525@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Khawla",
+  "lastName": "Khelifi",
+  "name": "Khawla Khelifi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.177Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.177Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84e9"
+  },
+  "email": "sonia.dhouib.3686@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Sonia",
+  "lastName": "Dhouib",
+  "name": "Sonia Dhouib",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.273Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.273Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84f3"
+  },
+  "email": "wissem.marzouki@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Wissem",
+  "lastName": "Marzouki",
+  "name": "Wissem Marzouki",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.366Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef84fd"
+  },
+  "email": "issam.jebali.5980@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Issam",
+  "lastName": "Jebali",
+  "name": "Issam Jebali",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.454Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:23:50.182Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef8507"
+  },
+  "email": "rami.yahiaoui.5209@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Rami",
+  "lastName": "Yahiaoui",
+  "name": "Rami Yahiaoui",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.540Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.540Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee1fa8117de61b7bef8518"
+  },
+  "email": "dalenda.riahi.6121@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Dalenda",
+  "lastName": "Riahi",
+  "name": "Dalenda Riahi",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "assignedActivities": [],
+  "createdAt": {
+    "$date": "2026-04-26T14:22:32.640Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T14:22:32.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8ea3"
+  },
+  "email": "manel.chaouachi@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Manel",
+  "lastName": "Chaouachi",
+  "name": "Manel Chaouachi",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:19:53.120Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7cffdf9d20ad2e7fe8dd"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T23:11:25.142Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee9b9d07040fb43547b164"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.791Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T23:11:47.916Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8ead"
+  },
+  "email": "zied.hammami.49@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Zied",
+  "lastName": "Hammami",
+  "name": "Zied Hammami",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:19:55.259Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:05:12.078Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee7d17df9d20ad2e7fe8e5"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee91d9667e7c26273e2102"
+      },
+      "title": "francais",
+      "description": "grammaire",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T23:11:47.927Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T23:46:06.184Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee9bb307040fb43547b16d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.871Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:05:12.082Z"
+  },
+  "__v": 11
+},
+{
+  "_id": {
+    "$oid": "69ee7364c651a8c229bf8eb7"
+  },
+  "email": "hassen.derbel.56@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Hassen",
+  "lastName": "Derbel",
+  "name": "Hassen Derbel",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:18.954Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T20:22:20.305Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee7d2edf9d20ad2e7fe8ed"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:31.350Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69eeabae2ba612bab62b06f0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:48.962Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:19:58.779Z"
+  },
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ec1"
+  },
+  "email": "salma.nasr@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Salma",
+  "lastName": "Nasr",
+  "name": "Salma Nasr",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:20.973Z"
+      },
+      "status": "REFUSED",
+      "justification": "maladie",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:22:01.923Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "maladie",
+      "_id": {
+        "$oid": "69ee7d2fdf9d20ad2e7fe8f5"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:33.525Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T00:21:22.493Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69eeabb22ba612bab62b06f9"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.039Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:22:01.929Z"
+  },
+  "__v": 8
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ecb"
+  },
+  "email": "sofiene.belhaj.155@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Sofiene",
+  "lastName": "Belhaj",
+  "name": "Sofiene Belhaj",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:23.119Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7d46df9d20ad2e7fe8fd"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.119Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:01:58.290Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ed5"
+  },
+  "email": "tarek.fehri.244@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Tarek",
+  "lastName": "Fehri",
+  "name": "Tarek Fehri",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:20:46.305Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7d5ddf9d20ad2e7fe905"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:57.330Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69eeabc82ba612bab62b0702"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.195Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:20:24.909Z"
+  },
+  "__v": 6
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8edf"
+  },
+  "email": "thouraya.wassim@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Thouraya",
+  "lastName": "Wassim",
+  "name": "Thouraya Wassim",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:09.274Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7d60df9d20ad2e7fe90d"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:55:59.238Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69eeabca2ba612bab62b070b"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.284Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:20:26.506Z"
+  },
+  "__v": 6
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ee9"
+  },
+  "email": "dalenda.ben.mohamed@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Dalenda",
+  "lastName": "Ben Mohamed",
+  "name": "Dalenda Ben Mohamed",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:32.039Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7d62df9d20ad2e7fe915"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.361Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:02:26.296Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8ef3"
+  },
+  "email": "fethi.saidani.312@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Fethi",
+  "lastName": "Saidani",
+  "name": "Fethi Saidani",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:33.721Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee7d64df9d20ad2e7fe91d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.435Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:02:28.367Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69ee7365c651a8c229bf8efd"
+  },
+  "email": "ghassen.elloumi.553@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Ghassen",
+  "lastName": "Elloumi",
+  "name": "Ghassen Elloumi",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T20:21:35.337Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-26T21:02:53.860Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69ee8430df9d20ad2e7febeb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T20:19:49.510Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:28.061Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb5e"
+  },
+  "email": "zeineb.xenopoulos.277@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Zeineb",
+  "lastName": "Xenopoulos",
+  "name": "Zeineb Xenopoulos",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:14.739Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee83e6df9d20ad2e7febca"
+      }
+    },
+    {
+      "activityId": {
+        "$oid": "69ee97cf07040fb43547afe4"
+      },
+      "title": "angular",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T22:56:22.830Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69eeabcc2ba612bab62b0714"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.257Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T00:20:28.040Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb68"
+  },
+  "email": "jihene.zaag@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Jihene",
+  "lastName": "Zaag",
+  "name": "Jihene Zaag",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:17.102Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee83e9df9d20ad2e7febd2"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.345Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:30:40.239Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb72"
+  },
+  "email": "hamza.ben.fredj.463@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Hamza",
+  "lastName": "Ben Fredj",
+  "name": "Hamza Ben Fredj",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:30:40.257Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8400df9d20ad2e7febda"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.421Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:03.512Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb7c"
+  },
+  "email": "naoufel.karoui.513@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Naoufel",
+  "lastName": "Karoui",
+  "name": "Naoufel Karoui",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:03.518Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8417df9d20ad2e7febe2"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.497Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:28.053Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb8e"
+  },
+  "email": "elyes.trabelsi.700@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Elyes",
+  "lastName": "Trabelsi",
+  "name": "Elyes Trabelsi",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:51.715Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8447df9d20ad2e7febf5"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.583Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:54.123Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feb98"
+  },
+  "email": "bilel.ben.ali.734@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Bilel",
+  "lastName": "Ben Ali",
+  "name": "Bilel Ben Ali",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:54.133Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee844adf9d20ad2e7febff"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.669Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:31:57.865Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7feba2"
+  },
+  "email": "walid.mansouri.811@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Walid",
+  "lastName": "Mansouri",
+  "name": "Walid Mansouri",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:31:57.872Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee844ddf9d20ad2e7fec07"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.748Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:32:01.837Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69ee83dadf9d20ad2e7febac"
+  },
+  "email": "cyrine.sellami.857@tonentreprise.com",
+  "password": "$2b$12$oUvQnUmAjbTRQNRDZYffbOK1mjWhL6xAowCYVvCucEvfAl4vNdTOO",
+  "firstName": "Cyrine",
+  "lastName": "Sellami",
+  "name": "Cyrine Sellami",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69ee7356c651a8c229bf8e90"
+      },
+      "title": "react",
+      "description": "frontend",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-26T21:32:01.855Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69ee8451df9d20ad2e7fec0f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-26T21:30:02.831Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-26T21:32:04.267Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "69efd44520757cc34580155e"
+  },
+  "email": "walid.ferchichi.1736@tonentreprise.com",
+  "password": "$2b$10$FzpPhceQY7oC9HfU2HjeT.VLgPXMSK4GEtWXT96bDfwoIAjRCiM3O",
+  "firstName": "Walid",
+  "lastName": "Ferchichi",
+  "name": "Walid Ferchichi",
+  "matricule": "1736",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js ",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:25:25.154Z"
+      },
+      "status": "ACCEPTED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": {
+        "$date": "2026-04-27T21:32:16.161Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69efd58e20757cc345801607"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:25:25.123Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:32:16.165Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69efd45c20757cc345801573"
+  },
+  "email": "ines.derbel.2381@tonentreprise.com",
+  "password": "$2b$10$qYuDhcW0698GWxmL/Tj7leou0AI5ysobYE0UQ.bCIHNy0wGNjEwJK",
+  "firstName": "Ines",
+  "lastName": "Derbel",
+  "name": "Ines Derbel",
+  "matricule": "2381",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js ",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:25:48.265Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69efd5a520757cc34580160f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:25:48.257Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:31:17.759Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69efd47520757cc345801588"
+  },
+  "email": "oumaima.ben.ali.3041@tonentreprise.com",
+  "password": "$2b$10$6EoeUkFmjB5agfNfrQ5pz.sDNQjjUm1zWpbM.NCisf96qhFZ1cQi2",
+  "firstName": "Oumaima",
+  "lastName": "Ben Ali",
+  "name": "Oumaima Ben Ali",
+  "matricule": "3041",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js ",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:13.851Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69efd5a720757cc345801617"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:13.843Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:31:19.440Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69efd48c20757cc34580159d"
+  },
+  "email": "jawher.baccouche.3463@tonentreprise.com",
+  "password": "$2b$10$A7F1DLiSInu1YqdnsqFeg.bNa6NENgbQWo8KPKfLahXW50rhe7RHi",
+  "firstName": "Jawher",
+  "lastName": "Baccouche",
+  "name": "Jawher Baccouche",
+  "matricule": "3463",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js ",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:36.719Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69efd5be20757cc34580161f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:36.713Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:31:42.030Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69efd4a320757cc3458015b2"
+  },
+  "email": "mehdi.guizani.4126@tonentreprise.com",
+  "password": "$2b$10$wI81UFtj7g58lSoXL7/yk.aUY4U4zG3FICns.V2cIGwAbJlmvTWlK",
+  "firstName": "Mehdi",
+  "lastName": "Guizani",
+  "name": "Mehdi Guizani",
+  "matricule": "4126",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69efcb3b39984cbdc77404a0"
+      },
+      "title": "full stack js",
+      "description": "Rest api , angular , nest js ",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T21:26:59.844Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69efd5bf20757cc345801627"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T21:26:59.831Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T21:31:43.474Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "69efe6ab271db4fe134d53d2"
+  },
+  "email": "ikram.nasr@tonentreprise.com",
+  "password": "$2b$10$dCXIr9/JhFS8oJc0TRgogOWj05o0zmSB.2KY81VAdnmDMbEGQPdp2",
+  "firstName": "Ikram",
+  "lastName": "Nasr",
+  "name": "Ikram Nasr",
+  "matricule": "938",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "spring",
+      "description": "spring",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T22:43:55.243Z"
+      },
+      "status": "CERTIFIED",
+      "justification": "",
+      "notificationRead": true,
+      "emailSent": true,
+      "completedAt": {
+        "$date": "2026-04-27T22:45:12.096Z"
+      },
+      "respondedAt": {
+        "$date": "2026-04-27T22:45:24.453Z"
+      },
+      "certificateUrl": "",
+      "employeeResponse": "ACCEPTED",
+      "_id": {
+        "$oid": "69efe6ab271db4fe134d53d6"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T22:43:55.234Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:45:24.453Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "69efe6c2271db4fe134d53e7"
+  },
+  "email": "adel.largueche.1637@tonentreprise.com",
+  "password": "$2b$10$7uwRiPsAlLF1oQFH2fTjg.m.7DsOoQlbbQu6J46xCBMV15075q8gu",
+  "firstName": "Adel",
+  "lastName": "Largueche",
+  "name": "Adel Largueche",
+  "matricule": "1637",
+  "telephone": "",
+  "status": "ACTIVE",
+  "enLigne": false,
+  "role": "EMPLOYEE",
+  "isActive": true,
+  "departement": "",
+  "assignedActivities": [
+    {
+      "activityId": {
+        "$oid": "69a7e86a5c103477b4fe731a"
+      },
+      "title": "spring",
+      "description": "spring",
+      "type": "TRAINING",
+      "category": "TECHNICAL",
+      "assignedAt": {
+        "$date": "2026-04-27T22:44:18.970Z"
+      },
+      "status": "ASSIGNED",
+      "justification": "",
+      "notificationRead": false,
+      "emailSent": true,
+      "completedAt": null,
+      "respondedAt": null,
+      "certificateUrl": "",
+      "employeeResponse": "",
+      "_id": {
+        "$oid": "69efe6c2271db4fe134d53eb"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2026-04-27T22:44:18.961Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-27T22:44:43.569Z"
+  },
+  "__v": 2
+}]

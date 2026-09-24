@@ -1,0 +1,23 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: skillranker-backend
+  namespace: skillranker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: skillranker-backend
+  template:
+    metadata:
+      labels:
+        app: skillranker-backend
+    spec:
+      containers:
+        - name: skillranker-backend
+          image: meddhia1rom/skillranker-backend:latest
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: skillranker-env

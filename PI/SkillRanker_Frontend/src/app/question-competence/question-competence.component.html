@@ -1,0 +1,196 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<main class="nxl-container">
+  <div class="nxl-content">
+
+    <div class="container-fluid py-4 px-4">
+
+      <!-- ── HEADER ── -->
+      <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+        <div>
+          <p class="text-muted text-uppercase fw-semibold mb-1"
+             style="font-size: 0.72rem; letter-spacing: 0.15em;">
+            Gestion des questions
+          </p>
+
+          <h1 class="fw-bold mb-0" style="font-size: 2rem; letter-spacing: -0.02em;">
+            Questions Compétence
+            <span class="badge bg-dark ms-2"
+                  style="font-size: 0.75rem; border-radius: 100px;">
+              {{ questions.length }}
+            </span>
+          </h1>
+        </div>
+
+        <button class="btn btn-danger d-flex align-items-center gap-2 fw-semibold px-4"
+                style="border-radius: 12px;"
+                (click)="openModal()">
+          <span class="fs-5 lh-1">+</span>
+          Nouvelle question
+        </button>
+      </div>
+
+      <!-- ── EMPTY STATE ── -->
+      <div class="text-center py-5 my-4" *ngIf="questions.length === 0">
+        <div class="mb-3" style="font-size: 3rem; opacity: 0.3;">❓</div>
+        <p class="text-muted fw-semibold fs-6">Aucune question pour le moment</p>
+        <button class="btn btn-outline-danger mt-2"
+                style="border-radius: 10px;"
+                (click)="openModal()">
+          Ajouter une question
+        </button>
+      </div>
+
+      <!-- ── CARDS GRID ── -->
+      <div class="row g-3" *ngIf="questions.length > 0">
+
+        <div class="col-md-6 col-lg-4"
+             *ngFor="let q of questions; let i = index">
+
+          <div class="card h-100 border shadow-sm"
+               style="border-radius: 16px; border-color: #e8e3da !important;">
+
+            <!-- top bar -->
+            <div style="height: 4px; background: linear-gradient(90deg, #dc3545, #f08070); border-radius: 16px 16px 0 0;"></div>
+
+            <div class="card-body p-4">
+
+              <!-- header small -->
+              <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted text-uppercase fw-semibold"
+                      style="font-size: 0.65rem; letter-spacing: 0.15em;">
+                  Question #{{ i + 1 }}
+                </span>
+
+                <span class="badge rounded-pill"
+                      style="background:#f0ece4; font-size:0.7rem;">
+                  {{ q.status }}
+                </span>
+              </div>
+
+              <!-- title -->
+              <h5 class="fw-bold mb-2">
+                {{ q.intitule }}
+              </h5>
+
+              <!-- details -->
+              <p class="text-muted fst-italic mb-0"
+                 style="font-size: 0.85rem; line-height: 1.6;">
+                {{ q.details || 'Aucun détail.' }}
+              </p>
+
+            </div>
+
+            <!-- footer -->
+            <div class="card-footer bg-transparent d-flex justify-content-end gap-2 px-4 py-3"
+                 style="border-top: 1px solid #e8e3da;">
+
+              <button class="btn btn-sm btn-outline-secondary"
+                      style="border-radius: 8px; width:34px; height:34px; padding:0;"
+                      (click)="edit(q)">
+                ✏️
+              </button>
+
+              <button class="btn btn-sm btn-outline-danger"
+                      style="border-radius: 8px; width:34px; height:34px; padding:0;"
+                      (click)="delete(q._id)">
+                🗑️
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── MODAL ── -->
+    <div class="modal-backdrop fade show"
+         *ngIf="showModal"
+         (click)="showModal=false"></div>
+
+    <div class="modal fade show d-block"
+         *ngIf="showModal">
+
+      <div class="modal-dialog modal-dialog-centered"
+           (click)="$event.stopPropagation()">
+
+        <div class="modal-content border-0 shadow"
+             style="border-radius: 20px; overflow: hidden;">
+
+          <!-- header -->
+          <div class="modal-header px-4 py-3">
+            <h5 class="fw-bold">
+              {{ editMode ? 'Modifier' : 'Nouvelle' }}
+              <span class="text-danger">question</span>
+            </h5>
+
+            <button class="btn-close" (click)="showModal=false"></button>
+          </div>
+
+          <!-- body -->
+          <div class="modal-body px-4 py-3">
+
+            <form [formGroup]="form" (ngSubmit)="submit()" id="qForm">
+
+              <div class="mb-3">
+                <label class="form-label text-uppercase fw-semibold"
+                       style="font-size:0.7rem;">Intitulé</label>
+
+                <input class="form-control"
+                       style="border-radius:10px; background:#f7f5f0;"
+                       formControlName="intitule">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label text-uppercase fw-semibold"
+                       style="font-size:0.7rem;">Détails</label>
+
+                <textarea class="form-control"
+                          style="border-radius:10px; background:#f7f5f0;"
+                          formControlName="details"></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label text-uppercase fw-semibold"
+                       style="font-size:0.7rem;">Status</label>
+
+                <select class="form-control"
+                        style="border-radius:10px; background:#f7f5f0;"
+                        formControlName="status">
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </div>
+
+            </form>
+
+          </div>
+
+          <!-- footer -->
+          <div class="modal-footer px-4 py-3 gap-2">
+
+            <button class="btn btn-outline-secondary"
+                    style="border-radius:10px;"
+                    (click)="showModal=false">
+              Annuler
+            </button>
+
+            <button class="btn btn-danger fw-semibold px-4"
+                    style="border-radius:10px;"
+                    type="submit"
+                    form="qForm"
+                    [disabled]="form.invalid">
+              {{ editMode ? 'Enregistrer' : 'Ajouter' }}
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
